@@ -71,10 +71,10 @@ const FormWizard = () => {
     }
   }
 
-document.title ="Wizard | Velzon - React Admin & Dashboard Template";
+  document.title = "Wizard | Velzon - React Admin & Dashboard Template";
   return (
     <React.Fragment>
-      <div className="page-content">        
+      <div className="page-content">
         <Container fluid>
           <BreadCrumb title="Forms" breadcrumbItem="Wizard" />
           <Row>
@@ -98,11 +98,10 @@ document.title ="Wizard | Velzon - React Admin & Dashboard Template";
                       <Nav
                         className="nav-pills progress-bar-tab custom-nav"
                         role="tablist"
-                       
                       >
                         <NavItem>
                           <NavLink
-                           to="#"
+                            to="#"
                             id="pills-gen-info-tab"
                             className={classnames(
                               {
@@ -121,7 +120,7 @@ document.title ="Wizard | Velzon - React Admin & Dashboard Template";
                         </NavItem>
                         <NavItem>
                           <NavLink
-                           to="#"
+                            to="#"
                             id="pills-gen-info-tab"
                             className={classnames(
                               {
@@ -140,7 +139,7 @@ document.title ="Wizard | Velzon - React Admin & Dashboard Template";
                         </NavItem>
                         <NavItem>
                           <NavLink
-                           to="#"
+                            to="#"
                             id="pills-gen-info-tab"
                             className={classnames(
                               {
@@ -343,7 +342,7 @@ document.title ="Wizard | Velzon - React Admin & Dashboard Template";
                       >
                         <NavItem>
                           <NavLink
-                          href="#"
+                            href="#"
                             id="steparrow-gen-info-tab"
                             className={classnames({
                               active: activeArrowTab === 4,
@@ -358,7 +357,7 @@ document.title ="Wizard | Velzon - React Admin & Dashboard Template";
                         </NavItem>
                         <NavItem>
                           <NavLink
-                          href="#"
+                            href="#"
                             id="steparrow-gen-info-tab"
                             className={classnames({
                               active: activeArrowTab === 5,
@@ -373,7 +372,7 @@ document.title ="Wizard | Velzon - React Admin & Dashboard Template";
                         </NavItem>
                         <NavItem>
                           <NavLink
-                          href="#"
+                            href="#"
                             id="steparrow-gen-info-tab"
                             className={classnames({
                               active: activeArrowTab === 6,
@@ -550,18 +549,16 @@ document.title ="Wizard | Velzon - React Admin & Dashboard Template";
                   <form className="vertical-navs-step form-steps">
                     <Row className="gy-5">
                       <Col lg={3}>
-                        <Nav
-                          className="flex-column custom-nav nav-pills"
-                        >
+                        <Nav className="flex-column custom-nav nav-pills">
                           <NavItem>
                             <NavLink
-                            href="#"
-                              className={
-                                (classnames({
-                                  active: activeVerticalTab === 7,
-                                  done: (activeVerticalTab <= 11 && activeVerticalTab > 7)
-                                }))
-                              }
+                              href="#"
+                              className={classnames({
+                                active: activeVerticalTab === 7,
+                                done:
+                                  activeVerticalTab <= 11 &&
+                                  activeVerticalTab > 7,
+                              })}
                               onClick={() => {
                                 toggleVerticalTab(7);
                               }}
@@ -575,13 +572,13 @@ document.title ="Wizard | Velzon - React Admin & Dashboard Template";
                           </NavItem>
                           <NavItem>
                             <NavLink
-                            href="#"
-                              className={
-                                (classnames({
-                                  active: activeVerticalTab === 8,
-                                  done: (activeVerticalTab <= 11 && activeVerticalTab >= 8)
-                                }))
-                              }
+                              href="#"
+                              className={classnames({
+                                active: activeVerticalTab === 8,
+                                done:
+                                  activeVerticalTab <= 11 &&
+                                  activeVerticalTab >= 8,
+                              })}
                               onClick={() => {
                                 toggleVerticalTab(8);
                               }}
@@ -595,10 +592,12 @@ document.title ="Wizard | Velzon - React Admin & Dashboard Template";
                           </NavItem>
                           <NavItem>
                             <NavLink
-                            href="#"
+                              href="#"
                               className={classnames({
                                 active: activeVerticalTab === 9,
-                                done: (activeVerticalTab <= 11 && activeVerticalTab >= 9)
+                                done:
+                                  activeVerticalTab <= 11 &&
+                                  activeVerticalTab >= 9,
                               })}
                               onClick={() => {
                                 toggleVerticalTab(9);
@@ -613,10 +612,12 @@ document.title ="Wizard | Velzon - React Admin & Dashboard Template";
                           </NavItem>
                           <NavItem>
                             <NavLink
-                            href="#"
+                              href="#"
                               className={classnames({
                                 active: activeVerticalTab === 10,
-                                done: (activeVerticalTab <= 11 && activeVerticalTab >= 10)
+                                done:
+                                  activeVerticalTab <= 11 &&
+                                  activeVerticalTab >= 10,
                               })}
                               onClick={() => {
                                 toggleVerticalTab(10);

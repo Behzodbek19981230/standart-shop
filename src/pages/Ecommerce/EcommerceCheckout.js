@@ -118,36 +118,72 @@ const EcommerceCheckout = () => {
                         role="tablist"
                       >
                         <NavItem role="presentation">
-                          <NavLink href="#"
-                            className={classnames({ active: activeTab === 1, done: (activeTab <= 4 && activeTab >= 0) }, "p-3 fs-15")}
-                            onClick={() => { toggleTab(1); }}
+                          <NavLink
+                            href="#"
+                            className={classnames(
+                              {
+                                active: activeTab === 1,
+                                done: activeTab <= 4 && activeTab >= 0,
+                              },
+                              "p-3 fs-15"
+                            )}
+                            onClick={() => {
+                              toggleTab(1);
+                            }}
                           >
                             <i className="ri-user-2-line fs-16 p-2 bg-soft-primary text-primary rounded-circle align-middle me-2"></i>
                             Personal Info
                           </NavLink>
                         </NavItem>
                         <NavItem role="presentation">
-                          <NavLink href="#"
-                            className={classnames({ active: activeTab === 2, done: activeTab <= 4 && activeTab > 1 }, "p-3 fs-15")}
-                            onClick={() => { toggleTab(2); }}
+                          <NavLink
+                            href="#"
+                            className={classnames(
+                              {
+                                active: activeTab === 2,
+                                done: activeTab <= 4 && activeTab > 1,
+                              },
+                              "p-3 fs-15"
+                            )}
+                            onClick={() => {
+                              toggleTab(2);
+                            }}
                           >
                             <i className="ri-truck-line fs-16 p-2 bg-soft-primary text-primary rounded-circle align-middle me-2"></i>
                             Shipping Info
                           </NavLink>
                         </NavItem>
                         <NavItem role="presentation">
-                          <NavLink href="#"
-                            className={classnames({ active: activeTab === 3, done: activeTab <= 4 && activeTab > 2 }, "p-3 fs-15")}
-                            onClick={() => { toggleTab(3); }}
+                          <NavLink
+                            href="#"
+                            className={classnames(
+                              {
+                                active: activeTab === 3,
+                                done: activeTab <= 4 && activeTab > 2,
+                              },
+                              "p-3 fs-15"
+                            )}
+                            onClick={() => {
+                              toggleTab(3);
+                            }}
                           >
                             <i className="ri-bank-card-line fs-16 p-2 bg-soft-primary text-primary rounded-circle align-middle me-2"></i>
                             Payment Info
                           </NavLink>
                         </NavItem>
                         <NavItem role="presentation">
-                          <NavLink href="#"
-                            className={classnames({ active: activeTab === 4, done: activeTab <= 4 && activeTab > 3 }, "p-3 fs-15")}
-                            onClick={() => { toggleTab(4); }}
+                          <NavLink
+                            href="#"
+                            className={classnames(
+                              {
+                                active: activeTab === 4,
+                                done: activeTab <= 4 && activeTab > 3,
+                              },
+                              "p-3 fs-15"
+                            )}
+                            onClick={() => {
+                              toggleTab(4);
+                            }}
                           >
                             <i className="ri-checkbox-circle-line fs-16 p-2 bg-soft-primary text-primary rounded-circle align-middle me-2"></i>
                             Finish
@@ -836,10 +872,11 @@ const EcommerceCheckout = () => {
         id="removeItemModal"
         toggle={toggledeletemodal}
       >
-        <ModalHeader toggle={() => {
-          setDeleteModal(!deletemodal);
-        }}>
-        </ModalHeader>
+        <ModalHeader
+          toggle={() => {
+            setDeleteModal(!deletemodal);
+          }}
+        ></ModalHeader>
         <ModalBody>
           <div className="mt-2 text-center">
             <lord-icon
@@ -865,9 +902,13 @@ const EcommerceCheckout = () => {
             >
               Close
             </button>
-            <button type="button" className="btn w-sm btn-danger" onClick={() => {
-              setDeleteModal(!deletemodal);
-            }}>
+            <button
+              type="button"
+              className="btn w-sm btn-danger"
+              onClick={() => {
+                setDeleteModal(!deletemodal);
+              }}
+            >
               Yes, Delete It!
             </button>
           </div>

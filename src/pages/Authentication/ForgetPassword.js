@@ -1,6 +1,17 @@
 import PropTypes from "prop-types";
 import React from "react";
-import { Row, Col, Alert, Card, CardBody, Container, FormFeedback, Input, Label, Form } from "reactstrap";
+import {
+  Row,
+  Col,
+  Alert,
+  Card,
+  CardBody,
+  Container,
+  FormFeedback,
+  Input,
+  Label,
+  Form,
+} from "reactstrap";
 
 //redux
 import { useSelector, useDispatch } from "react-redux";
@@ -20,7 +31,7 @@ import { userForgetPassword } from "../../slices/thunks";
 import logoLight from "../../assets/images/logo-light.png";
 import ParticlesAuth from "../AuthenticationInner/ParticlesAuth";
 
-const ForgetPasswordPage = props => {
+const ForgetPasswordPage = (props) => {
   const dispatch = useDispatch();
 
   const validation = useFormik({
@@ -28,26 +39,25 @@ const ForgetPasswordPage = props => {
     enableReinitialize: true,
 
     initialValues: {
-      email: '',
+      email: "",
     },
     validationSchema: Yup.object({
       email: Yup.string().required("Please Enter Your Email"),
     }),
     onSubmit: (values) => {
       dispatch(userForgetPassword(values, props.history));
-    }
+    },
   });
 
-  const { forgetError, forgetSuccessMsg } = useSelector(state => ({
+  const { forgetError, forgetSuccessMsg } = useSelector((state) => ({
     forgetError: state.ForgetPassword.forgetError,
     forgetSuccessMsg: state.ForgetPassword.forgetSuccessMsg,
   }));
 
-document.title ="Reset Password | Velzon - React Admin & Dashboard Template";
+  document.title = "Reset Password | Velzon - React Admin & Dashboard Template";
   return (
     <ParticlesAuth>
       <div className="auth-page-content">
-        
         <Container>
           <Row>
             <Col lg={12}>
@@ -57,7 +67,9 @@ document.title ="Reset Password | Velzon - React Admin & Dashboard Template";
                     <img src={logoLight} alt="" height="20" />
                   </Link>
                 </div>
-                <p className="mt-3 fs-15 fw-medium">Premium Admin & Dashboard Template</p>
+                <p className="mt-3 fs-15 fw-medium">
+                  Premium Admin & Dashboard Template
+                </p>
               </div>
             </Col>
           </Row>
@@ -65,7 +77,6 @@ document.title ="Reset Password | Velzon - React Admin & Dashboard Template";
           <Row className="justify-content-center">
             <Col md={8} lg={6} xl={5}>
               <Card className="mt-4">
-
                 <CardBody className="p-4">
                   <div className="text-center mt-2">
                     <h5 className="text-primary">Forgot Password?</h5>
@@ -77,12 +88,13 @@ document.title ="Reset Password | Velzon - React Admin & Dashboard Template";
                       colors="primary:#0ab39c"
                       className="avatar-xl"
                       style={{ width: "120px", height: "120px" }}
-                      >
-                    </lord-icon>
-
+                    ></lord-icon>
                   </div>
 
-                  <Alert className="alert-borderless alert-warning text-center mb-2 mx-2" role="alert">
+                  <Alert
+                    className="alert-borderless alert-warning text-center mb-2 mx-2"
+                    role="alert"
+                  >
                     Enter your email and instructions will be sent to you!
                   </Alert>
                   <div className="p-2">
@@ -114,16 +126,22 @@ document.title ="Reset Password | Velzon - React Admin & Dashboard Template";
                           onBlur={validation.handleBlur}
                           value={validation.values.email || ""}
                           invalid={
-                            validation.touched.email && validation.errors.email ? true : false
+                            validation.touched.email && validation.errors.email
+                              ? true
+                              : false
                           }
                         />
                         {validation.touched.email && validation.errors.email ? (
-                          <FormFeedback type="invalid"><div>{validation.errors.email}</div></FormFeedback>
+                          <FormFeedback type="invalid">
+                            <div>{validation.errors.email}</div>
+                          </FormFeedback>
                         ) : null}
                       </div>
 
                       <div className="text-center mt-4">
-                        <button className="btn btn-success w-100" type="submit">Send Reset Link</button>
+                        <button className="btn btn-success w-100" type="submit">
+                          Send Reset Link
+                        </button>
                       </div>
                     </Form>
                   </div>
@@ -131,9 +149,17 @@ document.title ="Reset Password | Velzon - React Admin & Dashboard Template";
               </Card>
 
               <div className="mt-4 text-center">
-                <p className="mb-0">Wait, I remember my password... <Link to="/login" className="fw-semibold text-primary text-decoration-underline"> Click here </Link> </p>
+                <p className="mb-0">
+                  Wait, I remember my password...{" "}
+                  <Link
+                    to="/login"
+                    className="fw-semibold text-primary text-decoration-underline"
+                  >
+                    {" "}
+                    Click here{" "}
+                  </Link>{" "}
+                </p>
               </div>
-
             </Col>
           </Row>
         </Container>

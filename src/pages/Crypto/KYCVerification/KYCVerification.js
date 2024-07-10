@@ -151,8 +151,14 @@ const KYCVerification = () => {
               >
                 <NavItem>
                   <NavLink
-                  href="#"
-                    className={classnames({ active: activeTab === 1, done: (activeTab <= 4 && activeTab >= 0) }, "p-3")}
+                    href="#"
+                    className={classnames(
+                      {
+                        active: activeTab === 1,
+                        done: activeTab <= 4 && activeTab >= 0,
+                      },
+                      "p-3"
+                    )}
                     onClick={() => {
                       toggleTab(1);
                     }}
@@ -162,8 +168,14 @@ const KYCVerification = () => {
                 </NavItem>
                 <NavItem>
                   <NavLink
-                  href="#"
-                    className={classnames({ active: activeTab === 2, done: activeTab <= 4 && activeTab > 1 }, "p-3")}
+                    href="#"
+                    className={classnames(
+                      {
+                        active: activeTab === 2,
+                        done: activeTab <= 4 && activeTab > 1,
+                      },
+                      "p-3"
+                    )}
                     onClick={() => {
                       toggleTab(2);
                     }}
@@ -173,8 +185,14 @@ const KYCVerification = () => {
                 </NavItem>
                 <NavItem>
                   <NavLink
-                  href="#"
-                    className={classnames({ active: activeTab === 3, done: activeTab <= 4 && activeTab > 2 }, "p-3")}
+                    href="#"
+                    className={classnames(
+                      {
+                        active: activeTab === 3,
+                        done: activeTab <= 4 && activeTab > 2,
+                      },
+                      "p-3"
+                    )}
                     onClick={() => {
                       toggleTab(3);
                     }}
@@ -184,8 +202,14 @@ const KYCVerification = () => {
                 </NavItem>
                 <NavItem>
                   <NavLink
-                  href="#"
-                    className={classnames({ active: activeTab === 4, done: activeTab <= 4 && activeTab > 3 }, "p-3")}
+                    href="#"
+                    className={classnames(
+                      {
+                        active: activeTab === 4,
+                        done: activeTab <= 4 && activeTab > 3,
+                      },
+                      "p-3"
+                    )}
                     onClick={() => {
                       toggleTab(4);
                     }}

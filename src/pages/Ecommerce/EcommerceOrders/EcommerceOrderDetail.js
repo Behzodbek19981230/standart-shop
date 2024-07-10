@@ -6,7 +6,7 @@ import {
   Container,
   Row,
   CardHeader,
-  Collapse
+  Collapse,
 } from "reactstrap";
 
 import classnames from "classnames";
@@ -34,10 +34,10 @@ const EcommerceOrderDetail = (props) => {
     setcol3(!col3);
   }
 
-document.title ="Order Details | Velzon - React Admin & Dashboard Template";
+  document.title = "Order Details | Velzon - React Admin & Dashboard Template";
   return (
     <div className="page-content">
-      <Container fluid>        
+      <Container fluid>
         <BreadCrumb title="Order Details" pageTitle="Ecommerce" />
 
         <Row>
@@ -142,15 +142,20 @@ document.title ="Order Details | Velzon - React Admin & Dashboard Template";
                     className="accordion accordion-flush"
                     id="accordionFlushExample"
                   >
-                    <div className="accordion-item border-0" onClick={togglecol1}>
+                    <div
+                      className="accordion-item border-0"
+                      onClick={togglecol1}
+                    >
                       <div className="accordion-header" id="headingOne">
-                        <Link to="#" className={classnames(
-                          "accordion-button",
-                          "p-2",
-                          "shadow-none",
-                          { collapsed: !col1 }
-
-                        )}>
+                        <Link
+                          to="#"
+                          className={classnames(
+                            "accordion-button",
+                            "p-2",
+                            "shadow-none",
+                            { collapsed: !col1 }
+                          )}
+                        >
                           <div className="d-flex align-items-center">
                             <div className="flex-shrink-0 avatar-xs">
                               <div className="avatar-title bg-success rounded-circle">
@@ -188,9 +193,13 @@ document.title ="Order Details | Velzon - React Admin & Dashboard Template";
                         </div>
                       </Collapse>
                     </div>
-                    <div className="accordion-item border-0" onClick={togglecol2}>
+                    <div
+                      className="accordion-item border-0"
+                      onClick={togglecol2}
+                    >
                       <div className="accordion-header" id="headingTwo">
-                        <Link to="#"
+                        <Link
+                          to="#"
                           className={classnames(
                             "accordion-button",
                             "p-2",
@@ -231,9 +240,13 @@ document.title ="Order Details | Velzon - React Admin & Dashboard Template";
                         </div>
                       </Collapse>
                     </div>
-                    <div className="accordion-item border-0" onClick={togglecol3}>
+                    <div
+                      className="accordion-item border-0"
+                      onClick={togglecol3}
+                    >
                       <div className="accordion-header" id="headingThree">
-                        <Link to="#"
+                        <Link
+                          to="#"
                           className={classnames(
                             "accordion-button",
                             "p-2",
@@ -277,7 +290,8 @@ document.title ="Order Details | Velzon - React Admin & Dashboard Template";
                     </div>
                     <div className="accordion-item border-0">
                       <div className="accordion-header" id="headingFour">
-                        <Link to="#"
+                        <Link
+                          to="#"
                           className="accordion-button p-2 shadow-none"
                         >
                           <div className="d-flex align-items-center">
