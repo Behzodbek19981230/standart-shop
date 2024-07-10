@@ -141,7 +141,7 @@ const Standarts = () => {
                                             </div>
                                           </div>
                                         </div>
-                                        {/* <div className="pt-4">
+                                        <div className="pt-4">
                                           <h2>
                                             <sup>
                                               <small>$ </small>
@@ -151,19 +151,29 @@ const Standarts = () => {
                                               /Month
                                             </span>
                                           </h2>
-                                        </div> */}
+                                        </div>
                                         <hr className="my-4 text-muted" />
                                         <div>
                                           <p className="text-muted mb-0">
                                             {price2.purpose}
                                           </p>
-                                          <div className="mt-4">
+                                          <div className="mt-4 d-flex justify-content-between align-items-center">
                                             <Link
-                                              to="/apps-nft-explore"
-                                              className="btn btn-soft-success w-100 waves-effect waves-light"
+                                              to="/"
+                                              className="btn btn-soft-success  waves-effect waves-light "
+                                            >
+                                              {" "}
+                                              <i
+                                                className="ri-shopping-cart-line align-bottom text-start"
+                                                style={{ fontSize: 20 }}
+                                              ></i>
+                                            </Link>
+                                            <Link
+                                              to="#"
+                                              className="fs-13 fw-medium text-success"
                                             >
                                               Batafsil{" "}
-                                              <i className="ri-arrow-right-line align-bottom"></i>
+                                              <i className="ri-arrow-right-s-line align-bottom"></i>
                                             </Link>
                                           </div>
                                         </div>

@@ -21,6 +21,9 @@ const Home = () => {
                     placeholder="Search..."
                     id="search-options"
                   />
+                  <p className="text-end text-white fw-600">
+                    Kengaytirilgan qidiruv
+                  </p>
                 </div>
 
                 {/* <div className="hstack gap-2 justify-content-center">
