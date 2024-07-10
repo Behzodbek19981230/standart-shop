@@ -17,12 +17,12 @@ import {
   NavItem,
   NavLink,
   TabContent,
-  TabPane
+  TabPane,
 } from "reactstrap";
 import { Link } from "react-router-dom";
 import SimpleBar from "simplebar-react";
 import classnames from "classnames";
-import Picker from 'emoji-picker-react';
+import Picker from "emoji-picker-react";
 import { isEmpty, map } from "lodash";
 
 //Import Icons
@@ -38,7 +38,7 @@ import {
   getMessages,
   getChannels as onGetChannels,
   addMessage as onAddMessage,
-  deleteMessage as onDeleteMessage
+  deleteMessage as onDeleteMessage,
 } from "../../slices/thunks";
 
 import avatar2 from "../../assets/images/users/avatar-2.jpg";
@@ -101,22 +101,21 @@ const Chat = () => {
   //   ref.current.recalculate();
   // });
 
-
   //Use For Chat Box
   const userChatOpen = (id, name, status, roomId, image) => {
     setChat_Box_Username(name);
     setCurrentRoomId(roomId);
     setChat_Box_Image(image);
     dispatch(getMessages(roomId));
-    if(window.innerWidth < 892){
-        userChatShow.current.classList.add("user-chat-show");
+    if (window.innerWidth < 892) {
+      userChatShow.current.classList.add("user-chat-show");
     }
-    };
+  };
 
-    const backToUserChat = () => {
-      userChatShow.current.classList.remove("user-chat-show");
-    }
-    
+  const backToUserChat = () => {
+    userChatShow.current.classList.remove("user-chat-show");
+  };
+
   const addMessage = (roomId, sender) => {
     const message = {
       id: Math.floor(Math.random() * 100),
@@ -128,7 +127,6 @@ const Chat = () => {
     setcurMessage("");
     dispatch(onAddMessage(message));
   };
-
 
   const scrollToBottom = useCallback(() => {
     if (messageBox) {
@@ -176,8 +174,11 @@ const Chat = () => {
     searchUL = document.getElementById("users-conversation");
     searchLI = searchUL.getElementsByTagName("li");
     Array.prototype.forEach.call(searchLI, function (search) {
-      a = search.getElementsByTagName("p")[0] ? search.getElementsByTagName("p")[0] : '';
-      txtValue = a.textContent || a.innerText ? a.textContent || a.innerText : '';
+      a = search.getElementsByTagName("p")[0]
+        ? search.getElementsByTagName("p")[0]
+        : "";
+      txtValue =
+        a.textContent || a.innerText ? a.textContent || a.innerText : "";
       if (txtValue.toUpperCase().indexOf(searchFilter) > -1) {
         search.style.display = "";
       } else {
@@ -188,7 +189,9 @@ const Chat = () => {
 
   // Copy Message
   const handleCkick = (ele) => {
-    var copy = ele.closest(".chat-list").querySelector('.ctext-content').innerHTML;
+    var copy = ele
+      .closest(".chat-list")
+      .querySelector(".ctext-content").innerHTML;
     navigator.clipboard.writeText(copy);
 
     document.getElementById("copyClipBoard").style.display = "block";
@@ -206,8 +209,7 @@ const Chat = () => {
     setcurMessage(emoji);
   };
 
-
-  document.title = "Chat | Velzon - React Admin & Dashboard Template";
+  document.title = "Chat | Standartlar onlayn do'koni";
 
   return (
     <React.Fragment>
@@ -246,8 +248,10 @@ const Chat = () => {
                 </div>
               </div>
 
-
-              <Nav tabs className="nav nav-tabs nav-tabs-custom nav-success nav-justified mb-3">
+              <Nav
+                tabs
+                className="nav nav-tabs nav-tabs-custom nav-success nav-justified mb-3"
+              >
                 <NavItem>
                   <NavLink
                     style={{ cursor: "pointer" }}
@@ -276,12 +280,8 @@ const Chat = () => {
                 </NavItem>
               </Nav>
 
-              <TabContent
-                activeTab={customActiveTab}
-                className="text-muted"
-              >
+              <TabContent activeTab={customActiveTab} className="text-muted">
                 <TabPane tabId="1" id="chats">
-
                   <SimpleBar
                     className="chat-room-list pt-3"
                     style={{ margin: "-16px 0px 0px" }}
@@ -293,7 +293,10 @@ const Chat = () => {
                         </h4>
                       </div>
                       <div className="flex-shrink-0">
-                        <UncontrolledTooltip placement="bottom" target="addnewmsg">
+                        <UncontrolledTooltip
+                          placement="bottom"
+                          target="addnewmsg"
+                        >
                           New Message
                         </UncontrolledTooltip>
 
@@ -355,7 +358,9 @@ const Chat = () => {
                                   <span className="user-status"></span>
                                 </div>
                                 <div className="flex-grow-1 overflow-hidden">
-                                  <p className="text-truncate mb-0">{chat.name}</p>
+                                  <p className="text-truncate mb-0">
+                                    {chat.name}
+                                  </p>
                                 </div>
                               </div>
                             </Link>
@@ -424,55 +429,92 @@ const Chat = () => {
                       </ul>
                     </div>
                   </SimpleBar>
-
                 </TabPane>
                 <TabPane tabId="2" id="contacts">
-                  <SimpleBar className="chat-room-list pt-3" style={{ margin: "-16px 0px 0px" }}>
+                  <SimpleBar
+                    className="chat-room-list pt-3"
+                    style={{ margin: "-16px 0px 0px" }}
+                  >
                     <div className="sort-contact">
-                      {(chatContactData || []).map((item, key) => (<div className="mt-3" key={key}>
-                        <div className="contact-list-title">{item.title}</div>
-                        <ul id={"contact-sort-" + item.title} className="list-unstyled contact-list">
-                          {item.contacts.map((item, key) => (<li key={key}>
-                            <div className="d-flex align-items-center">
-                              <div className="flex-shrink-0 me-2">
-                                <div className="avatar-xxs">
-                                  {item.image ? <img src={item.image} className="img-fluid rounded-circle" alt="" /> :
-                                    <span className="avatar-title rounded-circle bg-primary fs-10">
-                                      {item.name.charAt(0) + item.name.split(" ").slice(-1).toString().charAt(0)}
-                                    </span>}
+                      {(chatContactData || []).map((item, key) => (
+                        <div className="mt-3" key={key}>
+                          <div className="contact-list-title">{item.title}</div>
+                          <ul
+                            id={"contact-sort-" + item.title}
+                            className="list-unstyled contact-list"
+                          >
+                            {item.contacts.map((item, key) => (
+                              <li key={key}>
+                                <div className="d-flex align-items-center">
+                                  <div className="flex-shrink-0 me-2">
+                                    <div className="avatar-xxs">
+                                      {item.image ? (
+                                        <img
+                                          src={item.image}
+                                          className="img-fluid rounded-circle"
+                                          alt=""
+                                        />
+                                      ) : (
+                                        <span className="avatar-title rounded-circle bg-primary fs-10">
+                                          {item.name.charAt(0) +
+                                            item.name
+                                              .split(" ")
+                                              .slice(-1)
+                                              .toString()
+                                              .charAt(0)}
+                                        </span>
+                                      )}
+                                    </div>
+                                  </div>
+                                  <div
+                                    className="flex-grow-1"
+                                    onClick={(e) => {
+                                      userChatOpen(
+                                        item.id,
+                                        item.name,
+                                        item.status,
+                                        item.roomId,
+                                        item.image
+                                      );
+                                    }}
+                                  >
+                                    <p className="text-truncate contactlist-name mb-0">
+                                      {item.name}
+                                    </p>
+                                  </div>
+                                  <div className="flex-shrink-0">
+                                    <UncontrolledDropdown>
+                                      <DropdownToggle
+                                        tag="a"
+                                        className="text-muted"
+                                      >
+                                        <i className="ri-more-2-fill" />
+                                      </DropdownToggle>
+                                      <DropdownMenu className="dropdown-menu-end">
+                                        <DropdownItem>
+                                          <i className="ri-pencil-line text-muted me-2 align-bottom" />
+                                          Edit
+                                        </DropdownItem>
+                                        <DropdownItem>
+                                          <i className="ri-forbid-2-line text-muted me-2 align-bottom" />
+                                          Block
+                                        </DropdownItem>
+                                        <DropdownItem>
+                                          <i className="ri-delete-bin-6-line text-muted me-2 align-bottom" />{" "}
+                                          Remove
+                                        </DropdownItem>
+                                      </DropdownMenu>
+                                    </UncontrolledDropdown>
+                                  </div>
                                 </div>
-                              </div>
-                              <div className="flex-grow-1" onClick={(e) => {
-                                userChatOpen(
-                                  item.id,
-                                  item.name,
-                                  item.status,
-                                  item.roomId,
-                                  item.image
-                                );
-                              }}>
-                                <p className="text-truncate contactlist-name mb-0">{item.name}</p>
-                              </div>
-                              <div className="flex-shrink-0">
-                                <UncontrolledDropdown>
-                                  <DropdownToggle tag="a" className="text-muted">
-                                    <i className="ri-more-2-fill" />
-                                  </DropdownToggle>
-                                  <DropdownMenu className="dropdown-menu-end">
-                                    <DropdownItem><i className="ri-pencil-line text-muted me-2 align-bottom" />Edit</DropdownItem>
-                                    <DropdownItem><i className="ri-forbid-2-line text-muted me-2 align-bottom" />Block</DropdownItem>
-                                    <DropdownItem><i className="ri-delete-bin-6-line text-muted me-2 align-bottom" /> Remove</DropdownItem>
-                                  </DropdownMenu>
-                                </UncontrolledDropdown>
-                              </div>
-                            </div>
-                          </li>))}
-                        </ul>
-                      </div>))}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
                     </div>
                   </SimpleBar>
                 </TabPane>
-
               </TabContent>
             </div>
 
@@ -620,7 +662,8 @@ const Chat = () => {
                       <PerfectScrollbar
                         className="chat-conversation p-3 p-lg-4"
                         id="chat-conversation"
-                        containerRef={ref => setMessageBox(ref)} >
+                        containerRef={(ref) => setMessageBox(ref)}
+                      >
                         <div id="elmLoader"></div>
                         <ul
                           className="list-unstyled chat-conversation-list"
@@ -639,17 +682,11 @@ const Chat = () => {
                                 <div className="conversation-list">
                                   {message.sender === Chat_Box_Username && (
                                     <div className="chat-avatar">
-                                      {Chat_Box_Image === undefined ?
-                                        <img
-                                          src={userDummayImage}
-                                          alt=""
-                                        />
-                                        :
-                                        <img
-                                          src={Chat_Box_Image}
-                                          alt=""
-                                        />
-                                      }
+                                      {Chat_Box_Image === undefined ? (
+                                        <img src={userDummayImage} alt="" />
+                                      ) : (
+                                        <img src={Chat_Box_Image} alt="" />
+                                      )}
                                     </div>
                                   )}
 
@@ -669,7 +706,11 @@ const Chat = () => {
                                           <i className="ri-more-2-fill"></i>
                                         </DropdownToggle>
                                         <DropdownMenu>
-                                          <DropdownItem href="#" className="reply-message" onClick={() => setreply(message)}>
+                                          <DropdownItem
+                                            href="#"
+                                            className="reply-message"
+                                            onClick={() => setreply(message)}
+                                          >
                                             <i className="ri-reply-line me-2 text-muted align-bottom"></i>
                                             Reply
                                           </DropdownItem>
@@ -677,7 +718,12 @@ const Chat = () => {
                                             <i className="ri-share-line me-2 text-muted align-bottom"></i>
                                             Forward
                                           </DropdownItem>
-                                          <DropdownItem href="#" onClick={(e) => handleCkick(e.target)}>
+                                          <DropdownItem
+                                            href="#"
+                                            onClick={(e) =>
+                                              handleCkick(e.target)
+                                            }
+                                          >
                                             <i className="ri-file-copy-line me-2 text-muted align-bottom"></i>
                                             Copy
                                           </DropdownItem>
@@ -685,7 +731,14 @@ const Chat = () => {
                                             <i className="ri-bookmark-line me-2 text-muted align-bottom"></i>
                                             Bookmark
                                           </DropdownItem>
-                                          <DropdownItem href="#" onClick={() => dispatch(onDeleteMessage(message.id))}>
+                                          <DropdownItem
+                                            href="#"
+                                            onClick={() =>
+                                              dispatch(
+                                                onDeleteMessage(message.id)
+                                              )
+                                            }
+                                          >
                                             <i className="ri-delete-bin-5-line me-2 text-muted align-bottom"></i>
                                             Delete
                                           </DropdownItem>
@@ -713,9 +766,14 @@ const Chat = () => {
                       >
                         Message copied
                       </div>
-                      {emojiPicker && <div className="alert pickerEmoji">
-                        <Picker disableSearchBar={true} onEmojiClick={onEmojiClick} />
-                      </div>}
+                      {emojiPicker && (
+                        <div className="alert pickerEmoji">
+                          <Picker
+                            disableSearchBar={true}
+                            onEmojiClick={onEmojiClick}
+                          />
+                        </div>
+                      )}
                     </div>
 
                     <div className="chat-input-section p-3 p-lg-4">
@@ -744,7 +802,7 @@ const Chat = () => {
                               type="text"
                               value={curMessage}
                               onKeyPress={onKeyPress}
-                              onChange={e => setcurMessage(e.target.value)}
+                              onChange={(e) => setcurMessage(e.target.value)}
                               className="form-control chat-input bg-light border-light"
                               id="chat-input"
                               placeholder="Type your message..."
@@ -756,7 +814,11 @@ const Chat = () => {
                                 <Button
                                   type="button"
                                   color="success"
-                                  onClick={() => { addMessage(currentRoomId, currentUser.name); setemojiPicker(false); setemojiArray(""); }}
+                                  onClick={() => {
+                                    addMessage(currentRoomId, currentUser.name);
+                                    setemojiPicker(false);
+                                    setemojiArray("");
+                                  }}
                                   className="chat-send waves-effect waves-light"
                                 >
                                   <i className="ri-send-plane-2-fill align-bottom"></i>
@@ -773,7 +835,9 @@ const Chat = () => {
                         <CardBody className="py-3">
                           <div className="replymessage-block mb-0 d-flex align-items-start">
                             <div className="flex-grow-1">
-                              <h5 className="conversation-name">{reply && reply.sender}</h5>
+                              <h5 className="conversation-name">
+                                {reply && reply.sender}
+                              </h5>
                               <p className="mb-0">{reply && reply.message}</p>
                             </div>
                             <div className="flex-shrink-0">

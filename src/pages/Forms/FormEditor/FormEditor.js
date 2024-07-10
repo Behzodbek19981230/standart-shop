@@ -1,5 +1,13 @@
 import React from "react";
-import { Card, CardBody, Col, Row, CardHeader, Form, Container } from "reactstrap";
+import {
+  Card,
+  CardBody,
+  Col,
+  Row,
+  CardHeader,
+  Form,
+  Container,
+} from "reactstrap";
 import UiContent from "../../../Components/Common/UiContent";
 
 import { CKEditor } from "@ckeditor/ckeditor5-react";
@@ -10,14 +18,13 @@ import { useQuill } from "react-quilljs";
 import "quill/dist/quill.snow.css";
 
 const FormEditor = () => {
-  const {  quillRef } = useQuill();
+  const { quillRef } = useQuill();
 
-document.title ="Editors | Velzon - React Admin & Dashboard Template";
+  document.title = "Editors | Standartlar onlayn do'koni";
   return (
     <React.Fragment>
       <UiContent />
       <div className="page-content">
-        
         <Container fluid>
           <BreadCrumb title="Editors" pageTitle="Forms" />
 
@@ -34,7 +41,6 @@ document.title ="Editors | Velzon - React Admin & Dashboard Template";
                       data="<p>Hello from CKEditor 5!</p>"
                       onReady={(editor) => {
                         // You can store the "editor" and use when it is needed.
-                        
                       }}
                       // onChange={(editor) => {
                       //    editor.getData();
@@ -57,7 +63,7 @@ document.title ="Editors | Velzon - React Admin & Dashboard Template";
                 <CardHeader>
                   <h4 className="card-title mb-0">Snow Editor</h4>
                 </CardHeader>
-                <CardBody>                  
+                <CardBody>
                   <div className="snow-editor" style={{ height: 300 }}>
                     <div ref={quillRef} />
                   </div>

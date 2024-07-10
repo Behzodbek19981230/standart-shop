@@ -64,12 +64,11 @@ const CrmDeals = () => {
       setModal(true);
     }
   };
-  document.title = "Deals | Velzon - React Admin & Dashboard Template";
+  document.title = "Deals | Standartlar onlayn do'koni";
 
   return (
     <React.Fragment>
       <div className="page-content">
-
         <Container fluid>
           <BreadCrumb title="Deals" pageTitle="CRM" />
           <Card>
@@ -152,11 +151,17 @@ const CrmDeals = () => {
         <Form>
           <ModalBody>
             <div className="mb-3">
-              <label htmlFor="deatType" className="form-label">Deals Type</label>
-              <select className="form-select" id="deatType" data-choices
-                aria-label="Default select example" required>
-                <option value=""
-                >Select deals type</option>
+              <label htmlFor="deatType" className="form-label">
+                Deals Type
+              </label>
+              <select
+                className="form-select"
+                id="deatType"
+                data-choices
+                aria-label="Default select example"
+                required
+              >
+                <option value="">Select deals type</option>
                 <option value="Lead Disovered">Lead Disovered</option>
                 <option value="Contact Initiated">Contact Initiated</option>
                 <option value="Need Identified">Need Identified</option>
@@ -166,68 +171,106 @@ const CrmDeals = () => {
               <div className="invalid-feedback">
                 Please write an deals owner name.
               </div>
-
             </div>
 
             <div className="mb-3">
-              <label htmlFor="dealTitle" className="form-label">Deal Title</label>
-              <input type="text" className="form-control" id="dealTitle"
-                placeholder="Enter title" required />
-              <div className="invalid-feedback">
-                Please write a title.
-              </div>
+              <label htmlFor="dealTitle" className="form-label">
+                Deal Title
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                id="dealTitle"
+                placeholder="Enter title"
+                required
+              />
+              <div className="invalid-feedback">Please write a title.</div>
             </div>
 
             <div className="mb-3">
-              <label htmlFor="dealValue" className="form-label">Value (USD)</label>
-              <input type="number" className="form-control" id="dealValue" step="0.01"
-                placeholder="Enter value" required />
-              <div className="invalid-feedback">
-                Please write a value.
-              </div>
+              <label htmlFor="dealValue" className="form-label">
+                Value (USD)
+              </label>
+              <input
+                type="number"
+                className="form-control"
+                id="dealValue"
+                step="0.01"
+                placeholder="Enter value"
+                required
+              />
+              <div className="invalid-feedback">Please write a value.</div>
             </div>
 
             <div className="mb-3">
-              <label htmlFor="dealOwner" className="form-label">Deals Owner</label>
-              <input type="text" className="form-control" id="dealOwner" required
-                placeholder="Enter owner name" />
+              <label htmlFor="dealOwner" className="form-label">
+                Deals Owner
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                id="dealOwner"
+                required
+                placeholder="Enter owner name"
+              />
               <div className="invalid-feedback">
                 Please write an deals owner name.
               </div>
             </div>
             <div className="mb-3">
-              <label htmlFor="dueDate" className="form-label">Due Date</label>
-              <input type="text" className="form-control" id="dueDate"
-                data-provider="flatpickr" placeholder="Select date" required />
-              <div className="invalid-feedback">
-                Please select a due date.
-              </div>
+              <label htmlFor="dueDate" className="form-label">
+                Due Date
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                id="dueDate"
+                data-provider="flatpickr"
+                placeholder="Select date"
+                required
+              />
+              <div className="invalid-feedback">Please select a due date.</div>
             </div>
 
             <div className="mb-3">
-              <label htmlFor="dealEmail" className="form-label">Email</label>
-              <input type="email" className="form-control" id="dealEmail"
-                placeholder="Enter email" required />
-              <div className="invalid-feedback">
-                Please write a email.
-              </div>
+              <label htmlFor="dealEmail" className="form-label">
+                Email
+              </label>
+              <input
+                type="email"
+                className="form-control"
+                id="dealEmail"
+                placeholder="Enter email"
+                required
+              />
+              <div className="invalid-feedback">Please write a email.</div>
             </div>
 
             <div className="mb-3">
-              <label htmlFor="contactNumber" className="form-label">Contact</label>
-              <input type="text" className="form-control" id="contactNumber"
-                placeholder="Enter contact number" required />
-              <div className="invalid-feedback">
-                Please add a contact.
-              </div>
+              <label htmlFor="contactNumber" className="form-label">
+                Contact
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                id="contactNumber"
+                placeholder="Enter contact number"
+                required
+              />
+              <div className="invalid-feedback">Please add a contact.</div>
             </div>
             <div className="mb-3">
-              <label htmlFor="contactDescription" className="form-label">Description</label>
-              <textarea className="form-control" id="contactDescription" rows="3"
-                placeholder="Enter description" required></textarea>
-              <div className="invalid-feedback">
-                Please add a description.
-              </div>
+              <label htmlFor="contactDescription" className="form-label">
+                Description
+              </label>
+              <textarea
+                className="form-control"
+                id="contactDescription"
+                rows="3"
+                placeholder="Enter description"
+                required
+              ></textarea>
+              <div className="invalid-feedback">Please add a description.</div>
             </div>
           </ModalBody>
           <ModalFooter>

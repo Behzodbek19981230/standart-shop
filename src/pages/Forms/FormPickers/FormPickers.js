@@ -1,6 +1,15 @@
-import React, { useState } from 'react';
-import { Card, CardBody, CardHeader, Container, Form, Row, Col, Label } from 'reactstrap';
-import BreadCrumb from '../../../Components/Common/BreadCrumb';
+import React, { useState } from "react";
+import {
+  Card,
+  CardBody,
+  CardHeader,
+  Container,
+  Form,
+  Row,
+  Col,
+  Label,
+} from "reactstrap";
+import BreadCrumb from "../../../Components/Common/BreadCrumb";
 import ColorPicker from "@vtaits/react-color-picker";
 import { SketchPicker } from "react-color";
 
@@ -55,23 +64,22 @@ const FormPickers = () => {
     setcolor(c1);
   };
 
-  document.title = "Pickers | Velzon - React Admin & Dashboard Template";
+  document.title = "Pickers | Standartlar onlayn do'koni";
 
   return (
     <React.Fragment>
       <div className="page-content">
-
         <Container fluid>
           <BreadCrumb title="Pickers" pageTitle="Forms" />
 
           <Row>
             <Col lg={12}>
-              <Card >
-                <CardHeader >
+              <Card>
+                <CardHeader>
                   <h4 className="card-title mb-0">Flatpickr - Datepicker</h4>
                 </CardHeader>
                 <CardBody>
-                  <Form >
+                  <Form>
                     <Row className="gy-3">
                       <Col lg={6}>
                         <div>
@@ -79,7 +87,7 @@ const FormPickers = () => {
                           <Flatpickr
                             className="form-control"
                             options={{
-                              dateFormat: "d M, Y"
+                              dateFormat: "d M, Y",
                             }}
                           />
                         </div>
@@ -97,10 +105,12 @@ const FormPickers = () => {
                         </div>
                       </Col>
                     </Row>
-                    <Row >
+                    <Row>
                       <Col lg={6}>
                         <div className="mt-3">
-                          <Label className="form-label mb-0">Human-Friendly Dates</Label>
+                          <Label className="form-label mb-0">
+                            Human-Friendly Dates
+                          </Label>
                           <Flatpickr
                             className="form-control"
                             options={{
@@ -113,37 +123,48 @@ const FormPickers = () => {
                       </Col>
                       <Col lg={6}>
                         <div className="mt-3">
-                          <Label className="form-label mb-0">MinDate and MaxDate</Label>
+                          <Label className="form-label mb-0">
+                            MinDate and MaxDate
+                          </Label>
                           <Flatpickr
                             className="form-control"
                             options={{
                               minDate: "today",
-                              maxDate: new Date().fp_incr(14)
+                              maxDate: new Date().fp_incr(14),
                             }}
                           />
                         </div>
                       </Col>
                     </Row>
                     <Row>
-                      <Col lg={6} >
+                      <Col lg={6}>
                         <div className="mt-3">
-                          <Label className="form-label mb-0">Default Date</Label>
+                          <Label className="form-label mb-0">
+                            Default Date
+                          </Label>
                           <Flatpickr
                             className="form-control"
                             options={{
                               dateFormat: "Y-m-d",
-                              defaultDate: ["2022-01-20"]
+                              defaultDate: ["2022-01-20"],
                             }}
                           />
                         </div>
                       </Col>
-                      <Col lg={6} >
+                      <Col lg={6}>
                         <div className="mt-3">
-                          <Label className="form-label mb-0">Disabling Dates</Label>
+                          <Label className="form-label mb-0">
+                            Disabling Dates
+                          </Label>
                           <Flatpickr
                             className="form-control"
                             options={{
-                              disable: ["2022-01-30", "2022-02-21", "2022-03-08", new Date(2025, 4, 9)],
+                              disable: [
+                                "2022-01-30",
+                                "2022-02-21",
+                                "2022-03-08",
+                                new Date(2025, 4, 9),
+                              ],
                               dateFormat: "Y-m-d",
                             }}
                           />
@@ -153,12 +174,14 @@ const FormPickers = () => {
                     <Row>
                       <Col lg={6}>
                         <div className="mt-3">
-                          <Label className="form-label mb-0">Selecting Multiple Dates</Label>
+                          <Label className="form-label mb-0">
+                            Selecting Multiple Dates
+                          </Label>
                           <Flatpickr
                             className="form-control"
                             options={{
                               mode: "multiple",
-                              dateFormat: "Y-m-d"
+                              dateFormat: "Y-m-d",
                             }}
                           />
                         </div>
@@ -170,28 +193,30 @@ const FormPickers = () => {
                             className="form-control"
                             options={{
                               mode: "range",
-                              dateFormat: "Y-m-d"
+                              dateFormat: "Y-m-d",
                             }}
                           />
                         </div>
                       </Col>
                     </Row>
                     <Row>
-                      <Col lg={6} >
+                      <Col lg={6}>
                         <div className="mt-3">
                           <Label className="form-label mb-0">Inline</Label>
                           <Flatpickr
                             className="form-control"
                             options={{
                               inline: true,
-                              dateFormat: "Y-m-d"
+                              dateFormat: "Y-m-d",
                             }}
                           />
                         </div>
                       </Col>
                       <Col lg={6}>
                         <div className="mt-3">
-                          <label className="form-label mb-0">Week Numbers</label>
+                          <label className="form-label mb-0">
+                            Week Numbers
+                          </label>
                           <Flatpickr
                             className="form-control"
                             options={{
@@ -216,7 +241,7 @@ const FormPickers = () => {
                   <h4 className="card-title mb-0">Flatpickr - Timepicker</h4>
                 </CardHeader>
                 <CardBody>
-                  <Form >
+                  <Form>
                     <Row className="gy-3">
                       <Col lg={6}>
                         <div>
@@ -233,14 +258,16 @@ const FormPickers = () => {
                       </Col>
                       <Col lg={6}>
                         <div>
-                          <Label className="form-label mb-0">24-hour Time Picker</Label>
+                          <Label className="form-label mb-0">
+                            24-hour Time Picker
+                          </Label>
                           <Flatpickr
                             className="form-control"
                             options={{
                               enableTime: true,
                               noCalendar: true,
                               dateFormat: "H:i",
-                              time_24hr: true
+                              time_24hr: true,
                             }}
                           />
                         </div>
@@ -249,7 +276,9 @@ const FormPickers = () => {
                     <Row>
                       <Col lg={6}>
                         <div className="mt-3">
-                          <Label className="form-label mb-0">Time Picker w/ Limits</Label>
+                          <Label className="form-label mb-0">
+                            Time Picker w/ Limits
+                          </Label>
                           <Flatpickr
                             className="form-control"
                             options={{
@@ -264,14 +293,16 @@ const FormPickers = () => {
                       </Col>
                       <Col lg={6}>
                         <div className="mt-3">
-                          <label className="form-label mb-0">Preloading Time</label>
+                          <label className="form-label mb-0">
+                            Preloading Time
+                          </label>
                           <Flatpickr
                             className="form-control"
                             options={{
                               enableTime: true,
                               noCalendar: true,
                               dateFormat: "H:i",
-                              defaultDate: "13:45"
+                              defaultDate: "13:45",
                             }}
                           />
                         </div>
@@ -312,7 +343,9 @@ const FormPickers = () => {
                       <Row className="g-4">
                         <Col lg={4} md={6}>
                           <div>
-                            <h5 className="fs-13 text-muted mb-2">Classic Demo</h5>
+                            <h5 className="fs-13 text-muted mb-2">
+                              Classic Demo
+                            </h5>
 
                             <div
                               className="classic-colorpicker"
@@ -325,10 +358,9 @@ const FormPickers = () => {
                                   height: "28px",
                                   width: "28px",
                                   background: color,
-                                  display: "block"
+                                  display: "block",
                                 }}
                               />
-
                             </div>
                             {simple_color ? (
                               <ColorPicker
@@ -352,7 +384,7 @@ const FormPickers = () => {
                                   height: "28px",
                                   width: "28px",
                                   background: colorCust,
-                                  display: "block"
+                                  display: "block",
                                 }}
                               />
                             </div>
@@ -366,7 +398,6 @@ const FormPickers = () => {
                               />
                             ) : null}
                           </div>
-
                         </Col>
                         <Col lg={4} md={6}>
                           <div>
@@ -381,7 +412,7 @@ const FormPickers = () => {
                                   height: "28px",
                                   width: "28px",
                                   background: colorRGBA,
-                                  display: "block"
+                                  display: "block",
                                 }}
                               />
                             </div>
@@ -403,7 +434,6 @@ const FormPickers = () => {
               </Card>
             </Col>
           </Row>
-
         </Container>
       </div>
     </React.Fragment>

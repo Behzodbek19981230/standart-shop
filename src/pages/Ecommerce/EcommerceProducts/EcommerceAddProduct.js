@@ -46,7 +46,7 @@ import "filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css";
 registerPlugin(FilePondPluginImageExifOrientation, FilePondPluginImagePreview);
 
 const EcommerceAddProduct = (props) => {
-  document.title = "Create Product | Velzon - React Admin & Dashboard Template";
+  document.title = "Create Product | Standartlar onlayn do'koni";
 
   const history = useNavigate();
   const dispatch = useDispatch();
@@ -60,7 +60,6 @@ const EcommerceAddProduct = (props) => {
   const [selectedFiles, setselectedFiles] = useState([]);
   const [selectedVisibility, setselectedVisibility] = useState(null);
 
-
   function handleAcceptedFiles(files) {
     files.map((file) =>
       Object.assign(file, {
@@ -70,7 +69,6 @@ const EcommerceAddProduct = (props) => {
     );
     setselectedFiles(files);
   }
-
 
   function handleSelectVisibility(selectedVisibility) {
     setselectedVisibility(selectedVisibility);
@@ -106,10 +104,35 @@ const EcommerceAddProduct = (props) => {
 
   const dateFormat = () => {
     let d = new Date(),
-      months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-    let h = (d.getHours() % 12) || 12;
+      months = [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ];
+    let h = d.getHours() % 12 || 12;
     let ampm = d.getHours() < 12 ? "AM" : "PM";
-    return ((d.getDate() + ' ' + months[d.getMonth()] + ', ' + d.getFullYear() + ", " + h + ":" + d.getMinutes() + " " + ampm).toString());
+    return (
+      d.getDate() +
+      " " +
+      months[d.getMonth()] +
+      ", " +
+      d.getFullYear() +
+      ", " +
+      h +
+      ":" +
+      d.getMinutes() +
+      " " +
+      ampm
+    ).toString();
   };
 
   const [date, setDate] = useState(dateFormat());
@@ -118,8 +141,8 @@ const EcommerceAddProduct = (props) => {
     const dateString = e.toString().split(" ");
     let time = dateString[4];
     let H = +time.substr(0, 2);
-    let h = (H % 12) || 12;
-    h = (h <= 9) ? h = ("0" + h) : h;
+    let h = H % 12 || 12;
+    h = h <= 9 ? (h = "0" + h) : h;
     let ampm = H < 12 ? "AM" : "PM";
     time = h + time.substr(2, 3) + " " + ampm;
 
@@ -173,9 +196,15 @@ const EcommerceAddProduct = (props) => {
       orders: Yup.string().required("Please Enter a Product orders"),
       category: Yup.string().required("Please Enter a Product category"),
       status: Yup.string().required("Please Enter a Product status"),
-      manufacturer_name: Yup.string().required("Please Enter a Manufacturer Name"),
-      manufacturer_brand: Yup.string().required("Please Enter a Manufacturer Brand"),
-      product_discount: Yup.string().required("Please Enter a Product Discount"),
+      manufacturer_name: Yup.string().required(
+        "Please Enter a Manufacturer Name"
+      ),
+      manufacturer_brand: Yup.string().required(
+        "Please Enter a Manufacturer Brand"
+      ),
+      product_discount: Yup.string().required(
+        "Please Enter a Product Discount"
+      ),
       meta_title: Yup.string().required("Please Enter a Meta Title"),
       meta_keyword: Yup.string().required("Please Enter a Meta Keyword"),
       product_tags: Yup.string().required("Please Enter a Product Tags"),
@@ -196,7 +225,7 @@ const EcommerceAddProduct = (props) => {
       dispatch(onAddNewProduct(newProduct));
       history("/apps-ecommerce-products");
       validation.resetForm();
-    }
+    },
   });
   return (
     <div className="page-content">
@@ -210,7 +239,8 @@ const EcommerceAddProduct = (props) => {
                 e.preventDefault();
                 validation.handleSubmit();
                 return false;
-              }}>
+              }}
+            >
               <Card>
                 <CardBody>
                   <div className="mb-3">
@@ -226,10 +256,16 @@ const EcommerceAddProduct = (props) => {
                       value={validation.values.name || ""}
                       onBlur={validation.handleBlur}
                       onChange={validation.handleChange}
-                      invalid={validation.errors.name && validation.touched.name ? true : false}
+                      invalid={
+                        validation.errors.name && validation.touched.name
+                          ? true
+                          : false
+                      }
                     />
                     {validation.errors.name && validation.touched.name ? (
-                      <FormFeedback type="invalid">{validation.errors.name}</FormFeedback>
+                      <FormFeedback type="invalid">
+                        {validation.errors.name}
+                      </FormFeedback>
                     ) : null}
                   </div>
                   <div>
@@ -270,18 +306,36 @@ const EcommerceAddProduct = (props) => {
                     <div className="text-center">
                       <div className="position-relative d-inline-block">
                         <div className="position-absolute top-100 start-100 translate-middle">
-                          <label htmlFor="product-image-input" className="mb-0" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Select Image">
+                          <label
+                            htmlFor="product-image-input"
+                            className="mb-0"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="right"
+                            title=""
+                            data-bs-original-title="Select Image"
+                          >
                             <div className="avatar-xs">
                               <div className="avatar-title bg-light border rounded-circle text-muted cursor-pointer">
                                 <i className="ri-image-fill"></i>
                               </div>
                             </div>
                           </label>
-                          <input className="form-control d-none" defaultValue="" id="product-image-input" type="file" accept="image/png, image/gif, image/jpeg" />
+                          <input
+                            className="form-control d-none"
+                            defaultValue=""
+                            id="product-image-input"
+                            type="file"
+                            accept="image/png, image/gif, image/jpeg"
+                          />
                         </div>
                         <div className="avatar-lg">
                           <div className="avatar-title bg-light rounded">
-                            <img src="" id="product-img" alt="" className="avatar-md h-auto" />
+                            <img
+                              src=""
+                              id="product-img"
+                              alt=""
+                              className="avatar-md h-auto"
+                            />
                           </div>
                         </div>
                       </div>
@@ -402,10 +456,18 @@ const EcommerceAddProduct = (props) => {
                               value={validation.values.manufacturer_name || ""}
                               onBlur={validation.handleBlur}
                               onChange={validation.handleChange}
-                              invalid={validation.errors.manufacturer_name && validation.touched.manufacturer_name ? true : false}
+                              invalid={
+                                validation.errors.manufacturer_name &&
+                                validation.touched.manufacturer_name
+                                  ? true
+                                  : false
+                              }
                             />
-                            {validation.errors.manufacturer_name && validation.touched.manufacturer_name ? (
-                              <FormFeedback type="invalid">{validation.errors.manufacturer_name}</FormFeedback>
+                            {validation.errors.manufacturer_name &&
+                            validation.touched.manufacturer_name ? (
+                              <FormFeedback type="invalid">
+                                {validation.errors.manufacturer_name}
+                              </FormFeedback>
                             ) : null}
                           </div>
                         </Col>
@@ -426,10 +488,18 @@ const EcommerceAddProduct = (props) => {
                               value={validation.values.manufacturer_brand || ""}
                               onBlur={validation.handleBlur}
                               onChange={validation.handleChange}
-                              invalid={validation.errors.manufacturer_brand && validation.touched.manufacturer_brand ? true : false}
+                              invalid={
+                                validation.errors.manufacturer_brand &&
+                                validation.touched.manufacturer_brand
+                                  ? true
+                                  : false
+                              }
                             />
-                            {validation.errors.manufacturer_brand && validation.touched.manufacturer_brand ? (
-                              <FormFeedback type="invalid">{validation.errors.manufacturer_brand}</FormFeedback>
+                            {validation.errors.manufacturer_brand &&
+                            validation.touched.manufacturer_brand ? (
+                              <FormFeedback type="invalid">
+                                {validation.errors.manufacturer_brand}
+                              </FormFeedback>
                             ) : null}
                           </div>
                         </Col>
@@ -453,10 +523,18 @@ const EcommerceAddProduct = (props) => {
                                 value={validation.values.stock || ""}
                                 onBlur={validation.handleBlur}
                                 onChange={validation.handleChange}
-                                invalid={validation.errors.stock && validation.touched.stock ? true : false}
+                                invalid={
+                                  validation.errors.stock &&
+                                  validation.touched.stock
+                                    ? true
+                                    : false
+                                }
                               />
-                              {validation.errors.stock && validation.touched.stock ? (
-                                <FormFeedback type="invalid">{validation.errors.stock}</FormFeedback>
+                              {validation.errors.stock &&
+                              validation.touched.stock ? (
+                                <FormFeedback type="invalid">
+                                  {validation.errors.stock}
+                                </FormFeedback>
                               ) : null}
                             </div>
                           </div>
@@ -488,10 +566,18 @@ const EcommerceAddProduct = (props) => {
                                 value={validation.values.price || ""}
                                 onBlur={validation.handleBlur}
                                 onChange={validation.handleChange}
-                                invalid={validation.errors.price && validation.touched.price ? true : false}
+                                invalid={
+                                  validation.errors.price &&
+                                  validation.touched.price
+                                    ? true
+                                    : false
+                                }
                               />
-                              {validation.errors.price && validation.touched.price ? (
-                                <FormFeedback type="invalid">{validation.errors.price}</FormFeedback>
+                              {validation.errors.price &&
+                              validation.touched.price ? (
+                                <FormFeedback type="invalid">
+                                  {validation.errors.price}
+                                </FormFeedback>
                               ) : null}
                             </div>
                           </div>
@@ -523,10 +609,18 @@ const EcommerceAddProduct = (props) => {
                                 value={validation.values.product_discount || ""}
                                 onBlur={validation.handleBlur}
                                 onChange={validation.handleChange}
-                                invalid={validation.errors.product_discount && validation.touched.product_discount ? true : false}
+                                invalid={
+                                  validation.errors.product_discount &&
+                                  validation.touched.product_discount
+                                    ? true
+                                    : false
+                                }
                               />
-                              {validation.errors.product_discount && validation.touched.product_discount ? (
-                                <FormFeedback type="invalid">{validation.errors.product_discount}</FormFeedback>
+                              {validation.errors.product_discount &&
+                              validation.touched.product_discount ? (
+                                <FormFeedback type="invalid">
+                                  {validation.errors.product_discount}
+                                </FormFeedback>
                               ) : null}
                             </div>
                           </div>
@@ -552,10 +646,18 @@ const EcommerceAddProduct = (props) => {
                                 value={validation.values.orders || ""}
                                 onBlur={validation.handleBlur}
                                 onChange={validation.handleChange}
-                                invalid={validation.errors.orders && validation.touched.orders ? true : false}
+                                invalid={
+                                  validation.errors.orders &&
+                                  validation.touched.orders
+                                    ? true
+                                    : false
+                                }
                               />
-                              {validation.errors.orders && validation.touched.orders ? (
-                                <FormFeedback type="invalid">{validation.errors.orders}</FormFeedback>
+                              {validation.errors.orders &&
+                              validation.touched.orders ? (
+                                <FormFeedback type="invalid">
+                                  {validation.errors.orders}
+                                </FormFeedback>
                               ) : null}
                             </div>
                           </div>
@@ -582,10 +684,18 @@ const EcommerceAddProduct = (props) => {
                               value={validation.values.meta_title || ""}
                               onBlur={validation.handleBlur}
                               onChange={validation.handleChange}
-                              invalid={validation.errors.meta_title && validation.touched.meta_title ? true : false}
+                              invalid={
+                                validation.errors.meta_title &&
+                                validation.touched.meta_title
+                                  ? true
+                                  : false
+                              }
                             />
-                            {validation.errors.meta_title && validation.touched.meta_title ? (
-                              <FormFeedback type="invalid">{validation.errors.meta_title}</FormFeedback>
+                            {validation.errors.meta_title &&
+                            validation.touched.meta_title ? (
+                              <FormFeedback type="invalid">
+                                {validation.errors.meta_title}
+                              </FormFeedback>
                             ) : null}
                           </div>
                         </Col>
@@ -607,10 +717,18 @@ const EcommerceAddProduct = (props) => {
                               value={validation.values.meta_keyword || ""}
                               onBlur={validation.handleBlur}
                               onChange={validation.handleChange}
-                              invalid={validation.errors.meta_keyword && validation.touched.meta_keyword ? true : false}
+                              invalid={
+                                validation.errors.meta_keyword &&
+                                validation.touched.meta_keyword
+                                  ? true
+                                  : false
+                              }
                             />
-                            {validation.errors.meta_keyword && validation.touched.meta_keyword ? (
-                              <FormFeedback type="invalid">{validation.errors.meta_keyword}</FormFeedback>
+                            {validation.errors.meta_keyword &&
+                            validation.touched.meta_keyword ? (
+                              <FormFeedback type="invalid">
+                                {validation.errors.meta_keyword}
+                              </FormFeedback>
                             ) : null}
                           </div>
                         </Col>
@@ -664,18 +782,19 @@ const EcommerceAddProduct = (props) => {
                     id="choices-publish-status-input"
                     onChange={validation.handleChange}
                     onBlur={validation.handleBlur}
-                    value={
-                      validation.values.status || ""
-                    }
+                    value={validation.values.status || ""}
                   >
                     {productStatus.map((item, key) => (
                       <React.Fragment key={key}>
-                        {item.options.map((item, key) => (<option value={item.value} key={key}>{item.label}</option>))}
+                        {item.options.map((item, key) => (
+                          <option value={item.value} key={key}>
+                            {item.label}
+                          </option>
+                        ))}
                       </React.Fragment>
                     ))}
                   </Input>
-                  {validation.touched.status &&
-                    validation.errors.status ? (
+                  {validation.touched.status && validation.errors.status ? (
                     <FormFeedback type="invalid">
                       {validation.errors.status}
                     </FormFeedback>
@@ -727,13 +846,14 @@ const EcommerceAddProduct = (props) => {
                       altFormat: "d M, Y, G:i K",
                       dateFormat: "d M, Y, G:i K",
                     }}
-                    onChange={(e) =>
-                      dateformate(e)
-                    }
+                    onChange={(e) => dateformate(e)}
                     value={validation.values.publishedDate || ""}
                   />
-                  {validation.touched.publishedDate && validation.errors.publishedDate ? (
-                    <FormFeedback type="invalid">{validation.errors.publishedDate}</FormFeedback>
+                  {validation.touched.publishedDate &&
+                  validation.errors.publishedDate ? (
+                    <FormFeedback type="invalid">
+                      {validation.errors.publishedDate}
+                    </FormFeedback>
                   ) : null}
                 </div>
               </CardBody>
@@ -752,8 +872,6 @@ const EcommerceAddProduct = (props) => {
                   Select product category
                 </p>
 
-
-
                 <Input
                   name="category"
                   type="select"
@@ -761,18 +879,19 @@ const EcommerceAddProduct = (props) => {
                   id="category-field"
                   onChange={validation.handleChange}
                   onBlur={validation.handleBlur}
-                  value={
-                    validation.values.category || ""
-                  }
+                  value={validation.values.category || ""}
                 >
                   {productCategory.map((item, key) => (
                     <React.Fragment key={key}>
-                      {item.options.map((item, key) => (<option value={item.value} key={key}>{item.label}</option>))}
+                      {item.options.map((item, key) => (
+                        <option value={item.value} key={key}>
+                          {item.label}
+                        </option>
+                      ))}
                     </React.Fragment>
                   ))}
                 </Input>
-                {validation.touched.category &&
-                  validation.errors.category ? (
+                {validation.touched.category && validation.errors.category ? (
                   <FormFeedback type="invalid">
                     {validation.errors.category}
                   </FormFeedback>
@@ -795,10 +914,18 @@ const EcommerceAddProduct = (props) => {
                       value={validation.values.product_tags || ""}
                       onBlur={validation.handleBlur}
                       onChange={validation.handleChange}
-                      invalid={validation.errors.product_tags && validation.touched.product_tags ? true : false}
+                      invalid={
+                        validation.errors.product_tags &&
+                        validation.touched.product_tags
+                          ? true
+                          : false
+                      }
                     />
-                    {validation.errors.product_tags && validation.touched.product_tags ? (
-                      <FormFeedback type="invalid">{validation.errors.product_tags}</FormFeedback>
+                    {validation.errors.product_tags &&
+                    validation.touched.product_tags ? (
+                      <FormFeedback type="invalid">
+                        {validation.errors.product_tags}
+                      </FormFeedback>
                     ) : null}
                   </div>
                 </div>

@@ -98,7 +98,7 @@ const EcommerceSellers = () => {
     setSellerList(filter);
   };
 
-  document.title = "Sellers | Velzon - React Admin & Dashboard Template";
+  document.title = "Sellers | Standartlar onlayn do'koni";
   return (
     <React.Fragment>
       <div className="page-content">
@@ -119,7 +119,8 @@ const EcommerceSellers = () => {
                 </Col>
                 <Col xxl={3} className="ms-auto">
                   <div>
-                    <select className="form-control"
+                    <select
+                      className="form-control"
                       onChange={(e) => category(e.target.value)}
                     >
                       <option value="All">Select Categories</option>
@@ -393,7 +394,7 @@ const EcommerceSellers = () => {
                           <Flatpickr
                             className="form-control"
                             options={{
-                              dateFormat: "d M, Y"
+                              dateFormat: "d M, Y",
                             }}
                             placeholder="Select Date"
                           />

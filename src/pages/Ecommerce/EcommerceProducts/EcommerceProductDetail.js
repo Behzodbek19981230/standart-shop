@@ -120,16 +120,16 @@ function EcommerceProductDetail(props) {
   const [lsize, setlsize] = useState(false);
   const [xlsize, setxlsize] = useState(false);
   const [customActiveTab, setcustomActiveTab] = useState("1");
-  const toggleCustom = tab => {
+  const toggleCustom = (tab) => {
     if (customActiveTab !== tab) {
       setcustomActiveTab(tab);
     }
   };
 
-document.title ="Product Details | Velzon - React Admin & Dashboard Template";
+  document.title = "Product Details | Standartlar onlayn do'koni";
   return (
     <div className="page-content">
-      <Container fluid>        
+      <Container fluid>
         <BreadCrumb title="Product Details" pageTitle="Ecommerce" />
 
         <Row>
@@ -592,14 +592,11 @@ document.title ="Product Details | Velzon - React Admin & Dashboard Template";
                         </Nav>
 
                         <TabContent
-                        activeTab={customActiveTab}
+                          activeTab={customActiveTab}
                           className="border border-top-0 p-4"
                           id="nav-tabContent"
                         >
-                          <TabPane
-                            id="nav-speci"
-                            tabId="1"
-                          >
+                          <TabPane id="nav-speci" tabId="1">
                             <div className="table-responsive">
                               <table className="table mb-0">
                                 <tbody>
@@ -629,10 +626,7 @@ document.title ="Product Details | Velzon - React Admin & Dashboard Template";
                               </table>
                             </div>
                           </TabPane>
-                          <TabPane
-                            id="nav-detail"
-                            tabId="2"
-                          >
+                          <TabPane id="nav-detail" tabId="2">
                             <div>
                               <h5 className="font-size-16 mb-3">
                                 Tommy Hilfiger Sweatshirt for Men (Pink)

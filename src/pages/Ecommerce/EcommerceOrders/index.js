@@ -15,7 +15,7 @@ import {
   ModalBody,
   Label,
   Input,
-  FormFeedback
+  FormFeedback,
 } from "reactstrap";
 import * as moment from "moment";
 import { Link } from "react-router-dom";
@@ -42,8 +42,8 @@ import {
 } from "../../../slices/thunks";
 
 import Loader from "../../../Components/Common/Loader";
-import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import ExportCSVModal from "../../../Components/Common/ExportCSVModal";
 
@@ -171,14 +171,14 @@ const EcommerceOrders = () => {
     enableReinitialize: true,
 
     initialValues: {
-      orderId: (order && order.orderId) || '',
-      customer: (order && order.customer) || '',
-      product: (order && order.product) || '',
-      orderDate: (order && order.orderDate) || '',
+      orderId: (order && order.orderId) || "",
+      customer: (order && order.customer) || "",
+      product: (order && order.product) || "",
+      orderDate: (order && order.orderDate) || "",
       // ordertime: (order && order.ordertime) || '',
-      amount: (order && order.amount) || '',
-      payment: (order && order.payment) || '',
-      status: (order && order.status) || '',
+      amount: (order && order.amount) || "",
+      payment: (order && order.payment) || "",
+      status: (order && order.status) || "",
     },
     validationSchema: Yup.object({
       orderId: Yup.string().required("Please Enter order Id"),
@@ -188,7 +188,7 @@ const EcommerceOrders = () => {
       // ordertime: Yup.string().required("Please Enter Order Time"),
       amount: Yup.string().required("Please Enter Total Amount"),
       payment: Yup.string().required("Please Enter Payment Method"),
-      status: Yup.string().required("Please Enter Delivery Status")
+      status: Yup.string().required("Please Enter Delivery Status"),
     }),
     onSubmit: (values) => {
       if (isEdit) {
@@ -201,7 +201,7 @@ const EcommerceOrders = () => {
           // ordertime: values.ordertime,
           amount: values.amount,
           payment: values.payment,
-          status: values.status
+          status: values.status,
         };
         // update order
         dispatch(onUpdateOrder(updateOrder));
@@ -216,7 +216,7 @@ const EcommerceOrders = () => {
           // ordertime: values["ordertime"],
           amount: values["amount"],
           payment: values["payment"],
-          status: values["status"]
+          status: values["status"],
         };
         // save new order
         dispatch(onAddNewOrder(newOrder));
@@ -243,7 +243,6 @@ const EcommerceOrders = () => {
     }
   }, [orders]);
 
-
   const toggle = useCallback(() => {
     if (modal) {
       setModal(false);
@@ -260,25 +259,28 @@ const EcommerceOrders = () => {
     toggle();
   };
 
-  const handleOrderClick = useCallback((arg) => {
-    const order = arg;
-    setOrder({
-      _id: order._id,
-      orderId: order.orderId,
-      customer: order.customer,
-      product: order.product,
-      orderDate: order.orderDate,
-      ordertime: order.ordertime,
-      amount: order.amount,
-      payment: order.payment,
-      status: order.status
-    });
+  const handleOrderClick = useCallback(
+    (arg) => {
+      const order = arg;
+      setOrder({
+        _id: order._id,
+        orderId: order.orderId,
+        customer: order.customer,
+        product: order.product,
+        orderDate: order.orderDate,
+        ordertime: order.ordertime,
+        amount: order.amount,
+        payment: order.payment,
+        status: order.status,
+      });
 
-    setIsEdit(true);
-    toggle();
-  }, [toggle]);
+      setIsEdit(true);
+      toggle();
+    },
+    [toggle]
+  );
 
-  // Node API 
+  // Node API
   // useEffect(() => {
   //   if (isOrderCreated) {
   //     setOrder(null);
@@ -288,7 +290,6 @@ const EcommerceOrders = () => {
   //   dispatch,
   //   isOrderCreated,
   // ]);
-
 
   // Checked All
   const checkedAll = useCallback(() => {
@@ -315,7 +316,9 @@ const EcommerceOrders = () => {
     const checkall = document.getElementById("checkBoxAll");
     selectedCheckBoxDelete.forEach((element) => {
       dispatch(onDeleteOrder(element.value));
-      setTimeout(() => { toast.clearWaitingQueue(); }, 3000);
+      setTimeout(() => {
+        toast.clearWaitingQueue();
+      }, 3000);
     });
     checkall.checked = false;
     setIsMultiDeleteButton(false);
@@ -323,7 +326,9 @@ const EcommerceOrders = () => {
 
   const deleteCheckbox = () => {
     const ele = document.querySelectorAll(".orderCheckBox:checked");
-    ele.length > 0 ? setIsMultiDeleteButton(true) : setIsMultiDeleteButton(false);
+    ele.length > 0
+      ? setIsMultiDeleteButton(true)
+      : setIsMultiDeleteButton(false);
     setSelectedCheckBoxDelete(ele);
   };
 
@@ -331,18 +336,41 @@ const EcommerceOrders = () => {
   const columns = useMemo(
     () => [
       {
-        Header: <input type="checkbox" id="checkBoxAll" className="form-check-input" onClick={() => checkedAll()} />,
+        Header: (
+          <input
+            type="checkbox"
+            id="checkBoxAll"
+            className="form-check-input"
+            onClick={() => checkedAll()}
+          />
+        ),
         Cell: (cellProps) => {
-          return <input type="checkbox" className="orderCheckBox form-check-input" value={cellProps.row.original._id} onChange={() => { deleteCheckbox(); }} />;
+          return (
+            <input
+              type="checkbox"
+              className="orderCheckBox form-check-input"
+              value={cellProps.row.original._id}
+              onChange={() => {
+                deleteCheckbox();
+              }}
+            />
+          );
         },
-        id: '#',
+        id: "#",
       },
       {
         Header: "Order Id",
         accessor: "orderId",
         filterable: false,
         Cell: (cell) => {
-          return <Link to="/apps-ecommerce-order-details" className="fw-medium link-primary">{cell.value}</Link>;
+          return (
+            <Link
+              to="/apps-ecommerce-order-details"
+              className="fw-medium link-primary"
+            >
+              {cell.value}
+            </Link>
+          );
         },
       },
       {
@@ -361,7 +389,10 @@ const EcommerceOrders = () => {
         Cell: (order) => (
           <>
             {handleValidDate(order.row.original.orderDate)},
-            <small className="text-muted"> {handleValidTime(order.row.original.orderDate)}</small>
+            <small className="text-muted">
+              {" "}
+              {handleValidTime(order.row.original.orderDate)}
+            </small>
           </>
         ),
       },
@@ -376,26 +407,61 @@ const EcommerceOrders = () => {
         filterable: false,
       },
       {
-        Header: 'Delivery Status',
-        accessor: 'status',
+        Header: "Delivery Status",
+        accessor: "status",
         Cell: (cell) => {
           switch (cell.value) {
             case "Pending":
-              return <span className="badge text-uppercase badge-soft-warning"> {cell.value} </span>;
+              return (
+                <span className="badge text-uppercase badge-soft-warning">
+                  {" "}
+                  {cell.value}{" "}
+                </span>
+              );
             case "Cancelled":
-              return <span className="badge text-uppercase badge-soft-danger"> {cell.value} </span>;
+              return (
+                <span className="badge text-uppercase badge-soft-danger">
+                  {" "}
+                  {cell.value}{" "}
+                </span>
+              );
             case "Inprogress":
-              return <span className="badge text-uppercase badge-soft-secondary"> {cell.value} </span>;
+              return (
+                <span className="badge text-uppercase badge-soft-secondary">
+                  {" "}
+                  {cell.value}{" "}
+                </span>
+              );
             case "Pickups":
-              return <span className="badge text-uppercase badge-soft-info"> {cell.value} </span>;
+              return (
+                <span className="badge text-uppercase badge-soft-info">
+                  {" "}
+                  {cell.value}{" "}
+                </span>
+              );
             case "Returns":
-              return <span className="badge text-uppercase badge-soft-primary"> {cell.value} </span>;
+              return (
+                <span className="badge text-uppercase badge-soft-primary">
+                  {" "}
+                  {cell.value}{" "}
+                </span>
+              );
             case "Delivered":
-              return <span className="badge text-uppercase badge-soft-success"> {cell.value} </span>;
+              return (
+                <span className="badge text-uppercase badge-soft-success">
+                  {" "}
+                  {cell.value}{" "}
+                </span>
+              );
             default:
-              return <span className="badge text-uppercase badge-soft-warning"> {cell.value} </span>;
+              return (
+                <span className="badge text-uppercase badge-soft-warning">
+                  {" "}
+                  {cell.value}{" "}
+                </span>
+              );
           }
-        }
+        },
       },
 
       {
@@ -445,12 +511,36 @@ const EcommerceOrders = () => {
 
   const defaultdate = () => {
     let d = new Date(),
-      months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-    let h = (d.getHours() % 12) || 12;
+      months = [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ];
+    let h = d.getHours() % 12 || 12;
     let ampm = d.getHours() < 12 ? "AM" : "PM";
-    return ((d.getDate() + ' ' + months[d.getMonth()] + ', ' + d.getFullYear() + ", " + h + ":" + d.getMinutes() + " " + ampm).toString());
+    return (
+      d.getDate() +
+      " " +
+      months[d.getMonth()] +
+      ", " +
+      d.getFullYear() +
+      ", " +
+      h +
+      ":" +
+      d.getMinutes() +
+      " " +
+      ampm
+    ).toString();
   };
-
 
   const [date, setDate] = useState(defaultdate());
 
@@ -459,18 +549,17 @@ const EcommerceOrders = () => {
 
     let time = dateString[4];
     let H = +time.substr(0, 2);
-    let h = (H % 12) || 12;
-    h = (h <= 9) ? h = ("0" + h) : h;
+    let h = H % 12 || 12;
+    h = h <= 9 ? (h = "0" + h) : h;
     let ampm = H < 12 ? "AM" : "PM";
     time = h + time.substr(2, 3) + " " + ampm;
 
     const date = dateString[2] + " " + dateString[1] + ", " + dateString[3];
     const orderDate = (date + ", " + time).toString();
     setDate(orderDate);
-
   };
 
-  const handleValidDate = date => {
+  const handleValidDate = (date) => {
     const date1 = moment(new Date(date)).format("DD MMM Y");
     return date1;
   };
@@ -486,11 +575,12 @@ const EcommerceOrders = () => {
     } else {
       meridiem = "AM";
     }
-    const updateTime = moment(getTime, 'hh:mm').format('hh:mm') + " " + meridiem;
+    const updateTime =
+      moment(getTime, "hh:mm").format("hh:mm") + " " + meridiem;
     return updateTime;
   };
 
-  document.title = "Orders | Velzon - React Admin & Dashboard Template";
+  document.title = "Orders | Standartlar onlayn do'koni";
   return (
     <div className="page-content">
       <ExportCSVModal
@@ -512,7 +602,6 @@ const EcommerceOrders = () => {
         onCloseClick={() => setDeleteModalMulti(false)}
       />
       <Container fluid>
-
         <BreadCrumb title="Orders" pageTitle="Ecommerce" />
         <Row>
           <Col lg={12}>
@@ -528,20 +617,30 @@ const EcommerceOrders = () => {
                         type="button"
                         className="btn btn-success add-btn"
                         id="create-btn"
-                        onClick={() => { setIsEdit(false); toggle(); }}
+                        onClick={() => {
+                          setIsEdit(false);
+                          toggle();
+                        }}
                       >
                         <i className="ri-add-line align-bottom me-1"></i> Create
                         Order
                       </button>{" "}
-                      <button type="button" className="btn btn-info" onClick={() => setIsExportCSV(true)}>
+                      <button
+                        type="button"
+                        className="btn btn-info"
+                        onClick={() => setIsExportCSV(true)}
+                      >
                         <i className="ri-file-download-line align-bottom me-1"></i>{" "}
                         Export
-                      </button>
-                      {" "}
-                      {isMultiDeleteButton && <button className="btn btn-soft-danger"
-                        onClick={() => setDeleteModalMulti(true)}
-                      ><i
-                        className="ri-delete-bin-2-line"></i></button>}
+                      </button>{" "}
+                      {isMultiDeleteButton && (
+                        <button
+                          className="btn btn-soft-danger"
+                          onClick={() => setDeleteModalMulti(true)}
+                        >
+                          <i className="ri-delete-bin-2-line"></i>
+                        </button>
+                      )}
                     </div>
                   </div>
                 </Row>
@@ -634,7 +733,7 @@ const EcommerceOrders = () => {
                   {isOrderSuccess && orderList.length ? (
                     <TableContainer
                       columns={columns}
-                      data={(orderList || [])}
+                      data={orderList || []}
                       isGlobalFilter={true}
                       isAddUserList={false}
                       customPageSize={8}
@@ -643,28 +742,29 @@ const EcommerceOrders = () => {
                       theadClass="table-light text-muted"
                       handleOrderClick={handleOrderClicks}
                       isOrderFilter={true}
-                      SearchPlaceholder='Search for order ID, customer, order status or something...'
+                      SearchPlaceholder="Search for order ID, customer, order status or something..."
                     />
-                  ) : (<Loader error={error} />)
-                  }
+                  ) : (
+                    <Loader error={error} />
+                  )}
                 </div>
                 <Modal id="showModal" isOpen={modal} toggle={toggle} centered>
                   <ModalHeader className="bg-light p-3" toggle={toggle}>
                     {!!isEdit ? "Edit Order" : "Add Order"}
                   </ModalHeader>
-                  <Form className="tablelist-form" onSubmit={(e) => {
-                    e.preventDefault();
-                    validation.handleSubmit();
-                    return false;
-                  }}>
+                  <Form
+                    className="tablelist-form"
+                    onSubmit={(e) => {
+                      e.preventDefault();
+                      validation.handleSubmit();
+                      return false;
+                    }}
+                  >
                     <ModalBody>
                       <input type="hidden" id="id-field" />
 
                       <div className="mb-3">
-                        <Label
-                          htmlFor="id-field"
-                          className="form-label"
-                        >
+                        <Label htmlFor="id-field" className="form-label">
                           Order Id
                         </Label>
                         <Input
@@ -680,13 +780,18 @@ const EcommerceOrders = () => {
                           onBlur={validation.handleBlur}
                           value={validation.values.orderId || ""}
                           invalid={
-                            validation.touched.orderId && validation.errors.orderId ? true : false
+                            validation.touched.orderId &&
+                            validation.errors.orderId
+                              ? true
+                              : false
                           }
                         />
-                        {validation.touched.orderId && validation.errors.orderId ? (
-                          <FormFeedback type="invalid">{validation.errors.orderId}</FormFeedback>
+                        {validation.touched.orderId &&
+                        validation.errors.orderId ? (
+                          <FormFeedback type="invalid">
+                            {validation.errors.orderId}
+                          </FormFeedback>
                         ) : null}
-
                       </div>
 
                       <div className="mb-3">
@@ -709,13 +814,18 @@ const EcommerceOrders = () => {
                           onBlur={validation.handleBlur}
                           value={validation.values.customer || ""}
                           invalid={
-                            validation.touched.customer && validation.errors.customer ? true : false
+                            validation.touched.customer &&
+                            validation.errors.customer
+                              ? true
+                              : false
                           }
                         />
-                        {validation.touched.customer && validation.errors.customer ? (
-                          <FormFeedback type="invalid">{validation.errors.customer}</FormFeedback>
+                        {validation.touched.customer &&
+                        validation.errors.customer ? (
+                          <FormFeedback type="invalid">
+                            {validation.errors.customer}
+                          </FormFeedback>
                         ) : null}
-
                       </div>
 
                       <div className="mb-3">
@@ -732,18 +842,21 @@ const EcommerceOrders = () => {
                           className="form-select"
                           onChange={validation.handleChange}
                           onBlur={validation.handleBlur}
-                          value={
-                            validation.values.product || ""
-                          }
-                          required>
+                          value={validation.values.product || ""}
+                          required
+                        >
                           {productname.map((item, key) => (
                             <React.Fragment key={key}>
-                              {item.options.map((item, key) => (<option value={item.value} key={key}>{item.label}</option>))}
+                              {item.options.map((item, key) => (
+                                <option value={item.value} key={key}>
+                                  {item.label}
+                                </option>
+                              ))}
                             </React.Fragment>
                           ))}
                         </Input>
                         {validation.touched.product &&
-                          validation.errors.product ? (
+                        validation.errors.product ? (
                           <FormFeedback type="invalid">
                             {validation.errors.product}
                           </FormFeedback>
@@ -766,14 +879,15 @@ const EcommerceOrders = () => {
                             altFormat: "d M, Y, G:i K",
                             dateFormat: "d M, Y, G:i K",
                           }}
-                          onChange={(e) =>
-                            dateformate(e)
-                          }
+                          onChange={(e) => dateformate(e)}
                           value={validation.values.orderDate || ""}
                         />
 
-                        {validation.touched.orderDate && validation.errors.orderDate ? (
-                          <FormFeedback type="invalid">{validation.errors.orderDate}</FormFeedback>
+                        {validation.touched.orderDate &&
+                        validation.errors.orderDate ? (
+                          <FormFeedback type="invalid">
+                            {validation.errors.orderDate}
+                          </FormFeedback>
                         ) : null}
                       </div>
                       <div className="row gy-4 mb-3">
@@ -792,13 +906,18 @@ const EcommerceOrders = () => {
                               onBlur={validation.handleBlur}
                               value={validation.values.amount || ""}
                               invalid={
-                                validation.touched.amount && validation.errors.amount ? true : false
+                                validation.touched.amount &&
+                                validation.errors.amount
+                                  ? true
+                                  : false
                               }
                             />
-                            {validation.touched.amount && validation.errors.amount ? (
-                              <FormFeedback type="invalid">{validation.errors.amount}</FormFeedback>
+                            {validation.touched.amount &&
+                            validation.errors.amount ? (
+                              <FormFeedback type="invalid">
+                                {validation.errors.amount}
+                              </FormFeedback>
                             ) : null}
-
                           </div>
                         </div>
                         <div className="col-md-6">
@@ -816,18 +935,20 @@ const EcommerceOrders = () => {
                               className="form-select"
                               onChange={validation.handleChange}
                               onBlur={validation.handleBlur}
-                              value={
-                                validation.values.payment || ""
-                              }
+                              value={validation.values.payment || ""}
                             >
                               {orderpayement.map((item, key) => (
                                 <React.Fragment key={key}>
-                                  {item.options.map((item, key) => (<option value={item.value} key={key}>{item.label}</option>))}
+                                  {item.options.map((item, key) => (
+                                    <option value={item.value} key={key}>
+                                      {item.label}
+                                    </option>
+                                  ))}
                                 </React.Fragment>
                               ))}
                             </Input>
                             {validation.touched.payment &&
-                              validation.errors.payment ? (
+                            validation.errors.payment ? (
                               <FormFeedback type="invalid">
                                 {validation.errors.payment}
                               </FormFeedback>
@@ -850,23 +971,24 @@ const EcommerceOrders = () => {
                           className="form-select"
                           onChange={validation.handleChange}
                           onBlur={validation.handleBlur}
-                          value={
-                            validation.values.status || ""
-                          }
+                          value={validation.values.status || ""}
                         >
                           {orderstatus.map((item, key) => (
                             <React.Fragment key={key}>
-                              {item.options.map((item, key) => (<option value={item.value} key={key}>{item.label}</option>))}
+                              {item.options.map((item, key) => (
+                                <option value={item.value} key={key}>
+                                  {item.label}
+                                </option>
+                              ))}
                             </React.Fragment>
                           ))}
                         </Input>
                         {validation.touched.status &&
-                          validation.errors.status ? (
+                        validation.errors.status ? (
                           <FormFeedback type="invalid">
                             {validation.errors.status}
                           </FormFeedback>
                         ) : null}
-
                       </div>
                     </ModalBody>
                     <div className="modal-footer">
@@ -882,9 +1004,7 @@ const EcommerceOrders = () => {
                         </button>
 
                         <button type="submit" className="btn btn-success">
-                          {!!isEdit
-                            ? "Update"
-                            : "Add Customer"}
+                          {!!isEdit ? "Update" : "Add Customer"}
                         </button>
                       </div>
                     </div>
@@ -901,5 +1021,3 @@ const EcommerceOrders = () => {
 };
 
 export default EcommerceOrders;
-
-

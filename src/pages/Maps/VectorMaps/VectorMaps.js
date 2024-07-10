@@ -7,7 +7,7 @@ import Vector from "./MapVector";
 import BreadCrumb from "../../../Components/Common/BreadCrumb";
 
 const VectorMaps = () => {
-  document.title = "Vector Maps | Velzon - React Admin & Dashboard Template";
+  document.title = "Vector Maps | Standartlar onlayn do'koni";
   return (
     <React.Fragment>
       <div className="page-content">

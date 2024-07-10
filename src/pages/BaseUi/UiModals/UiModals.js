@@ -218,7 +218,7 @@ const UiModals = () => {
     setmodal_signUpModals(!modal_signUpModals);
   }
 
-  document.title = "Modals | Velzon - React Admin & Dashboard Template";
+  document.title = "Modals | Standartlar onlayn do'koni";
 
   return (
     <React.Fragment>

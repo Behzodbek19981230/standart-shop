@@ -11,7 +11,7 @@ import {
 
 import BreadCrumb from "../../../Components/Common/BreadCrumb";
 
-import DualListbox from './DualListbox';
+import DualListbox from "./DualListbox";
 
 const FormAdvanced = () => {
   const [defaultCounter, setdefaultCounter] = useState(5);
@@ -33,11 +33,10 @@ const FormAdvanced = () => {
     id(prev_data_attr - 1);
   }
 
-  document.title = "Form Advanced | Velzon - React Admin & Dashboard Template";
+  document.title = "Form Advanced | Standartlar onlayn do'koni";
   return (
     <React.Fragment>
       <div className="page-content">
-
         <Container fluid>
           <BreadCrumb title="Form Advanced" pageTitle="Forms" />
           <Row>
@@ -398,7 +397,6 @@ const FormAdvanced = () => {
                 <CardBody>
                   <DualListbox />
                 </CardBody>
-
               </Card>
             </Col>
           </Row>

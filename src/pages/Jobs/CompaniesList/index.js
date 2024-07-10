@@ -15,7 +15,7 @@ import BreadCrumb from "../../../Components/Common/BreadCrumb";
 import img6 from "../../../assets/images/companies/img-6.png";
 import { jobCompanies } from "../../../common/data/appsJobs";
 const CompaniesList = () => {
-  document.title = "Companies | Velzon - React Admin & Dashboard Template";
+  document.title = "Companies | Standartlar onlayn do'koni";
 
   return (
     <React.Fragment>
@@ -73,10 +73,7 @@ const CompaniesList = () => {
                       </Col>
 
                       <Col xxl={2} sm={4}>
-                        <button
-                          type="button"
-                          className="btn btn-primary w-100"
-                        >
+                        <button type="button" className="btn btn-primary w-100">
                           <i className="ri-equalizer-fill me-1 align-bottom"></i>{" "}
                           Filters
                         </button>

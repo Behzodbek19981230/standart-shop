@@ -99,7 +99,7 @@ const EcommerceCheckout = () => {
     },
   ];
 
-  document.title = "Checkout | Velzon - React Admin & Dashboard Template";
+  document.title = "Checkout | Standartlar onlayn do'koni";
 
   return (
     <React.Fragment>

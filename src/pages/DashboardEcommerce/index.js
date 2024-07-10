@@ -11,7 +11,7 @@ import StoreVisits from "./StoreVisits";
 import TopSellers from "./TopSellers";
 
 const DashboardEcommerce = () => {
-  document.title = "Dashboard | Velzon - React Admin & Dashboard Template";
+  document.title = "Dashboard | Standartlar onlayn do'koni";
 
   const [rightColumn, setRightColumn] = useState(true);
   const toggleRightColumn = () => {
@@ -45,7 +45,10 @@ const DashboardEcommerce = () => {
                 </Row>
               </div>
             </Col>
-            <RecentActivity rightColumn={rightColumn} hideRightColumn={toggleRightColumn} />
+            <RecentActivity
+              rightColumn={rightColumn}
+              hideRightColumn={toggleRightColumn}
+            />
           </Row>
         </Container>
       </div>

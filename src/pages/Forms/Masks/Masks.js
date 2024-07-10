@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
-import { Card, CardBody, CardHeader, Col, Container, Row } from 'reactstrap';
-import BreadCrumb from '../../../Components/Common/BreadCrumb';
+import React, { useState } from "react";
+import { Card, CardBody, CardHeader, Col, Container, Row } from "reactstrap";
+import BreadCrumb from "../../../Components/Common/BreadCrumb";
 import Cleave from "cleave.js/react";
 import "cleave.js/dist/addons/cleave-phone.in";
-
 
 const Masks = () => {
   const [date, setDate] = useState("");
@@ -17,7 +16,7 @@ const Masks = () => {
   const [phone, setPhone] = useState("");
   const [number, setNumber] = useState("");
 
-  //Date 
+  //Date
   function onDateChange(e) {
     setDate(e.target.rawValue);
   }
@@ -25,7 +24,7 @@ const Masks = () => {
   function onDateFormatChange(e) {
     setDateFormat(e.target.rawValue);
   }
-  //Time 
+  //Time
   function onTimeChange(e) {
     setTime(e.target.rawValue);
   }
@@ -33,7 +32,7 @@ const Masks = () => {
   function onTimeFormatChange(e) {
     setTimeFormat(e.target.rawValue);
   }
-  //Credit card 
+  //Credit card
   function onCreditCardChange(e) {
     setCreditCardNo(e.target.rawValue);
   }
@@ -60,12 +59,11 @@ const Masks = () => {
     setNumber(e.target.rawValue);
   }
 
-document.title ="Input Masks | Velzon - React Admin & Dashboard Template";
+  document.title = "Input Masks | Standartlar onlayn do'koni";
 
   return (
     <React.Fragment>
       <div className="page-content">
-        
         <Container fluid>
           <BreadCrumb title="Input Masks" pageTitle="Forms" />
           <Row>
@@ -75,23 +73,25 @@ document.title ="Input Masks | Velzon - React Admin & Dashboard Template";
                   <h4 className="card-title mb-0">Examples</h4>
                 </CardHeader>
 
-                <CardBody >
+                <CardBody>
                   <form action="#">
                     <div>
                       <h5 className="fs-14 mb-3 text-muted">Date Formatting</h5>
-                      <Row >
+                      <Row>
                         <Col xl={6}>
                           <div className="mb-3">
-                            <label htmlFor="cleave-date" className="form-label">Date</label>
+                            <label htmlFor="cleave-date" className="form-label">
+                              Date
+                            </label>
                             <Cleave
                               placeholder="DD-MM-YYYY"
                               options={{
                                 date: true,
-                                delimiter: '-',
-                                datePattern: ['d', 'm', 'Y']
+                                delimiter: "-",
+                                datePattern: ["d", "m", "Y"],
                               }}
                               value={date}
-                              onChange={e => onDateChange(e)}
+                              onChange={(e) => onDateChange(e)}
                               className="form-control"
                             />
                           </div>
@@ -99,15 +99,20 @@ document.title ="Input Masks | Velzon - React Admin & Dashboard Template";
 
                         <Col xl={6}>
                           <div className="mb-3">
-                            <label htmlFor="cleave-date-format" className="form-label">Date Formatting</label>
+                            <label
+                              htmlFor="cleave-date-format"
+                              className="form-label"
+                            >
+                              Date Formatting
+                            </label>
                             <Cleave
                               placeholder="MM/YY"
                               options={{
                                 date: true,
-                                datePattern: ['m', 'y']
+                                datePattern: ["m", "y"],
                               }}
                               value={dateFormat}
-                              onChange={e => onDateFormatChange(e)}
+                              onChange={(e) => onDateFormatChange(e)}
                               className="form-control"
                             />
                           </div>
@@ -122,37 +127,43 @@ document.title ="Input Masks | Velzon - React Admin & Dashboard Template";
                       <Row>
                         <Col xl={6}>
                           <div className="mb-3">
-                            <label htmlFor="cleave-time" className="form-label">Time</label>
+                            <label htmlFor="cleave-time" className="form-label">
+                              Time
+                            </label>
                             <Cleave
                               placeholder="hh:mm:ss"
                               options={{
                                 time: true,
-                                timePattern: ['h', 'm', 's']
+                                timePattern: ["h", "m", "s"],
                               }}
                               value={time}
-                              onChange={e => onTimeChange(e)}
+                              onChange={(e) => onTimeChange(e)}
                               className="form-control"
                             />
                           </div>
-
                         </Col>
 
                         <Col xl={6}>
                           <div className="mb-3">
-                            <label htmlFor="cleave-time-format" className="form-label">Time Formatting</label>
+                            <label
+                              htmlFor="cleave-time-format"
+                              className="form-label"
+                            >
+                              Time Formatting
+                            </label>
                             <Cleave
                               placeholder="hh:mm"
                               options={{
                                 time: true,
-                                timePattern: ['h', 'm']
+                                timePattern: ["h", "m"],
                               }}
                               value={timeFormat}
-                              onChange={e => onTimeFormatChange(e)}
+                              onChange={(e) => onTimeFormatChange(e)}
                               className="form-control"
                             />
                           </div>
                         </Col>
-                      </Row>         
+                      </Row>
                     </div>
 
                     <div className="border mt-3 border-dashed"></div>
@@ -162,32 +173,41 @@ document.title ="Input Masks | Velzon - React Admin & Dashboard Template";
                       <Row>
                         <Col xl={6}>
                           <div className="mb-3">
-                            <label htmlFor="cleave-ccard" className="form-label">Credit Card</label>
+                            <label
+                              htmlFor="cleave-ccard"
+                              className="form-label"
+                            >
+                              Credit Card
+                            </label>
                             <Cleave
                               placeholder="xxxx xxxx xxxx xxxx"
                               options={{
                                 creditCard: true,
                               }}
                               value={creditCardNo}
-                              onChange={e => onCreditCardChange(e)}
+                              onChange={(e) => onCreditCardChange(e)}
                               className="form-control"
                             />
                           </div>
-
                         </Col>
 
                         <Col xl={6}>
                           <div className="mb-3">
-                            <label htmlFor="cleave-delimiter" className="form-label">Delimiter</label>
+                            <label
+                              htmlFor="cleave-delimiter"
+                              className="form-label"
+                            >
+                              Delimiter
+                            </label>
                             <Cleave
                               placeholder="xxx·xxx·xxx"
                               options={{
-                                delimiter: '·',
+                                delimiter: "·",
                                 blocks: [3, 3, 3],
-                                uppercase: true
+                                uppercase: true,
                               }}
                               value={delimiter}
-                              onChange={e => onDelimiterChange(e)}
+                              onChange={(e) => onDelimiterChange(e)}
                               className="form-control"
                             />
                           </div>
@@ -197,16 +217,21 @@ document.title ="Input Masks | Velzon - React Admin & Dashboard Template";
                       <Row>
                         <Col xl={6}>
                           <div className="mb-3">
-                            <label htmlFor="cleave-delimiters" className="form-label">Delimiters</label>
+                            <label
+                              htmlFor="cleave-delimiters"
+                              className="form-label"
+                            >
+                              Delimiters
+                            </label>
                             <Cleave
                               placeholder="xxx.xxx.xxx-xx"
                               options={{
-                                delimiters: ['.', '.', '-'],
+                                delimiters: [".", ".", "-"],
                                 blocks: [3, 3, 3, 2],
-                                uppercase: true
+                                uppercase: true,
                               }}
                               value={delimiter2}
-                              onChange={e => onDelimiterChange2(e)}
+                              onChange={(e) => onDelimiterChange2(e)}
                               className="form-control"
                             />
                           </div>
@@ -214,16 +239,21 @@ document.title ="Input Masks | Velzon - React Admin & Dashboard Template";
 
                         <Col xl={6}>
                           <div className="mb-3">
-                            <label htmlFor="cleave-prefix" className="form-label">Prefix</label>
+                            <label
+                              htmlFor="cleave-prefix"
+                              className="form-label"
+                            >
+                              Prefix
+                            </label>
                             <Cleave
                               options={{
-                                prefix: 'PREFIX',
-                                delimiter: '-',
+                                prefix: "PREFIX",
+                                delimiter: "-",
                                 blocks: [6, 4, 4, 4],
-                                uppercase: true
+                                uppercase: true,
                               }}
                               value={prefix}
-                              onChange={e => onPrefixChange(e)}
+                              onChange={(e) => onPrefixChange(e)}
                               className="form-control"
                             />
                           </div>
@@ -233,12 +263,17 @@ document.title ="Input Masks | Velzon - React Admin & Dashboard Template";
                       <Row>
                         <Col xl={6}>
                           <div className="mb-3 mb-xl-0">
-                            <label htmlFor="cleave-phone" className="form-label">Phone</label>
+                            <label
+                              htmlFor="cleave-phone"
+                              className="form-label"
+                            >
+                              Phone
+                            </label>
                             <Cleave
                               placeholder="xxxx xxx xxx"
                               options={{
                                 phone: true,
-                                phoneRegionCode: "IN"
+                                phoneRegionCode: "IN",
                               }}
                               value={phone}
                               onChange={onPhoneChange}
@@ -249,15 +284,20 @@ document.title ="Input Masks | Velzon - React Admin & Dashboard Template";
 
                         <Col xl={6}>
                           <div className="mb-0">
-                            <label htmlFor="cleave-numeral" className="form-label">Numeral Formatting</label>
+                            <label
+                              htmlFor="cleave-numeral"
+                              className="form-label"
+                            >
+                              Numeral Formatting
+                            </label>
                             <Cleave
                               placeholder="Enter numeral"
                               options={{
                                 numeral: true,
-                                numeralThousandsGroupStyle: 'thousand'
+                                numeralThousandsGroupStyle: "thousand",
                               }}
                               value={number}
-                              onChange={e => onNumberChange(e)}
+                              onChange={(e) => onNumberChange(e)}
                               className="form-control"
                             />
                           </div>

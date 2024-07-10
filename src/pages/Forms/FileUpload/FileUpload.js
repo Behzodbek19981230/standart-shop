@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-import { Card, CardBody, Col, Row, Container, CardHeader } from 'reactstrap';
+import React, { useState } from "react";
+import { Card, CardBody, Col, Row, Container, CardHeader } from "reactstrap";
 import Dropzone from "react-dropzone";
 import { Link } from "react-router-dom";
-import BreadCrumb from '../../../Components/Common/BreadCrumb';
+import BreadCrumb from "../../../Components/Common/BreadCrumb";
 
 // Import React FilePond
-import { FilePond,  registerPlugin } from 'react-filepond';
+import { FilePond, registerPlugin } from "react-filepond";
 // Import FilePond styles
-import 'filepond/dist/filepond.min.css';
-import FilePondPluginImageExifOrientation from 'filepond-plugin-image-exif-orientation';
-import FilePondPluginImagePreview from 'filepond-plugin-image-preview';
-import 'filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css';
+import "filepond/dist/filepond.min.css";
+import FilePondPluginImageExifOrientation from "filepond-plugin-image-exif-orientation";
+import FilePondPluginImagePreview from "filepond-plugin-image-preview";
+import "filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css";
 
 // Register the plugins
 registerPlugin(FilePondPluginImageExifOrientation, FilePondPluginImagePreview);
@@ -20,7 +20,7 @@ const FileUpload = () => {
   const [files, setFiles] = useState([]);
 
   function handleAcceptedFiles(files) {
-    files.map(file =>
+    files.map((file) =>
       Object.assign(file, {
         preview: URL.createObjectURL(file),
         formattedSize: formatBytes(file.size),
@@ -41,7 +41,7 @@ const FileUpload = () => {
     const i = Math.floor(Math.log(bytes) / Math.log(k));
     return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + " " + sizes[i];
   }
-  document.title ="File Upload | Velzon - React Admin & Dashboard Template";
+  document.title = "File Upload | Standartlar onlayn do'koni";
   return (
     <React.Fragment>
       <div className="page-content">
@@ -54,10 +54,12 @@ const FileUpload = () => {
                   <h4 className="card-title mb-0">Dropzone</h4>
                 </CardHeader>
                 <CardBody>
-
-                  <p className="text-muted">DropzoneJS is an open source library that provides drag’n’drop file uploads with image previews.</p>
+                  <p className="text-muted">
+                    DropzoneJS is an open source library that provides
+                    drag’n’drop file uploads with image previews.
+                  </p>
                   <Dropzone
-                    onDrop={acceptedFiles => {
+                    onDrop={(acceptedFiles) => {
                       handleAcceptedFiles(acceptedFiles);
                     }}
                   >
@@ -115,11 +117,12 @@ const FileUpload = () => {
             </Col>
           </Row>
 
-
           <Row className="mt-2">
             <Col lg={12}>
               <div className="justify-content-between d-flex align-items-center mb-3">
-                <h5 className="mb-0 pb-1 text-decoration-underline">Filepond</h5>
+                <h5 className="mb-0 pb-1 text-decoration-underline">
+                  Filepond
+                </h5>
               </div>
 
               <Row>
@@ -130,9 +133,11 @@ const FileUpload = () => {
                     </CardHeader>
 
                     <CardBody>
-                      <p className="text-muted">FilePond is a JavaScript library that
-                        optimizes multiple images for faster uploads and offers a great, accessible, silky
-                        smooth user experience.</p>
+                      <p className="text-muted">
+                        FilePond is a JavaScript library that optimizes multiple
+                        images for faster uploads and offers a great,
+                        accessible, silky smooth user experience.
+                      </p>
                       <FilePond
                         files={files}
                         onupdatefiles={setFiles}

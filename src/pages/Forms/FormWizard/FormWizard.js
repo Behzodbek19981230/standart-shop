@@ -71,7 +71,7 @@ const FormWizard = () => {
     }
   }
 
-  document.title = "Wizard | Velzon - React Admin & Dashboard Template";
+  document.title = "Wizard | Standartlar onlayn do'koni";
   return (
     <React.Fragment>
       <div className="page-content">

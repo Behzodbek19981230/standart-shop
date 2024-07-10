@@ -30,8 +30,8 @@ const EcommerceCart = () => {
   }
 
   useEffect(() => {
-    let dis = (0.15 * subTotal);
-    let tax = (0.125 * subTotal);
+    let dis = 0.15 * subTotal;
+    let tax = 0.125 * subTotal;
 
     if (subTotal !== 0) {
       setCharge(65);
@@ -53,7 +53,13 @@ const EcommerceCart = () => {
   function countUP(id, prev_data_attr, itemPrice) {
     setproductList(
       productList.map((p) =>
-        p.id === id ? { ...p, data_attr: prev_data_attr + 1, total: (prev_data_attr + 1) * itemPrice } : p
+        p.id === id
+          ? {
+              ...p,
+              data_attr: prev_data_attr + 1,
+              total: (prev_data_attr + 1) * itemPrice,
+            }
+          : p
       )
     );
   }
@@ -61,12 +67,18 @@ const EcommerceCart = () => {
   function countDown(id, prev_data_attr, itemPrice) {
     setproductList(
       productList.map((p) =>
-        (p.id === id && p.data_attr > 0) ? { ...p, data_attr: prev_data_attr - 1, total: (prev_data_attr - 1) * itemPrice } : p
+        p.id === id && p.data_attr > 0
+          ? {
+              ...p,
+              data_attr: prev_data_attr - 1,
+              total: (prev_data_attr - 1) * itemPrice,
+            }
+          : p
       )
     );
   }
 
-document.title ="Shopping Cart | Velzon - React Admin & Dashboard Template";
+  document.title = "Shopping Cart | Standartlar onlayn do'koni";
   return (
     <React.Fragment>
       <div className="page-content">
@@ -78,7 +90,9 @@ document.title ="Shopping Cart | Velzon - React Admin & Dashboard Template";
               <Row className="align-items-center gy-3 mb-3">
                 <div className="col-sm">
                   <div>
-                    <h5 className="fs-14 mb-0">Your Cart ({productList.length} items)</h5>
+                    <h5 className="fs-14 mb-0">
+                      Your Cart ({productList.length} items)
+                    </h5>
                   </div>
                 </div>
                 <div className="col-sm-auto">
@@ -131,7 +145,11 @@ document.title ="Shopping Cart | Velzon - React Admin & Dashboard Template";
                               type="button"
                               className="minus"
                               onClick={() => {
-                                countDown(cartItem.id, cartItem.data_attr, cartItem.price);
+                                countDown(
+                                  cartItem.id,
+                                  cartItem.data_attr,
+                                  cartItem.price
+                                );
                               }}
                             >
                               –
@@ -147,7 +165,11 @@ document.title ="Shopping Cart | Velzon - React Admin & Dashboard Template";
                               type="button"
                               className="plus"
                               onClick={() => {
-                                countUP(cartItem.id, cartItem.data_attr, cartItem.price);
+                                countUP(
+                                  cartItem.id,
+                                  cartItem.data_attr,
+                                  cartItem.price
+                                );
                               }}
                             >
                               +
@@ -200,7 +222,7 @@ document.title ="Shopping Cart | Velzon - React Admin & Dashboard Template";
                               $
                               <span className="product-line-price">
                                 {" "}
-                                {(cartItem.total).toFixed(2)}
+                                {cartItem.total.toFixed(2)}
                               </span>
                             </h5>
                           </div>
@@ -253,7 +275,7 @@ document.title ="Shopping Cart | Velzon - React Admin & Dashboard Template";
                           <tr>
                             <td>Sub Total :</td>
                             <td className="text-end" id="cart-subtotal">
-                            $ {subTotal}
+                              $ {subTotal}
                             </td>
                           </tr>
                           <tr>
@@ -262,26 +284,26 @@ document.title ="Shopping Cart | Velzon - React Admin & Dashboard Template";
                               <span className="text-muted">(VELZON15)</span> :{" "}
                             </td>
                             <td className="text-end" id="cart-discount">
-                            - $ {dis}
+                              - $ {dis}
                             </td>
                           </tr>
                           <tr>
                             <td>Shipping Charge :</td>
                             <td className="text-end" id="cart-shipping">
-                            $ {charge}
+                              $ {charge}
                             </td>
                           </tr>
                           <tr>
                             <td>Estimated Tax (12.5%) : </td>
                             <td className="text-end" id="cart-tax">
-                            $ {tax}
+                              $ {tax}
                             </td>
                           </tr>
                           <tr className="table-active">
                             <th>Total (USD) :</th>
                             <td className="text-end">
                               <span className="fw-semibold" id="cart-total">
-                              ${subTotal + charge + tax - dis}
+                                ${subTotal + charge + tax - dis}
                               </span>
                             </td>
                           </tr>

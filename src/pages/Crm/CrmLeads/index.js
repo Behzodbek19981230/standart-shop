@@ -48,8 +48,8 @@ import * as Yup from "yup";
 import { useFormik } from "formik";
 
 import Loader from "../../../Components/Common/Loader";
-import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const CrmLeads = () => {
   const dispatch = useDispatch();
@@ -101,7 +101,7 @@ const CrmLeads = () => {
     { label: "Exiting", value: "Exiting" },
     { label: "Lead", value: "Lead" },
     { label: "Long-term", value: "Long-term" },
-    { label: "Partner", value: "Partner" }
+    { label: "Partner", value: "Partner" },
   ];
 
   const toggle = useCallback(() => {
@@ -147,13 +147,13 @@ const CrmLeads = () => {
 
     initialValues: {
       // img: (lead && lead.img) || '',
-      name: (lead && lead.name) || '',
-      company: (lead && lead.company) || '',
-      score: (lead && lead.score) || '',
-      phone: (lead && lead.phone) || '',
-      location: (lead && lead.location) || '',
-      date: (lead && lead.date) || '',
-      tags: (lead && lead.tags) || '',
+      name: (lead && lead.name) || "",
+      company: (lead && lead.company) || "",
+      score: (lead && lead.score) || "",
+      phone: (lead && lead.phone) || "",
+      location: (lead && lead.location) || "",
+      date: (lead && lead.date) || "",
+      tags: (lead && lead.tags) || "",
     },
     validationSchema: Yup.object({
       name: Yup.string().required("Please Enter Name"),
@@ -200,26 +200,29 @@ const CrmLeads = () => {
   });
 
   // Update Data
-  const handleLeadClick = useCallback((arg) => {
-    const lead = arg;
+  const handleLeadClick = useCallback(
+    (arg) => {
+      const lead = arg;
 
-    setLead({
-      _id: lead._id,
-      // img: lead.img,
-      name: lead.name,
-      company: lead.company,
-      score: lead.score,
-      phone: lead.phone,
-      location: lead.location,
-      date: lead.date,
-      tags: lead.tags,
-    });
+      setLead({
+        _id: lead._id,
+        // img: lead.img,
+        name: lead.name,
+        company: lead.company,
+        score: lead.score,
+        phone: lead.phone,
+        location: lead.location,
+        date: lead.date,
+        tags: lead.tags,
+      });
 
-    setIsEdit(true);
-    toggle();
-  }, [toggle]);
+      setIsEdit(true);
+      toggle();
+    },
+    [toggle]
+  );
 
-  // Node API 
+  // Node API
   // useEffect(() => {
   //   if (isLeadCreated) {
   //     setLead(null);
@@ -230,7 +233,7 @@ const CrmLeads = () => {
   //   isLeadCreated,
   // ]);
 
-  const handleValidDate = date => {
+  const handleValidDate = (date) => {
     const date1 = moment(new Date(date)).format("DD MMM Y");
     return date1;
   };
@@ -260,7 +263,9 @@ const CrmLeads = () => {
     const checkall = document.getElementById("checkBoxAll");
     selectedCheckBoxDelete.forEach((element) => {
       dispatch(onDeleteLead(element.value));
-      setTimeout(() => { toast.clearWaitingQueue(); }, 3000);
+      setTimeout(() => {
+        toast.clearWaitingQueue();
+      }, 3000);
     });
     setIsMultiDeleteButton(false);
     checkall.checked = false;
@@ -268,7 +273,9 @@ const CrmLeads = () => {
 
   const deleteCheckbox = () => {
     const ele = document.querySelectorAll(".leadsCheckBox:checked");
-    ele.length > 0 ? setIsMultiDeleteButton(true) : setIsMultiDeleteButton(false);
+    ele.length > 0
+      ? setIsMultiDeleteButton(true)
+      : setIsMultiDeleteButton(false);
     setSelectedCheckBoxDelete(ele);
   };
 
@@ -276,11 +283,25 @@ const CrmLeads = () => {
   const columns = useMemo(
     () => [
       {
-        Header: <input type="checkbox" id="checkBoxAll" className="form-check-input" onClick={() => checkedAll()} />,
+        Header: (
+          <input
+            type="checkbox"
+            id="checkBoxAll"
+            className="form-check-input"
+            onClick={() => checkedAll()}
+          />
+        ),
         Cell: (cellProps) => {
-          return <input type="checkbox" className="leadsCheckBox form-check-input" value={cellProps.row.original._id} onChange={() => deleteCheckbox()} />;
+          return (
+            <input
+              type="checkbox"
+              className="leadsCheckBox form-check-input"
+              value={cellProps.row.original._id}
+              onChange={() => deleteCheckbox()}
+            />
+          );
         },
-        id: '#',
+        id: "#",
       },
       {
         Header: "Name",
@@ -290,16 +311,24 @@ const CrmLeads = () => {
           <>
             <div className="d-flex align-items-center">
               <div className="flex-shrink-0">
-                {leads.row.original.image_src ? <img
-                  src={process.env.REACT_APP_API_URL + "/images/users/" + leads.row.original.image_src}
-                  alt=""
-                  className="avatar-xxs rounded-circle"
-                /> :
-                  <div className="flex-shrink-0 avatar-xs me-2">
-                    <div className="avatar-title bg-soft-success text-success rounded-circle fs-13">
-                      {leads.row.original.name.charAt(0)}
+                {
+                  leads.row.original.image_src ? (
+                    <img
+                      src={
+                        process.env.REACT_APP_API_URL +
+                        "/images/users/" +
+                        leads.row.original.image_src
+                      }
+                      alt=""
+                      className="avatar-xxs rounded-circle"
+                    />
+                  ) : (
+                    <div className="flex-shrink-0 avatar-xs me-2">
+                      <div className="avatar-title bg-soft-success text-success rounded-circle fs-13">
+                        {leads.row.original.name.charAt(0)}
+                      </div>
                     </div>
-                  </div>
+                  )
                   // <img src={dummyImg} alt="" className="avatar-xxs rounded-circle" />
                 }
               </div>
@@ -334,7 +363,11 @@ const CrmLeads = () => {
         Header: "Tags",
         Cell: (leads) => (
           <>
-            {leads.row.original.tags.map((item, key) => (<span className="badge badge-soft-primary me-1" key={key}>{item}</span>))}
+            {leads.row.original.tags.map((item, key) => (
+              <span className="badge badge-soft-primary me-1" key={key}>
+                {item}
+              </span>
+            ))}
           </>
         ),
       },
@@ -342,11 +375,7 @@ const CrmLeads = () => {
         Header: "Create Date",
         accessor: "date",
         filterable: false,
-        Cell: (cell) => (
-          <>
-            {handleValidDate(cell.value)}
-          </>
-        ),
+        Cell: (cell) => <>{handleValidDate(cell.value)}</>,
       },
       {
         Header: "Action",
@@ -357,7 +386,7 @@ const CrmLeads = () => {
                 <Link
                   to="#"
                   className="text-muted d-inline-block"
-                // onClick={toggle}
+                  // onClick={toggle}
                 >
                   <i className="ri-phone-line fs-16"></i>
                 </Link>
@@ -373,8 +402,13 @@ const CrmLeads = () => {
                 </Link>
               </li>
               <li className="list-inline-item" title="Edit">
-                <Link className="edit-item-btn" to="#"
-                  onClick={() => { const LeadData = cellProps.row.original; handleLeadClick(LeadData); }}
+                <Link
+                  className="edit-item-btn"
+                  to="#"
+                  onClick={() => {
+                    const LeadData = cellProps.row.original;
+                    handleLeadClick(LeadData);
+                  }}
                 >
                   <i className="ri-pencil-fill align-bottom text-muted"></i>
                 </Link>
@@ -382,7 +416,10 @@ const CrmLeads = () => {
               <li className="list-inline-item" title="Delete">
                 <Link
                   className="remove-item-btn"
-                  onClick={() => { const LeadData = cellProps.row.original; onClickDelete(LeadData); }}
+                  onClick={() => {
+                    const LeadData = cellProps.row.original;
+                    onClickDelete(LeadData);
+                  }}
                   to="#"
                 >
                   <i className="ri-delete-bin-fill align-bottom text-muted"></i>
@@ -398,8 +435,27 @@ const CrmLeads = () => {
 
   const defaultdate = () => {
     let d = new Date(),
-      months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-    return ((d.getDate() + ' ' + months[d.getMonth()] + ', ' + d.getFullYear()).toString());
+      months = [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ];
+    return (
+      d.getDate() +
+      " " +
+      months[d.getMonth()] +
+      ", " +
+      d.getFullYear()
+    ).toString();
   };
 
   const [date, setDate] = useState(defaultdate());
@@ -410,7 +466,7 @@ const CrmLeads = () => {
     setDate(joinDate);
   };
 
-  document.title = "Leads | Velzon - React Admin & Dashboard Template";
+  document.title = "Leads | Standartlar onlayn do'koni";
 
   return (
     <React.Fragment>
@@ -448,10 +504,19 @@ const CrmLeads = () => {
                     </Col>
                     <div className="col-sm-auto ms-auto">
                       <div className="hstack gap-2">
-                        {isMultiDeleteButton && <button className="btn btn-soft-danger"
-                          onClick={() => setDeleteModalMulti(true)}
-                        ><i className="ri-delete-bin-2-line"></i></button>}
-                        <button type="button" className="btn btn-info" onClick={toggleInfo}>
+                        {isMultiDeleteButton && (
+                          <button
+                            className="btn btn-soft-danger"
+                            onClick={() => setDeleteModalMulti(true)}
+                          >
+                            <i className="ri-delete-bin-2-line"></i>
+                          </button>
+                        )}
+                        <button
+                          type="button"
+                          className="btn btn-info"
+                          onClick={toggleInfo}
+                        >
                           <i className="ri-filter-3-line align-bottom me-1"></i>{" "}
                           Fliters
                         </button>
@@ -459,7 +524,10 @@ const CrmLeads = () => {
                           type="button"
                           className="btn btn-success add-btn"
                           id="create-btn"
-                          onClick={() => { setIsEdit(false); toggle(); }}
+                          onClick={() => {
+                            setIsEdit(false);
+                            toggle();
+                          }}
                         >
                           <i className="ri-add-line align-bottom me-1"></i> Add
                           Leads
@@ -474,22 +542,15 @@ const CrmLeads = () => {
                           >
                             <i className="ri-settings-4-line"></i>
                           </DropdownToggle>
-                          <DropdownMenu
-                          >
+                          <DropdownMenu>
                             <li>
-                              <DropdownItem>
-                                Copy
-                              </DropdownItem>
+                              <DropdownItem>Copy</DropdownItem>
                             </li>
                             <li>
-                              <DropdownItem>
-                                Move to pipline
-                              </DropdownItem>
+                              <DropdownItem>Move to pipline</DropdownItem>
                             </li>
                             <li>
-                              <DropdownItem>
-                                Add to exceptions
-                              </DropdownItem>
+                              <DropdownItem>Add to exceptions</DropdownItem>
                             </li>
                             <li>
                               <DropdownItem>
@@ -512,7 +573,7 @@ const CrmLeads = () => {
                     {isLeadsSuccess && leads.length ? (
                       <TableContainer
                         columns={columns}
-                        data={(leads || [])}
+                        data={leads || []}
                         isGlobalFilter={false}
                         isAddUserList={false}
                         customPageSize={10}
@@ -522,22 +583,25 @@ const CrmLeads = () => {
                         theadClass="table-light"
                         handleLeadClick={handleLeadClicks}
                         isLeadsFilter={false}
-                        SearchPlaceholder='Search for'
+                        SearchPlaceholder="Search for"
                       />
-                    ) : (<Loader error={error} />)
-                    }
-
+                    ) : (
+                      <Loader error={error} />
+                    )}
                   </div>
 
                   <Modal id="showModal" isOpen={modal} toggle={toggle} centered>
                     <ModalHeader className="bg-light p-3" toggle={toggle}>
                       {!!isEdit ? "Edit Lead" : "Add Lead"}
                     </ModalHeader>
-                    <Form className="tablelist-form" onSubmit={(e) => {
-                      e.preventDefault();
-                      validation.handleSubmit();
-                      return false;
-                    }}>
+                    <Form
+                      className="tablelist-form"
+                      onSubmit={(e) => {
+                        e.preventDefault();
+                        validation.handleSubmit();
+                        return false;
+                      }}
+                    >
                       <ModalBody>
                         <Input type="hidden" id="id-field" />
                         <Row className="g-3">
@@ -545,26 +609,40 @@ const CrmLeads = () => {
                             <div className="text-center">
                               <div className="position-relative d-inline-block">
                                 <div className="position-absolute bottom-0 end-0">
-                                  <Label htmlFor="lead-image-input" className="mb-0">
+                                  <Label
+                                    htmlFor="lead-image-input"
+                                    className="mb-0"
+                                  >
                                     <div className="avatar-xs cursor-pointer">
                                       <div className="avatar-title bg-light border rounded-circle text-muted">
                                         <i className="ri-image-fill"></i>
                                       </div>
                                     </div>
                                   </Label>
-                                  <Input className="form-control d-none" id="lead-image-input" type="file"
+                                  <Input
+                                    className="form-control d-none"
+                                    id="lead-image-input"
+                                    type="file"
                                     accept="image/png, image/gif, image/jpeg"
                                     onChange={validation.handleChange}
                                     onBlur={validation.handleBlur}
                                     value={validation.values.img || ""}
                                     invalid={
-                                      validation.touched.img && validation.errors.img ? true : false
+                                      validation.touched.img &&
+                                      validation.errors.img
+                                        ? true
+                                        : false
                                     }
                                   />
                                 </div>
                                 <div className="avatar-lg p-1">
                                   <div className="avatar-title bg-light rounded-circle">
-                                    <img src={dummyImg} alt="dummyImg" id="lead-img" className="avatar-md rounded-circle object-cover" />
+                                    <img
+                                      src={dummyImg}
+                                      alt="dummyImg"
+                                      id="lead-img"
+                                      className="avatar-md rounded-circle object-cover"
+                                    />
                                   </div>
                                 </div>
                               </div>
@@ -590,11 +668,17 @@ const CrmLeads = () => {
                                 onBlur={validation.handleBlur}
                                 value={validation.values.name || ""}
                                 invalid={
-                                  validation.touched.name && validation.errors.name ? true : false
+                                  validation.touched.name &&
+                                  validation.errors.name
+                                    ? true
+                                    : false
                                 }
                               />
-                              {validation.touched.name && validation.errors.name ? (
-                                <FormFeedback type="invalid">{validation.errors.name}</FormFeedback>
+                              {validation.touched.name &&
+                              validation.errors.name ? (
+                                <FormFeedback type="invalid">
+                                  {validation.errors.name}
+                                </FormFeedback>
                               ) : null}
                             </div>
                           </Col>
@@ -619,11 +703,17 @@ const CrmLeads = () => {
                                 onBlur={validation.handleBlur}
                                 value={validation.values.company || ""}
                                 invalid={
-                                  validation.touched.company && validation.errors.company ? true : false
+                                  validation.touched.company &&
+                                  validation.errors.company
+                                    ? true
+                                    : false
                                 }
                               />
-                              {validation.touched.company && validation.errors.company ? (
-                                <FormFeedback type="invalid">{validation.errors.company}</FormFeedback>
+                              {validation.touched.company &&
+                              validation.errors.company ? (
+                                <FormFeedback type="invalid">
+                                  {validation.errors.company}
+                                </FormFeedback>
                               ) : null}
                             </div>
                           </Col>
@@ -648,11 +738,17 @@ const CrmLeads = () => {
                                 onBlur={validation.handleBlur}
                                 value={validation.values.score || ""}
                                 invalid={
-                                  validation.touched.score && validation.errors.score ? true : false
+                                  validation.touched.score &&
+                                  validation.errors.score
+                                    ? true
+                                    : false
                                 }
                               />
-                              {validation.touched.score && validation.errors.score ? (
-                                <FormFeedback type="invalid">{validation.errors.score}</FormFeedback>
+                              {validation.touched.score &&
+                              validation.errors.score ? (
+                                <FormFeedback type="invalid">
+                                  {validation.errors.score}
+                                </FormFeedback>
                               ) : null}
                             </div>
                           </Col>
@@ -677,11 +773,17 @@ const CrmLeads = () => {
                                 onBlur={validation.handleBlur}
                                 value={validation.values.phone || ""}
                                 invalid={
-                                  validation.touched.phone && validation.errors.phone ? true : false
+                                  validation.touched.phone &&
+                                  validation.errors.phone
+                                    ? true
+                                    : false
                                 }
                               />
-                              {validation.touched.phone && validation.errors.phone ? (
-                                <FormFeedback type="invalid">{validation.errors.phone}</FormFeedback>
+                              {validation.touched.phone &&
+                              validation.errors.phone ? (
+                                <FormFeedback type="invalid">
+                                  {validation.errors.phone}
+                                </FormFeedback>
                               ) : null}
                             </div>
                           </Col>
@@ -706,11 +808,17 @@ const CrmLeads = () => {
                                 onBlur={validation.handleBlur}
                                 value={validation.values.location || ""}
                                 invalid={
-                                  validation.touched.location && validation.errors.location ? true : false
+                                  validation.touched.location &&
+                                  validation.errors.location
+                                    ? true
+                                    : false
                                 }
                               />
-                              {validation.touched.location && validation.errors.location ? (
-                                <FormFeedback type="invalid">{validation.errors.location}</FormFeedback>
+                              {validation.touched.location &&
+                              validation.errors.location ? (
+                                <FormFeedback type="invalid">
+                                  {validation.errors.location}
+                                </FormFeedback>
                               ) : null}
                             </div>
                           </Col>
@@ -733,11 +841,10 @@ const CrmLeads = () => {
                                 options={tags}
                                 id="taginput-choices"
                                 defaultValue={validation.values.tags}
-                              >
-                              </Select>
+                              ></Select>
 
                               {validation.touched.tags &&
-                                validation.errors.tags ? (
+                              validation.errors.tags ? (
                                 <FormFeedback type="invalid">
                                   {validation.errors.tags}
                                 </FormFeedback>
@@ -763,13 +870,14 @@ const CrmLeads = () => {
                                   altFormat: "d M, Y",
                                   dateFormat: "d M, Y",
                                 }}
-                                onChange={(e) =>
-                                  dateformate(e)
-                                }
+                                onChange={(e) => dateformate(e)}
                                 value={validation.values.date || ""}
                               />
-                              {validation.touched.date && validation.errors.date ? (
-                                <FormFeedback type="invalid">{validation.errors.date}</FormFeedback>
+                              {validation.touched.date &&
+                              validation.errors.date ? (
+                                <FormFeedback type="invalid">
+                                  {validation.errors.date}
+                                </FormFeedback>
                               ) : null}
                             </div>
                           </Col>
@@ -777,8 +885,24 @@ const CrmLeads = () => {
                       </ModalBody>
                       <ModalFooter>
                         <div className="hstack gap-2 justify-content-end">
-                          <button type="button" className="btn btn-light" onClick={() => { setModal(false); }} > Close </button>
-                          <button type="submit" className="btn btn-success" id="add-btn"> {!!isEdit ? "Update" : "Add Lead"} </button>
+                          <button
+                            type="button"
+                            className="btn btn-light"
+                            onClick={() => {
+                              setModal(false);
+                            }}
+                          >
+                            {" "}
+                            Close{" "}
+                          </button>
+                          <button
+                            type="submit"
+                            className="btn btn-success"
+                            id="add-btn"
+                          >
+                            {" "}
+                            {!!isEdit ? "Update" : "Add Lead"}{" "}
+                          </button>
                         </div>
                       </ModalFooter>
                     </Form>
@@ -795,7 +919,7 @@ const CrmLeads = () => {
         show={isInfoDetails}
         onCloseClick={() => setIsInfoDetails(false)}
       />
-    </React.Fragment >
+    </React.Fragment>
   );
 };
 

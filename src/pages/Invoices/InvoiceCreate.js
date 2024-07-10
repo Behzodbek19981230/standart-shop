@@ -86,14 +86,13 @@ const InvoiceCreate = () => {
   const [charge, setCharge] = useState(0);
 
   useEffect(() => {
-    let tax = (0.125 * rate * count);
-    let dis = (0.15 * rate * count);
+    let tax = 0.125 * rate * count;
+    let dis = 0.15 * rate * count;
 
-    if ((rate && count) && isNaN !== 0) {
+    if (rate && count && isNaN !== 0) {
       setCharge(65);
     } else {
       setCharge(0);
-
     }
     setTax(tax);
     setDis(dis);
@@ -101,8 +100,27 @@ const InvoiceCreate = () => {
 
   const dateFormat = () => {
     let d = new Date(),
-      months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-    return ((d.getDate() + ' ' + months[d.getMonth()] + ', ' + d.getFullYear()).toString());
+      months = [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ];
+    return (
+      d.getDate() +
+      " " +
+      months[d.getMonth()] +
+      ", " +
+      d.getFullYear()
+    ).toString();
   };
 
   const [date, setDate] = useState(dateFormat());
@@ -113,9 +131,7 @@ const InvoiceCreate = () => {
     setDate(joinDate);
   };
 
-
-
-  document.title = "Create Invoice | Velzon - React Admin & Dashboard Template";
+  document.title = "Create Invoice | Standartlar onlayn do'koni";
 
   const validation = useFormik({
     enableReinitialize: true,
@@ -259,12 +275,19 @@ const InvoiceCreate = () => {
                             onBlur={validation.handleBlur}
                             onChange={validation.handleChange}
                             placeholder="Enter Postal Code"
-                            invalid={validation.errors.postalcode && validation.touched.postalcode ? true : false}
+                            invalid={
+                              validation.errors.postalcode &&
+                              validation.touched.postalcode
+                                ? true
+                                : false
+                            }
                           />
-                          {validation.errors.postalcode && validation.touched.postalcode ? (
-                            <FormFeedback type="invalid">{validation.errors.postalcode}</FormFeedback>
+                          {validation.errors.postalcode &&
+                          validation.touched.postalcode ? (
+                            <FormFeedback type="invalid">
+                              {validation.errors.postalcode}
+                            </FormFeedback>
                           ) : null}
-                          
                         </div>
                       </div>
                     </Col>
@@ -280,10 +303,18 @@ const InvoiceCreate = () => {
                           onChange={validation.handleChange}
                           maxLength="12"
                           placeholder="Legal Registration No"
-                          invalid={validation.errors.registration && validation.touched.registration ? true : false}
+                          invalid={
+                            validation.errors.registration &&
+                            validation.touched.registration
+                              ? true
+                              : false
+                          }
                         />
-                        {validation.errors.registration && validation.touched.registration ? (
-                          <FormFeedback type="invalid">{validation.errors.registration}</FormFeedback>
+                        {validation.errors.registration &&
+                        validation.touched.registration ? (
+                          <FormFeedback type="invalid">
+                            {validation.errors.registration}
+                          </FormFeedback>
                         ) : null}
                       </div>
                       <div className="mb-2">
@@ -296,12 +327,17 @@ const InvoiceCreate = () => {
                           onBlur={validation.handleBlur}
                           onChange={validation.handleChange}
                           placeholder="Email Address"
-                          invalid={validation.errors.email && validation.touched.email ? true : false}
+                          invalid={
+                            validation.errors.email && validation.touched.email
+                              ? true
+                              : false
+                          }
                         />
                         {validation.errors.email && validation.touched.email ? (
-                          <FormFeedback type="invalid">{validation.errors.email}</FormFeedback>
+                          <FormFeedback type="invalid">
+                            {validation.errors.email}
+                          </FormFeedback>
                         ) : null}
-                        
                       </div>
                       <div className="mb-2">
                         <Input
@@ -313,12 +349,19 @@ const InvoiceCreate = () => {
                           onBlur={validation.handleBlur}
                           onChange={validation.handleChange}
                           placeholder="Website"
-                          invalid={validation.errors.website && validation.touched.website ? true : false}
+                          invalid={
+                            validation.errors.website &&
+                            validation.touched.website
+                              ? true
+                              : false
+                          }
                         />
-                        {validation.errors.website && validation.touched.website ? (
-                          <FormFeedback type="invalid">{validation.errors.website}</FormFeedback>
+                        {validation.errors.website &&
+                        validation.touched.website ? (
+                          <FormFeedback type="invalid">
+                            {validation.errors.website}
+                          </FormFeedback>
                         ) : null}
-                        
                       </div>
                       <div>
                         <Input
@@ -331,12 +374,19 @@ const InvoiceCreate = () => {
                           onBlur={validation.handleBlur}
                           onChange={validation.handleChange}
                           placeholder="Contact No"
-                          invalid={validation.errors.contact && validation.touched.contact ? true : false}
+                          invalid={
+                            validation.errors.contact &&
+                            validation.touched.contact
+                              ? true
+                              : false
+                          }
                         />
-                        {validation.errors.contact && validation.touched.contact ? (
-                          <FormFeedback type="invalid">{validation.errors.contact}</FormFeedback>
+                        {validation.errors.contact &&
+                        validation.touched.contact ? (
+                          <FormFeedback type="invalid">
+                            {validation.errors.contact}
+                          </FormFeedback>
                         ) : null}
-                        
                       </div>
                     </Col>
                   </Row>
@@ -354,10 +404,18 @@ const InvoiceCreate = () => {
                         onBlur={validation.handleBlur}
                         onChange={validation.handleChange}
                         placeholder="Invoice No"
-                        invalid={validation.errors.invoiceId && validation.touched.invoiceId ? true : false}
+                        invalid={
+                          validation.errors.invoiceId &&
+                          validation.touched.invoiceId
+                            ? true
+                            : false
+                        }
                       />
-                      {validation.errors.invoiceId && validation.touched.invoiceId ? (
-                        <FormFeedback type="invalid">{validation.errors.invoiceId}</FormFeedback>
+                      {validation.errors.invoiceId &&
+                      validation.touched.invoiceId ? (
+                        <FormFeedback type="invalid">
+                          {validation.errors.invoiceId}
+                        </FormFeedback>
                       ) : null}
                     </Col>
                     <Col lg={3} sm={6}>
@@ -373,20 +431,19 @@ const InvoiceCreate = () => {
                             altFormat: "d M, Y",
                             dateFormat: "d M, Y",
                           }}
-                          onChange={(e) =>
-                            dateformate(e)
-                          }
+                          onChange={(e) => dateformate(e)}
                           value={validation.values.date || ""}
                         />
                         {validation.touched.date && validation.errors.date ? (
-                          <FormFeedback type="invalid">{validation.errors.date}</FormFeedback>
+                          <FormFeedback type="invalid">
+                            {validation.errors.date}
+                          </FormFeedback>
                         ) : null}
                       </div>
                     </Col>
                     <Col lg={3} sm={6}>
                       <Label for="choices-payment-status">Payment Status</Label>
                       <div className="input-light">
-
                         <Input
                           name="status"
                           type="select"
@@ -394,23 +451,24 @@ const InvoiceCreate = () => {
                           id="choices-payment-status"
                           onChange={validation.handleChange}
                           onBlur={validation.handleBlur}
-                          value={
-                            validation.values.status || ""
-                          }
+                          value={validation.values.status || ""}
                         >
                           {allstatus.map((item, key) => (
                             <React.Fragment key={key}>
-                              {item.options.map((item, key) => (<option value={item.value} key={key}>{item.label}</option>))}
+                              {item.options.map((item, key) => (
+                                <option value={item.value} key={key}>
+                                  {item.label}
+                                </option>
+                              ))}
                             </React.Fragment>
                           ))}
                         </Input>
                         {validation.touched.status &&
-                          validation.errors.status ? (
+                        validation.errors.status ? (
                           <FormFeedback type="invalid">
                             {validation.errors.status}
                           </FormFeedback>
                         ) : null}
-                      
                       </div>
                     </Col>
                     <Col lg={3} sm={6}>
@@ -422,7 +480,9 @@ const InvoiceCreate = () => {
                           id="totalamountInput"
                           placeholder="$0.00"
                           readOnly
-                          value={"$" + Math.round(rate * count + tax + charge - dis)}
+                          value={
+                            "$" + Math.round(rate * count + tax + charge - dis)
+                          }
                         />
                       </div>
                     </Col>
@@ -449,12 +509,17 @@ const InvoiceCreate = () => {
                           onBlur={validation.handleBlur}
                           onChange={validation.handleChange}
                           placeholder="Full Name"
-                          invalid={validation.errors.name && validation.touched.name ? true : false}
+                          invalid={
+                            validation.errors.name && validation.touched.name
+                              ? true
+                              : false
+                          }
                         />
                         {validation.errors.name && validation.touched.name ? (
-                          <FormFeedback type="invalid">{validation.errors.name}</FormFeedback>
+                          <FormFeedback type="invalid">
+                            {validation.errors.name}
+                          </FormFeedback>
                         ) : null}
-                        
                       </div>
                       <div className="mb-2">
                         <Input
@@ -467,12 +532,19 @@ const InvoiceCreate = () => {
                           onChange={validation.handleChange}
                           rows="3"
                           placeholder="Address"
-                          invalid={validation.errors.billing_address && validation.touched.billing_address ? true : false}
+                          invalid={
+                            validation.errors.billing_address &&
+                            validation.touched.billing_address
+                              ? true
+                              : false
+                          }
                         />
-                        {validation.errors.billing_address && validation.touched.billing_address ? (
-                          <FormFeedback type="invalid">{validation.errors.billing_address}</FormFeedback>
+                        {validation.errors.billing_address &&
+                        validation.touched.billing_address ? (
+                          <FormFeedback type="invalid">
+                            {validation.errors.billing_address}
+                          </FormFeedback>
                         ) : null}
-                        
                       </div>
                       <div className="mb-2">
                         <Input
@@ -485,12 +557,19 @@ const InvoiceCreate = () => {
                           onBlur={validation.handleBlur}
                           onChange={validation.handleChange}
                           placeholder="(123)456-7890"
-                          invalid={validation.errors.billing_phone && validation.touched.billing_phone ? true : false}
+                          invalid={
+                            validation.errors.billing_phone &&
+                            validation.touched.billing_phone
+                              ? true
+                              : false
+                          }
                         />
-                        {validation.errors.billing_phone && validation.touched.billing_phone ? (
-                          <FormFeedback type="invalid">{validation.errors.billing_phone}</FormFeedback>
+                        {validation.errors.billing_phone &&
+                        validation.touched.billing_phone ? (
+                          <FormFeedback type="invalid">
+                            {validation.errors.billing_phone}
+                          </FormFeedback>
                         ) : null}
-                       
                       </div>
                       <div className="mb-3">
                         <Input
@@ -502,12 +581,19 @@ const InvoiceCreate = () => {
                           onBlur={validation.handleBlur}
                           onChange={validation.handleChange}
                           placeholder="Tax Number"
-                          invalid={validation.errors.billing_taxno && validation.touched.billing_taxno ? true : false}
+                          invalid={
+                            validation.errors.billing_taxno &&
+                            validation.touched.billing_taxno
+                              ? true
+                              : false
+                          }
                         />
-                        {validation.errors.billing_taxno && validation.touched.billing_taxno ? (
-                          <FormFeedback type="invalid">{validation.errors.billing_taxno}</FormFeedback>
+                        {validation.errors.billing_taxno &&
+                        validation.touched.billing_taxno ? (
+                          <FormFeedback type="invalid">
+                            {validation.errors.billing_taxno}
+                          </FormFeedback>
                         ) : null}
-                        
                       </div>
                       <div className="form-check">
                         <Input
@@ -542,12 +628,19 @@ const InvoiceCreate = () => {
                               onBlur={validation.handleBlur}
                               onChange={validation.handleChange}
                               placeholder="Full Name"
-                              invalid={validation.errors.shipping_name && validation.touched.shipping_name ? true : false}
+                              invalid={
+                                validation.errors.shipping_name &&
+                                validation.touched.shipping_name
+                                  ? true
+                                  : false
+                              }
                             />
-                            {validation.errors.shipping_name && validation.touched.shipping_name ? (
-                              <FormFeedback type="invalid">{validation.errors.shipping_name}</FormFeedback>
+                            {validation.errors.shipping_name &&
+                            validation.touched.shipping_name ? (
+                              <FormFeedback type="invalid">
+                                {validation.errors.shipping_name}
+                              </FormFeedback>
                             ) : null}
-                            
                           </div>
                           <div className="mb-2">
                             <Input
@@ -560,12 +653,19 @@ const InvoiceCreate = () => {
                               onBlur={validation.handleBlur}
                               onChange={validation.handleChange}
                               placeholder="Address"
-                              invalid={validation.errors.shipping_address && validation.touched.shipping_address ? true : false}
+                              invalid={
+                                validation.errors.shipping_address &&
+                                validation.touched.shipping_address
+                                  ? true
+                                  : false
+                              }
                             />
-                            {validation.errors.shipping_address && validation.touched.shipping_address ? (
-                              <FormFeedback type="invalid">{validation.errors.shipping_address}</FormFeedback>
+                            {validation.errors.shipping_address &&
+                            validation.touched.shipping_address ? (
+                              <FormFeedback type="invalid">
+                                {validation.errors.shipping_address}
+                              </FormFeedback>
                             ) : null}
-                            
                           </div>
                           <div className="mb-2">
                             <Input
@@ -578,12 +678,19 @@ const InvoiceCreate = () => {
                               onBlur={validation.handleBlur}
                               onChange={validation.handleChange}
                               placeholder="(123)456-7890"
-                              invalid={validation.errors.shipping_phone && validation.touched.shipping_phone ? true : false}
+                              invalid={
+                                validation.errors.shipping_phone &&
+                                validation.touched.shipping_phone
+                                  ? true
+                                  : false
+                              }
                             />
-                            {validation.errors.shipping_phone && validation.touched.shipping_phone ? (
-                              <FormFeedback type="invalid">{validation.errors.shipping_phone}</FormFeedback>
+                            {validation.errors.shipping_phone &&
+                            validation.touched.shipping_phone ? (
+                              <FormFeedback type="invalid">
+                                {validation.errors.shipping_phone}
+                              </FormFeedback>
                             ) : null}
-                            
                           </div>
                           <div>
                             <Input
@@ -595,12 +702,19 @@ const InvoiceCreate = () => {
                               value={validation.values.shipping_taxno || ""}
                               onBlur={validation.handleBlur}
                               onChange={validation.handleChange}
-                              invalid={validation.errors.shipping_taxno && validation.touched.shipping_taxno ? true : false}
+                              invalid={
+                                validation.errors.shipping_taxno &&
+                                validation.touched.shipping_taxno
+                                  ? true
+                                  : false
+                              }
                             />
-                            {validation.errors.shipping_taxno && validation.touched.shipping_taxno ? (
-                              <FormFeedback type="invalid">{validation.errors.shipping_taxno}</FormFeedback>
+                            {validation.errors.shipping_taxno &&
+                            validation.touched.shipping_taxno ? (
+                              <FormFeedback type="invalid">
+                                {validation.errors.shipping_taxno}
+                              </FormFeedback>
                             ) : null}
-                            
                           </div>
                         </Col>
                       </Row>
@@ -663,12 +777,19 @@ const InvoiceCreate = () => {
                                 value={validation.values.product_name || ""}
                                 onBlur={validation.handleBlur}
                                 onChange={validation.handleChange}
-                                invalid={validation.errors.product_name && validation.touched.product_name ? true : false}
+                                invalid={
+                                  validation.errors.product_name &&
+                                  validation.touched.product_name
+                                    ? true
+                                    : false
+                                }
                               />
-                              {validation.errors.product_name && validation.touched.product_name ? (
-                                <FormFeedback type="invalid">{validation.errors.product_name}</FormFeedback>
+                              {validation.errors.product_name &&
+                              validation.touched.product_name ? (
+                                <FormFeedback type="invalid">
+                                  {validation.errors.product_name}
+                                </FormFeedback>
                               ) : null}
-                              
                             </div>
                             <Input
                               type="textarea"
@@ -683,7 +804,8 @@ const InvoiceCreate = () => {
                               type="number"
                               className="form-control product-price bg-light border-0"
                               placeholder="0.00"
-                              id="productRate-1" step="0.01"
+                              id="productRate-1"
+                              step="0.01"
                               onChange={(e) => {
                                 setRate(e.target.value);
                               }}
@@ -693,10 +815,14 @@ const InvoiceCreate = () => {
                             </div>
                           </td>
                           <td>
-
-
                             <div className="input-step">
-                              <button type="button" className="minus" onClick={() => setCount(count > 0 ? (count - 1) : count)}>
+                              <button
+                                type="button"
+                                className="minus"
+                                onClick={() =>
+                                  setCount(count > 0 ? count - 1 : count)
+                                }
+                              >
                                 –
                               </button>
                               <Input
@@ -706,12 +832,14 @@ const InvoiceCreate = () => {
                                 value={count}
                                 readOnly
                               />
-                              <button type="button" className="plus" onClick={() => setCount(count + 1)}>
+                              <button
+                                type="button"
+                                className="plus"
+                                onClick={() => setCount(count + 1)}
+                              >
                                 +
                               </button>
                             </div>
-
-
                           </td>
                           <td className="text-end">
                             <div>
@@ -733,7 +861,11 @@ const InvoiceCreate = () => {
                         </tr>
                       </tbody>
                       <tbody>
-                        <tr id="newForm" style={{ display: "none" }}><td className="d-none" colSpan="5"><p>Add New Form</p></td></tr>
+                        <tr id="newForm" style={{ display: "none" }}>
+                          <td className="d-none" colSpan="5">
+                            <p>Add New Form</p>
+                          </td>
+                        </tr>
                         <tr>
                           <td colSpan="5">
                             <Link
@@ -817,7 +949,12 @@ const InvoiceCreate = () => {
                                       id="cart-total"
                                       placeholder="$0.00"
                                       readOnly
-                                      value={"$" + Math.round(rate * count + tax + charge - dis)}
+                                      value={
+                                        "$" +
+                                        Math.round(
+                                          rate * count + tax + charge - dis
+                                        )
+                                      }
                                     />
                                   </td>
                                 </tr>

@@ -33,8 +33,8 @@ import { useSelector, useDispatch } from "react-redux";
 
 import Loader from "../../Components/Common/Loader";
 
-import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const InvoiceList = () => {
   const dispatch = useDispatch();
@@ -43,7 +43,6 @@ const InvoiceList = () => {
     isInvoiceSuccess: state.Invoice.isInvoiceSuccess,
     error: state.Invoice.error,
   }));
-
 
   //delete invoice
   const [deleteModal, setDeleteModal] = useState(false);
@@ -74,8 +73,7 @@ const InvoiceList = () => {
     }
   };
 
-
-  const handleValidDate = date => {
+  const handleValidDate = (date) => {
     const date1 = moment(new Date(date)).format("DD MMM Y");
     return date1;
   };
@@ -91,7 +89,8 @@ const InvoiceList = () => {
     } else {
       meridiem = "AM";
     }
-    const updateTime = moment(getTime, 'hh:mm').format('hh:mm') + " " + meridiem;
+    const updateTime =
+      moment(getTime, "hh:mm").format("hh:mm") + " " + meridiem;
     return updateTime;
   };
 
@@ -120,7 +119,9 @@ const InvoiceList = () => {
     const checkall = document.getElementById("checkBoxAll");
     selectedCheckBoxDelete.forEach((element) => {
       dispatch(onDeleteInvoice(element.value));
-      setTimeout(() => { toast.clearWaitingQueue(); }, 3000);
+      setTimeout(() => {
+        toast.clearWaitingQueue();
+      }, 3000);
     });
     setIsMultiDeleteButton(false);
     checkall.checked = false;
@@ -128,7 +129,9 @@ const InvoiceList = () => {
 
   const deleteCheckbox = () => {
     const ele = document.querySelectorAll(".invoiceCheckBox:checked");
-    ele.length > 0 ? setIsMultiDeleteButton(true) : setIsMultiDeleteButton(false);
+    ele.length > 0
+      ? setIsMultiDeleteButton(true)
+      : setIsMultiDeleteButton(false);
     setSelectedCheckBoxDelete(ele);
   };
 
@@ -136,18 +139,39 @@ const InvoiceList = () => {
   const columns = useMemo(
     () => [
       {
-        Header: <input type="checkbox" id="checkBoxAll" className="form-check-input" onClick={() => checkedAll()} />,
+        Header: (
+          <input
+            type="checkbox"
+            id="checkBoxAll"
+            className="form-check-input"
+            onClick={() => checkedAll()}
+          />
+        ),
         Cell: (cellProps) => {
-          return <input type="checkbox" className="invoiceCheckBox form-check-input" value={cellProps.row.original._id} onChange={() => deleteCheckbox()} />;
+          return (
+            <input
+              type="checkbox"
+              className="invoiceCheckBox form-check-input"
+              value={cellProps.row.original._id}
+              onChange={() => deleteCheckbox()}
+            />
+          );
         },
-        id: '#',
+        id: "#",
       },
       {
         Header: "ID",
         accessor: "invoiceId",
         filterable: false,
         Cell: (cell) => {
-          return <Link to="/apps-invoices-details" className="fw-medium link-primary">{cell.value}</Link>;
+          return (
+            <Link
+              to="/apps-invoices-details"
+              className="fw-medium link-primary"
+            >
+              {cell.value}
+            </Link>
+          );
         },
       },
       {
@@ -155,16 +179,28 @@ const InvoiceList = () => {
         Cell: (invoice) => (
           <>
             <div className="d-flex align-items-center">
-              {invoice.row.original.img ? <img
-                src={process.env.REACT_APP_API_URL + "/images/users/" + invoice.row.original.img}
-                alt=""
-                className="avatar-xs rounded-circle me-2"
-              /> :
+              {invoice.row.original.img ? (
+                <img
+                  src={
+                    process.env.REACT_APP_API_URL +
+                    "/images/users/" +
+                    invoice.row.original.img
+                  }
+                  alt=""
+                  className="avatar-xs rounded-circle me-2"
+                />
+              ) : (
                 <div className="flex-shrink-0 avatar-xs me-2">
                   <div className="avatar-title bg-soft-success text-success rounded-circle fs-13">
-                    {invoice.row.original.name.charAt(0) + invoice.row.original.name.split(" ").slice(-1).toString().charAt(0)}
+                    {invoice.row.original.name.charAt(0) +
+                      invoice.row.original.name
+                        .split(" ")
+                        .slice(-1)
+                        .toString()
+                        .charAt(0)}
                   </div>
-                </div>}
+                </div>
+              )}
               {invoice.row.original.name}
             </div>
           </>
@@ -185,7 +221,9 @@ const InvoiceList = () => {
         Cell: (invoice) => (
           <>
             {handleValidDate(invoice.row.original.date)},{" "}
-            <small className="text-muted">{handleValidTime(invoice.row.original.date)}</small>
+            <small className="text-muted">
+              {handleValidTime(invoice.row.original.date)}
+            </small>
           </>
         ),
       },
@@ -200,21 +238,41 @@ const InvoiceList = () => {
         Cell: (cell) => {
           switch (cell.value) {
             case "Paid":
-              return <span className="badge text-uppercase badge-soft-success"> {cell.value} </span>;
+              return (
+                <span className="badge text-uppercase badge-soft-success">
+                  {" "}
+                  {cell.value}{" "}
+                </span>
+              );
             case "Unpaid":
-              return <span className="badge text-uppercase badge-soft-success"> {cell.value} </span>;
+              return (
+                <span className="badge text-uppercase badge-soft-success">
+                  {" "}
+                  {cell.value}{" "}
+                </span>
+              );
             case "Cancel":
-              return <span className="badge text-uppercase badge-soft-danger"> {cell.value} </span>;
+              return (
+                <span className="badge text-uppercase badge-soft-danger">
+                  {" "}
+                  {cell.value}{" "}
+                </span>
+              );
             default:
-              return <span className="badge text-uppercase badge-soft-info"> {cell.value} </span>;
+              return (
+                <span className="badge text-uppercase badge-soft-info">
+                  {" "}
+                  {cell.value}{" "}
+                </span>
+              );
           }
-        }
+        },
       },
       {
         Header: "Action",
         Cell: (cellProps) => {
           return (
-            <UncontrolledDropdown >
+            <UncontrolledDropdown>
               <DropdownToggle
                 href="#"
                 className="btn btn-soft-secondary btn-sm dropdown"
@@ -242,7 +300,10 @@ const InvoiceList = () => {
 
                 <DropdownItem
                   href="#"
-                  onClick={() => { const invoiceData = cellProps.row.original; onClickDelete(invoiceData); }}
+                  onClick={() => {
+                    const invoiceData = cellProps.row.original;
+                    onClickDelete(invoiceData);
+                  }}
                 >
                   <i className="ri-delete-bin-fill align-bottom me-2 text-muted"></i>{" "}
                   Delete
@@ -256,7 +317,7 @@ const InvoiceList = () => {
     [checkedAll]
   );
 
-  document.title = "Invoice List | Velzon - React Admin & Dashboard Template";
+  document.title = "Invoice List | Standartlar onlayn do'koni";
 
   return (
     <React.Fragment>
@@ -344,15 +405,20 @@ const InvoiceList = () => {
                     <h5 className="card-title mb-0 flex-grow-1">Invoices</h5>
                     <div className="flex-shrink-0">
                       <div className="d-flex gap-2 flex-wrap">
-                        {isMultiDeleteButton && <button className="btn btn-primary me-1"
-                          onClick={() => setDeleteModalMulti(true)}
-                        ><i className="ri-delete-bin-2-line"></i></button>}
+                        {isMultiDeleteButton && (
+                          <button
+                            className="btn btn-primary me-1"
+                            onClick={() => setDeleteModalMulti(true)}
+                          >
+                            <i className="ri-delete-bin-2-line"></i>
+                          </button>
+                        )}
                         <Link
                           to="/apps-invoices-create"
                           className="btn btn-danger"
                         >
-                          <i className="ri-add-line align-bottom me-1"></i> Create
-                          Invoice
+                          <i className="ri-add-line align-bottom me-1"></i>{" "}
+                          Create Invoice
                         </Link>
                       </div>
                     </div>
@@ -363,17 +429,18 @@ const InvoiceList = () => {
                     {isInvoiceSuccess && invoices.length ? (
                       <TableContainer
                         columns={columns}
-                        data={(invoices || [])}
+                        data={invoices || []}
                         isGlobalFilter={true}
                         isAddUserList={false}
                         customPageSize={10}
                         className="custom-header-css"
                         isInvoiceListFilter={true}
                         theadClass="text-muted text-uppercase"
-                        SearchPlaceholder='Search for customer, email, country, status or something...'
+                        SearchPlaceholder="Search for customer, email, country, status or something..."
                       />
-                    ) : (<Loader error={error} />)
-                    }
+                    ) : (
+                      <Loader error={error} />
+                    )}
                     <ToastContainer closeButton={false} limit={1} />
                   </div>
                 </CardBody>

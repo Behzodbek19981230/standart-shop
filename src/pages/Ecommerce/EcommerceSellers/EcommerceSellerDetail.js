@@ -47,7 +47,7 @@ const EcommerceSellerDetail = () => {
     if (products && !products.length) {
       dispatch(onGetProducts());
     }
-  }, [dispatch,products]);
+  }, [dispatch, products]);
 
   useEffect(() => {
     setProductList(products);
@@ -58,7 +58,7 @@ const EcommerceSellerDetail = () => {
       {
         Header: "#",
         Cell: () => {
-          return <input type="checkbox" className="form-check-input"/>;
+          return <input type="checkbox" className="form-check-input" />;
         },
       },
       {
@@ -69,7 +69,11 @@ const EcommerceSellerDetail = () => {
               <div className="flex-shrink-0 me-3">
                 <div className="avatar-sm bg-light rounded p-1">
                   <img
-                    src={process.env.REACT_APP_API_URL + "/images/products/" + product.row.original.image}
+                    src={
+                      process.env.REACT_APP_API_URL +
+                      "/images/products/" +
+                      product.row.original.image
+                    }
                     alt=""
                     className="img-fluid d-block"
                   />
@@ -172,7 +176,7 @@ const EcommerceSellerDetail = () => {
     ],
     []
   );
-document.title ="Sellers Details | Velzon - React Admin & Dashboard Template";
+  document.title = "Sellers Details | Standartlar onlayn do'koni";
 
   return (
     <React.Fragment>
@@ -470,12 +474,10 @@ document.title ="Sellers Details | Velzon - React Admin & Dashboard Template";
               </Row>
               <Card>
                 <CardBody>
-                  <div
-                    className="table-card gridjs-border-none pb-2"
-                  >
+                  <div className="table-card gridjs-border-none pb-2">
                     <TableContainer
                       columns={columns}
-                      data={(productList || [])}
+                      data={productList || []}
                       isGlobalFilter={false}
                       isAddUserList={false}
                       customPageSize={10}

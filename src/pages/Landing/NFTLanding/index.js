@@ -17,7 +17,7 @@ import Reviews from "./reviews";
 import Contact from "./contact";
 
 const index = () => {
-  document.title = " Landing | Velzon - React Admin & Dashboard Template";
+  document.title = " Landing | Standartlar onlayn do'koni";
 
   window.onscroll = function () {
     scrollFunction();

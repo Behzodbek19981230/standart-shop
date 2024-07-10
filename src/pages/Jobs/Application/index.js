@@ -15,7 +15,7 @@ import {
   ModalBody,
   Label,
   Button,
-  NavLink
+  NavLink,
 } from "reactstrap";
 import Select from "react-select";
 import Flatpickr from "react-flatpickr";
@@ -26,16 +26,10 @@ import { useSelector, useDispatch } from "react-redux";
 import { getApplicationList } from "../../../slices/thunks";
 import TableContainer from "../../../Components/Common/TableContainer";
 import { Link } from "react-router-dom";
-import {
-  AppId,
-  Designation,
-  Contact,
-  Status,
-  Type,
-} from "./ApplicationCol";
+import { AppId, Designation, Contact, Status, Type } from "./ApplicationCol";
 import MultiUser from "../../../assets/images/users/multi-user.jpg";
 const Application = () => {
-  document.title = "Application | Velzon - React Admin & Dashboard Template";
+  document.title = "Application | Standartlar onlayn do'koni";
 
   const option = [
     {
@@ -310,7 +304,7 @@ const Application = () => {
                             type="button"
                             color="primary"
                             className="btn w-100"
-                          // onclick=""
+                            // onclick=""
                           >
                             {" "}
                             <i className="ri-equalizer-fill me-1 align-bottom"></i>
@@ -415,7 +409,11 @@ const Application = () => {
                         centered={true}
                         className="modal-content"
                       >
-                        <Form action="#" autoComplete="off" className="tablelist-form">
+                        <Form
+                          action="#"
+                          autoComplete="off"
+                          className="tablelist-form"
+                        >
                           <ModalBody className="modal-body">
                             <Input type="hidden" id="id-field" />
 

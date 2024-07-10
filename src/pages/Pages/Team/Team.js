@@ -47,7 +47,7 @@ import * as Yup from "yup";
 import { useFormik } from "formik";
 
 const Team = () => {
-  document.title = "Team | Velzon - React Admin & Dashboard Template";
+  document.title = "Team | Standartlar onlayn do'koni";
 
   const dispatch = useDispatch();
 

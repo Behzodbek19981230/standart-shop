@@ -1,9 +1,9 @@
 import React from "react";
 import { Row, Col, Card, CardBody, Container, CardHeader } from "reactstrap";
-import BreadCrumb from '../../../Components/Common/BreadCrumb';
+import BreadCrumb from "../../../Components/Common/BreadCrumb";
 
 const IconBoxicons = () => {
-  document.title = "Box Icons | Velzon - React Admin & Dashboard Template";
+  document.title = "Box Icons | Standartlar onlayn do'koni";
   return (
     <React.Fragment>
       <div className="page-content">
@@ -14,10 +14,15 @@ const IconBoxicons = () => {
               <Card>
                 <CardHeader>
                   <h4 className="card-title">Examples</h4>
-                  <p className="text-muted mb-0">Use <code>&lt;i className="bx bx-**"{'>'}&lt;/i{'>'}</code> class.</p>
+                  <p className="text-muted mb-0">
+                    Use{" "}
+                    <code>
+                      &lt;i className="bx bx-**"{">"}&lt;/i{">"}
+                    </code>{" "}
+                    class.
+                  </p>
                 </CardHeader>
                 <CardBody>
-
                   <h5>Regular</h5>
                   <Row className="icon-demo-content">
                     <div className="col-xl-3 col-lg-4 col-sm-6">
@@ -45,10 +50,12 @@ const IconBoxicons = () => {
                       <i className="bx bx-circle-half"></i> bx bx-circle-half
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-circle-three-quarter"></i> bx bx-circle-three-quarter
+                      <i className="bx bx-circle-three-quarter"></i> bx
+                      bx-circle-three-quarter
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-circle-quarter"></i> bx bx-circle-quarter
+                      <i className="bx bx-circle-quarter"></i> bx
+                      bx-circle-quarter
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-bowl-rice"></i> bx bx-bowl-rice
@@ -63,10 +70,12 @@ const IconBoxicons = () => {
                       <i className="bx bx-cross"></i> bx bx-cross
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-scatter-chart"></i> bx bx-scatter-chart
+                      <i className="bx bx-scatter-chart"></i> bx
+                      bx-scatter-chart
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-money-withdraw"></i> bx bx-money-withdraw
+                      <i className="bx bx-money-withdraw"></i> bx
+                      bx-money-withdraw
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-candles"></i> bx bx-candles
@@ -84,16 +93,20 @@ const IconBoxicons = () => {
                       <i className="bx bx-injection"></i> bx bx-injection
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-expand-vertical"></i> bx bx-expand-vertical
+                      <i className="bx bx-expand-vertical"></i> bx
+                      bx-expand-vertical
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-expand-horizontal"></i> bx bx-expand-horizontal
+                      <i className="bx bx-expand-horizontal"></i> bx
+                      bx-expand-horizontal
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-collapse-vertical"></i> bx bx-collapse-vertical
+                      <i className="bx bx-collapse-vertical"></i> bx
+                      bx-collapse-vertical
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-collapse-horizontal"></i> bx bx-collapse-horizontal
+                      <i className="bx bx-collapse-horizontal"></i> bx
+                      bx-collapse-horizontal
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-collapse-alt"></i> bx bx-collapse-alt
@@ -108,7 +121,8 @@ const IconBoxicons = () => {
                       <i className="bx bx-podcast"></i> bx bx-podcast
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-checkbox-minus"></i> bx bx-checkbox-minus
+                      <i className="bx bx-checkbox-minus"></i> bx
+                      bx-checkbox-minus
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-speaker"></i> bx bx-speaker
@@ -126,13 +140,15 @@ const IconBoxicons = () => {
                       <i className="bx bx-store-alt"></i> bx bx-store-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-bar-chart-alt-2"></i> bx bx-bar-chart-alt-2
+                      <i className="bx bx-bar-chart-alt-2"></i> bx
+                      bx-bar-chart-alt-2
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-message-dots"></i> bx bx-message-dots
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-message-rounded-dots"></i> bx bx-message-rounded-dots
+                      <i className="bx bx-message-rounded-dots"></i> bx
+                      bx-message-rounded-dots
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-memory-card"></i> bx bx-memory-card
@@ -144,10 +160,12 @@ const IconBoxicons = () => {
                       <i className="bx bx-slideshow"></i> bx bx-slideshow
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-message-square"></i> bx bx-message-square
+                      <i className="bx bx-message-square"></i> bx
+                      bx-message-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-message-square-dots"></i> bx bx-message-square-dots
+                      <i className="bx bx-message-square-dots"></i> bx
+                      bx-message-square-dots
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-book-content"></i> bx bx-book-content
@@ -168,13 +186,15 @@ const IconBoxicons = () => {
                       <i className="bx bx-notepad"></i> bx bx-notepad
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-video-recording"></i> bx bx-video-recording
+                      <i className="bx bx-video-recording"></i> bx
+                      bx-video-recording
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-shape-square"></i> bx bx-shape-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-shape-triangle"></i> bx bx-shape-triangle
+                      <i className="bx bx-shape-triangle"></i> bx
+                      bx-shape-triangle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-ghost"></i> bx bx-ghost
@@ -222,19 +242,23 @@ const IconBoxicons = () => {
                       <i className="bx bx-lock-alt"></i> bx bx-lock-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-lock-open-alt"></i> bx bx-lock-open-alt
+                      <i className="bx bx-lock-open-alt"></i> bx
+                      bx-lock-open-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-left-arrow-alt"></i> bx bx-left-arrow-alt
+                      <i className="bx bx-left-arrow-alt"></i> bx
+                      bx-left-arrow-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-right-arrow-alt"></i> bx bx-right-arrow-alt
+                      <i className="bx bx-right-arrow-alt"></i> bx
+                      bx-right-arrow-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-up-arrow-alt"></i> bx bx-up-arrow-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-down-arrow-alt"></i> bx bx-down-arrow-alt
+                      <i className="bx bx-down-arrow-alt"></i> bx
+                      bx-down-arrow-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-shape-circle"></i> bx bx-shape-circle
@@ -273,7 +297,8 @@ const IconBoxicons = () => {
                       <i className="bx bx-square"></i> bx bx-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-square-rounded"></i> bx bx-square-rounded
+                      <i className="bx bx-square-rounded"></i> bx
+                      bx-square-rounded
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-polygon"></i> bx bx-polygon
@@ -288,19 +313,24 @@ const IconBoxicons = () => {
                       <i className="bx bx-user-voice"></i> bx bx-user-voice
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-accessibility"></i> bx bx-accessibility
+                      <i className="bx bx-accessibility"></i> bx
+                      bx-accessibility
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-building-house"></i> bx bx-building-house
+                      <i className="bx bx-building-house"></i> bx
+                      bx-building-house
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-doughnut-chart"></i> bx bx-doughnut-chart
+                      <i className="bx bx-doughnut-chart"></i> bx
+                      bx-doughnut-chart
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-log-in-circle"></i> bx bx-log-in-circle
+                      <i className="bx bx-log-in-circle"></i> bx
+                      bx-log-in-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-log-out-circle"></i> bx bx-log-out-circle
+                      <i className="bx bx-log-out-circle"></i> bx
+                      bx-log-out-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-check-square"></i> bx bx-check-square
@@ -309,7 +339,8 @@ const IconBoxicons = () => {
                       <i className="bx bx-message-alt"></i> bx bx-message-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-message-alt-dots"></i> bx bx-message-alt-dots
+                      <i className="bx bx-message-alt-dots"></i> bx
+                      bx-message-alt-dots
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-no-entry"></i> bx bx-no-entry
@@ -321,7 +352,8 @@ const IconBoxicons = () => {
                       <i className="bx bx-basket"></i> bx bx-basket
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-purchase-tag-alt"></i> bx bx-purchase-tag-alt
+                      <i className="bx bx-purchase-tag-alt"></i> bx
+                      bx-purchase-tag-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-receipt"></i> bx bx-receipt
@@ -339,13 +371,15 @@ const IconBoxicons = () => {
                       <i className="bx bx-band-aid"></i> bx bx-band-aid
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-credit-card-alt"></i> bx bx-credit-card-alt
+                      <i className="bx bx-credit-card-alt"></i> bx
+                      bx-credit-card-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-wifi-off"></i> bx bx-wifi-off
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-brightness-half"></i> bx bx-brightness-half
+                      <i className="bx bx-brightness-half"></i> bx
+                      bx-brightness-half
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-brightness"></i> bx bx-brightness
@@ -366,28 +400,33 @@ const IconBoxicons = () => {
                       <i className="bx bx-border-top"></i> bx bx-border-top
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-border-bottom"></i> bx bx-border-bottom
+                      <i className="bx bx-border-bottom"></i> bx
+                      bx-border-bottom
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-border-all"></i> bx bx-border-all
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-mobile-landscape"></i> bx bx-mobile-landscape
+                      <i className="bx bx-mobile-landscape"></i> bx
+                      bx-mobile-landscape
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-mobile-vibration"></i> bx bx-mobile-vibration
+                      <i className="bx bx-mobile-vibration"></i> bx
+                      bx-mobile-vibration
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-gas-pump"></i> bx bx-gas-pump
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-pie-chart-alt-2"></i> bx bx-pie-chart-alt-2
+                      <i className="bx bx-pie-chart-alt-2"></i> bx
+                      bx-pie-chart-alt-2
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-time-five"></i> bx bx-time-five
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-briefcase-alt-2"></i> bx bx-briefcase-alt-2
+                      <i className="bx bx-briefcase-alt-2"></i> bx
+                      bx-briefcase-alt-2
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-brush-alt"></i> bx bx-brush-alt
@@ -429,7 +468,8 @@ const IconBoxicons = () => {
                       <i className="bx bx-check-shield"></i> bx bx-check-shield
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-border-radius"></i> bx bx-border-radius
+                      <i className="bx bx-border-radius"></i> bx
+                      bx-border-radius
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-add-to-queue"></i> bx bx-add-to-queue
@@ -543,7 +583,8 @@ const IconBoxicons = () => {
                       <i className="bx bx-angry"></i> bx bx-angry
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-happy-heart-eyes"></i> bx bx-happy-heart-eyes
+                      <i className="bx bx-happy-heart-eyes"></i> bx
+                      bx-happy-heart-eyes
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-dizzy"></i> bx bx-dizzy
@@ -561,7 +602,8 @@ const IconBoxicons = () => {
                       <i className="bx bx-shocked"></i> bx bx-shocked
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-happy-beaming"></i> bx bx-happy-beaming
+                      <i className="bx bx-happy-beaming"></i> bx
+                      bx-happy-beaming
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-meh-blank"></i> bx bx-meh-blank
@@ -618,13 +660,15 @@ const IconBoxicons = () => {
                       <i className="bx bx-captions"></i> bx bx-captions
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-checkbox-checked"></i> bx bx-checkbox-checked
+                      <i className="bx bx-checkbox-checked"></i> bx
+                      bx-checkbox-checked
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-checkbox"></i> bx bx-checkbox
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-checkbox-square"></i> bx bx-checkbox-square
+                      <i className="bx bx-checkbox-square"></i> bx
+                      bx-checkbox-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-chevron-down"></i> bx bx-chevron-down
@@ -636,19 +680,23 @@ const IconBoxicons = () => {
                       <i className="bx bx-chevron-left"></i> bx bx-chevron-left
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-chevron-right"></i> bx bx-chevron-right
+                      <i className="bx bx-chevron-right"></i> bx
+                      bx-chevron-right
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-chevrons-down"></i> bx bx-chevrons-down
+                      <i className="bx bx-chevrons-down"></i> bx
+                      bx-chevrons-down
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-chevrons-up"></i> bx bx-chevrons-up
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-chevrons-right"></i> bx bx-chevrons-right
+                      <i className="bx bx-chevrons-right"></i> bx
+                      bx-chevrons-right
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-chevrons-left"></i> bx bx-chevrons-left
+                      <i className="bx bx-chevrons-left"></i> bx
+                      bx-chevrons-left
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-clipboard"></i> bx bx-clipboard
@@ -669,7 +717,8 @@ const IconBoxicons = () => {
                       <i className="bx bx-copyright"></i> bx bx-copyright
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-down-arrow-circle"></i> bx bx-down-arrow-circle
+                      <i className="bx bx-down-arrow-circle"></i> bx
+                      bx-down-arrow-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-error-circle"></i> bx bx-error-circle
@@ -678,10 +727,12 @@ const IconBoxicons = () => {
                       <i className="bx bx-error"></i> bx bx-error
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-exit-fullscreen"></i> bx bx-exit-fullscreen
+                      <i className="bx bx-exit-fullscreen"></i> bx
+                      bx-exit-fullscreen
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-fast-forward-circle"></i> bx bx-fast-forward-circle
+                      <i className="bx bx-fast-forward-circle"></i> bx
+                      bx-fast-forward-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-fast-forward"></i> bx bx-fast-forward
@@ -711,7 +762,8 @@ const IconBoxicons = () => {
                       <i className="bx bx-info-circle"></i> bx bx-info-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-align-justify"></i> bx bx-align-justify
+                      <i className="bx bx-align-justify"></i> bx
+                      bx-align-justify
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-key"></i> bx bx-key
@@ -720,16 +772,19 @@ const IconBoxicons = () => {
                       <i className="bx bx-last-page"></i> bx bx-last-page
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-left-arrow-circle"></i> bx bx-left-arrow-circle
+                      <i className="bx bx-left-arrow-circle"></i> bx
+                      bx-left-arrow-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-left-down-arrow-circle"></i> bx bx-left-down-arrow-circle
+                      <i className="bx bx-left-down-arrow-circle"></i> bx
+                      bx-left-down-arrow-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-left-indent"></i> bx bx-left-indent
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-left-top-arrow-circle"></i> bx bx-left-top-arrow-circle
+                      <i className="bx bx-left-top-arrow-circle"></i> bx
+                      bx-left-top-arrow-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-menu"></i> bx bx-menu
@@ -759,10 +814,12 @@ const IconBoxicons = () => {
                       <i className="bx bx-plus-circle"></i> bx bx-plus-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-question-mark"></i> bx bx-question-mark"
+                      <i className="bx bx-question-mark"></i> bx
+                      bx-question-mark"
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-radio-circle-marked"></i> bx bx-radio-circle-marked
+                      <i className="bx bx-radio-circle-marked"></i> bx
+                      bx-radio-circle-marked
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-radio-circle"></i> bx bx-radio-circle
@@ -777,16 +834,19 @@ const IconBoxicons = () => {
                       <i className="bx bx-reset"></i> bx bx-reset
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-right-arrow-circle"></i> bx bx-right-arrow-circle
+                      <i className="bx bx-right-arrow-circle"></i> bx
+                      bx-right-arrow-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-right-down-arrow-circle"></i> bx bx-right-down-arrow-circle
+                      <i className="bx bx-right-down-arrow-circle"></i> bx
+                      bx-right-down-arrow-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-right-indent"></i> bx bx-right-indent
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-right-top-arrow-circle"></i> bx bx-right-top-arrow-circle
+                      <i className="bx bx-right-top-arrow-circle"></i> bx
+                      bx-right-top-arrow-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-rss"></i> bx bx-rss
@@ -801,7 +861,8 @@ const IconBoxicons = () => {
                       <i className="bx bx-skip-next"></i> bx bx-skip-next
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-skip-previous"></i> bx bx-skip-previous
+                      <i className="bx bx-skip-previous"></i> bx
+                      bx-skip-previous
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-stop-circle"></i> bx bx-stop-circle
@@ -825,16 +886,19 @@ const IconBoxicons = () => {
                       <i className="bx bx-toggle-right"></i> bx bx-toggle-right
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-trending-down"></i> bx bx-trending-down
+                      <i className="bx bx-trending-down"></i> bx
+                      bx-trending-down
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-trending-up"></i> bx bx-trending-up
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-up-arrow-circle"></i> bx bx-up-arrow-circle
+                      <i className="bx bx-up-arrow-circle"></i> bx
+                      bx-up-arrow-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-vertical-center"></i> bx bx-vertical-center
+                      <i className="bx bx-vertical-center"></i> bx
+                      bx-vertical-center
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-video"></i> bx bx-video
@@ -867,10 +931,12 @@ const IconBoxicons = () => {
                       <i className="bx bx-at"></i> bx bx-at
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-bar-chart-alt"></i> bx bx-bar-chart-alt
+                      <i className="bx bx-bar-chart-alt"></i> bx
+                      bx-bar-chart-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-bar-chart-square"></i> bx bx-bar-chart-square
+                      <i className="bx bx-bar-chart-square"></i> bx
+                      bx-bar-chart-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-bar-chart"></i> bx bx-bar-chart
@@ -882,16 +948,19 @@ const IconBoxicons = () => {
                       <i className="bx bx-block"></i> bx bx-block
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-book-bookmark"></i> bx bx-book-bookmark
+                      <i className="bx bx-book-bookmark"></i> bx
+                      bx-book-bookmark
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-book"></i> bx bx-book
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-bookmark-minus"></i> bx bx-bookmark-minus
+                      <i className="bx bx-bookmark-minus"></i> bx
+                      bx-bookmark-minus
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-bookmark-plus"></i> bx bx-bookmark-plus
+                      <i className="bx bx-bookmark-plus"></i> bx
+                      bx-bookmark-plus
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-briefcase"></i> bx bx-briefcase
@@ -915,13 +984,16 @@ const IconBoxicons = () => {
                       <i className="bx bx-buoy"></i> bx bx-buoy
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-calendar-plus"></i> bx bx-calendar-plus
+                      <i className="bx bx-calendar-plus"></i> bx
+                      bx-calendar-plus
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-calendar-check"></i> bx bx-calendar-check
+                      <i className="bx bx-calendar-check"></i> bx
+                      bx-calendar-check
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-calendar-minus"></i> bx bx-calendar-minus
+                      <i className="bx bx-calendar-minus"></i> bx
+                      bx-calendar-minus
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-calendar-x"></i> bx bx-calendar-x
@@ -933,7 +1005,8 @@ const IconBoxicons = () => {
                       <i className="bx bx-chart"></i> bx bx-chart
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-cloud-download"></i> bx bx-cloud-download
+                      <i className="bx bx-cloud-download"></i> bx
+                      bx-cloud-download
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-cloud-upload"></i> bx bx-cloud-upload
@@ -963,16 +1036,20 @@ const IconBoxicons = () => {
                       <i className="bx bx-dollar"></i> bx bx-dollar
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-dots-horizontal-rounded"></i> bx bx-dots-horizontal-rounded
+                      <i className="bx bx-dots-horizontal-rounded"></i> bx
+                      bx-dots-horizontal-rounded
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-dots-horizontal"></i> bx bx-dots-horizontal
+                      <i className="bx bx-dots-horizontal"></i> bx
+                      bx-dots-horizontal
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-dots-vertical-rounded"></i> bx bx-dots-vertical-rounded
+                      <i className="bx bx-dots-vertical-rounded"></i> bx
+                      bx-dots-vertical-rounded
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-dots-vertical"></i> bx bx-dots-vertical
+                      <i className="bx bx-dots-vertical"></i> bx
+                      bx-dots-vertical
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-download"></i> bx bx-download
@@ -1032,7 +1109,8 @@ const IconBoxicons = () => {
                       <i className="bx bx-map"></i> bx bx-map
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-message-rounded"></i> bx bx-message-rounded
+                      <i className="bx bx-message-rounded"></i> bx
+                      bx-message-rounded
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-message"></i> bx bx-message
@@ -1137,13 +1215,16 @@ const IconBoxicons = () => {
                       <i className="bx bx-check"></i> bx bx-check
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-cloud-drizzle"></i> bx bx-cloud-drizzle
+                      <i className="bx bx-cloud-drizzle"></i> bx
+                      bx-cloud-drizzle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-cloud-light-rain"></i> bx bx-cloud-light-rain
+                      <i className="bx bx-cloud-light-rain"></i> bx
+                      bx-cloud-light-rain
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-cloud-lightning"></i> bx bx-cloud-lightning
+                      <i className="bx bx-cloud-lightning"></i> bx
+                      bx-cloud-lightning
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-cloud-rain"></i> bx bx-cloud-rain
@@ -1173,7 +1254,8 @@ const IconBoxicons = () => {
                       <i className="bx bx-detail"></i> bx bx-detail
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-shield-quarter"></i> bx bx-shield-quarter
+                      <i className="bx bx-shield-quarter"></i> bx
+                      bx-shield-quarter
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-edit"></i> bx bx-edit
@@ -1200,10 +1282,12 @@ const IconBoxicons = () => {
                       <i className="bx bx-git-merge"></i> bx bx-git-merge
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-git-pull-request"></i> bx bx-git-pull-request
+                      <i className="bx bx-git-pull-request"></i> bx
+                      bx-git-pull-request
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-git-repo-forked"></i> bx bx-git-repo-forked
+                      <i className="bx bx-git-repo-forked"></i> bx
+                      bx-git-repo-forked
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-group"></i> bx bx-group
@@ -1224,7 +1308,8 @@ const IconBoxicons = () => {
                       <i className="bx bx-joystick"></i> bx bx-joystick
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-link-external"></i> bx bx-link-external
+                      <i className="bx bx-link-external"></i> bx
+                      bx-link-external
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-log-in"></i> bx bx-log-in
@@ -1233,7 +1318,8 @@ const IconBoxicons = () => {
                       <i className="bx bx-log-out"></i> bx bx-log-out
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-microphone-off"></i> bx bx-microphone-off
+                      <i className="bx bx-microphone-off"></i> bx
+                      bx-microphone-off
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-minus"></i> bx bx-minus
@@ -1281,7 +1367,8 @@ const IconBoxicons = () => {
                       <i className="bx bx-screenshot"></i> bx bx-screenshot
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-select-multiple"></i> bx bx-select-multiple
+                      <i className="bx bx-select-multiple"></i> bx
+                      bx-select-multiple
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-share-alt"></i> bx bx-share-alt
@@ -1401,10 +1488,12 @@ const IconBoxicons = () => {
                       <i className="bx bx-right-arrow"></i> bx bx-right-arrow
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-subdirectory-left"></i> bx bx-subdirectory-left
+                      <i className="bx bx-subdirectory-left"></i> bx
+                      bx-subdirectory-left
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-subdirectory-right"></i> bx bx-subdirectory-right
+                      <i className="bx bx-subdirectory-right"></i> bx
+                      bx-subdirectory-right
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-support"></i> bx bx-support
@@ -1449,7 +1538,8 @@ const IconBoxicons = () => {
                       <i className="bx bx-ruler"></i> bx bx-ruler
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-horizontal-center"></i> bx bx-horizontal-center
+                      <i className="bx bx-horizontal-center"></i> bx
+                      bx-horizontal-center
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-rotate-right"></i> bx bx-rotate-right
@@ -1461,10 +1551,12 @@ const IconBoxicons = () => {
                       <i className="bx bx-collapse"></i> bx bx-collapse
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-phone-incoming"></i> bx bx-phone-incoming
+                      <i className="bx bx-phone-incoming"></i> bx
+                      bx-phone-incoming
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-phone-outgoing"></i> bx bx-phone-outgoing
+                      <i className="bx bx-phone-outgoing"></i> bx
+                      bx-phone-outgoing
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-body"></i> bx bx-body
@@ -1476,10 +1568,12 @@ const IconBoxicons = () => {
                       <i className="bx bx-chip"></i> bx bx-chip
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-skip-next-circle"></i> bx bx-skip-next-circle
+                      <i className="bx bx-skip-next-circle"></i> bx
+                      bx-skip-next-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-skip-previous-circle"></i> bx bx-skip-previous-circle
+                      <i className="bx bx-skip-previous-circle"></i> bx
+                      bx-skip-previous-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-hdd"></i> bx bx-hdd
@@ -1500,7 +1594,8 @@ const IconBoxicons = () => {
                       <i className="bx bx-news"></i> bx bx-news
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-pie-chart-alt"></i> bx bx-pie-chart-alt
+                      <i className="bx bx-pie-chart-alt"></i> bx
+                      bx-pie-chart-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-images"></i> bx bx-images
@@ -1533,7 +1628,8 @@ const IconBoxicons = () => {
                       <i className="bx bx-wallet"></i> bx bx-wallet
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-briefcase-alt"></i> bx bx-briefcase-alt
+                      <i className="bx bx-briefcase-alt"></i> bx
+                      bx-briefcase-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-hourglass"></i> bx bx-hourglass
@@ -1548,7 +1644,8 @@ const IconBoxicons = () => {
                       <i className="bx bx-plug"></i> bx bx-plug
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-notification-off"></i> bx bx-notification-off
+                      <i className="bx bx-notification-off"></i> bx
+                      bx-notification-off
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-window-close"></i> bx bx-window-close
@@ -1602,7 +1699,8 @@ const IconBoxicons = () => {
                       <i className="bx bx-wrench"></i> bx bx-wrench
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-loader-circle"></i> bx bx-loader-circle
+                      <i className="bx bx-loader-circle"></i> bx
+                      bx-loader-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-loader-alt"></i> bx bx-loader-alt
@@ -1626,7 +1724,8 @@ const IconBoxicons = () => {
                       <i className="bx bx-slider-alt"></i> bx bx-slider-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-certification"></i> bx bx-certification
+                      <i className="bx bx-certification"></i> bx
+                      bx-certification
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-rocket"></i> bx bx-rocket
@@ -1677,10 +1776,12 @@ const IconBoxicons = () => {
                       <i className="bx bx-video-plus"></i> bx bx-video-plus
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-menu-alt-left"></i> bx bx-menu-alt-left
+                      <i className="bx bx-menu-alt-left"></i> bx
+                      bx-menu-alt-left
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-menu-alt-right"></i> bx bx-menu-alt-right
+                      <i className="bx bx-menu-alt-right"></i> bx
+                      bx-menu-alt-right
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-box"></i> bx bx-box
@@ -1713,7 +1814,8 @@ const IconBoxicons = () => {
                       <i className="bx bx-photo-album"></i> bx bx-photo-album
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-strikethrough"></i> bx bx-strikethrough
+                      <i className="bx bx-strikethrough"></i> bx
+                      bx-strikethrough
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-file-blank"></i> bx bx-file-blank
@@ -1740,7 +1842,8 @@ const IconBoxicons = () => {
                       <i className="bx bx-football"></i> bx bx-football
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-dollar-circle"></i> bx bx-dollar-circle
+                      <i className="bx bx-dollar-circle"></i> bx
+                      bx-dollar-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-search-alt"></i> bx bx-search-alt
@@ -1758,16 +1861,20 @@ const IconBoxicons = () => {
                       <i className="bx bx-stats"></i> bx bx-stats
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-move-horizontal"></i> bx bx-move-horizontal
+                      <i className="bx bx-move-horizontal"></i> bx
+                      bx-move-horizontal
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-move-vertical"></i> bx bx-move-vertical
+                      <i className="bx bx-move-vertical"></i> bx
+                      bx-move-vertical
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-grid-horizontal"></i> bx bx-grid-horizontal
+                      <i className="bx bx-grid-horizontal"></i> bx
+                      bx-grid-horizontal
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-grid-vertical"></i> bx bx-grid-vertical
+                      <i className="bx bx-grid-vertical"></i> bx
+                      bx-grid-vertical
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-grid-small"></i> bx bx-grid-small
@@ -1797,13 +1904,15 @@ const IconBoxicons = () => {
                       <i className="bx bx-card"></i> bx bx-card
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-rewind-circle"></i> bx bx-rewind-circle
+                      <i className="bx bx-rewind-circle"></i> bx
+                      bx-rewind-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-magnet"></i> bx bx-magnet
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-calendar-event"></i> bx bx-calendar-event
+                      <i className="bx bx-calendar-event"></i> bx
+                      bx-calendar-event
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-caret-left"></i> bx bx-caret-left
@@ -1836,7 +1945,8 @@ const IconBoxicons = () => {
                       <i className="bx bx-paint"></i> bx bx-paint
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-joystick-button"></i> bx bx-joystick-button
+                      <i className="bx bx-joystick-button"></i> bx
+                      bx-joystick-button
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-font-family"></i> bx bx-font-family
@@ -1854,7 +1964,8 @@ const IconBoxicons = () => {
                       <i className="bx bx-home-circle"></i> bx bx-home-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-location-plus"></i> bx bx-location-plus
+                      <i className="bx bx-location-plus"></i> bx
+                      bx-location-plus
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-arch"></i> bx bx-arch
@@ -1881,7 +1992,8 @@ const IconBoxicons = () => {
                       <i className="bx bx-cabinet"></i> bx bx-cabinet
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-calendar-edit"></i> bx bx-calendar-edit
+                      <i className="bx bx-calendar-edit"></i> bx
+                      bx-calendar-edit
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-coffee-togo"></i> bx bx-coffee-togo
@@ -1935,31 +2047,39 @@ const IconBoxicons = () => {
                       <i className="bx bx-been-here"></i> bx bx-been-here
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-current-location"></i> bx bx-current-location
+                      <i className="bx bx-current-location"></i> bx
+                      bx-current-location
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-arrow-from-top"></i> bx bx-arrow-from-top
+                      <i className="bx bx-arrow-from-top"></i> bx
+                      bx-arrow-from-top
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-arrow-from-bottom"></i> bx bx-arrow-from-bottom
+                      <i className="bx bx-arrow-from-bottom"></i> bx
+                      bx-arrow-from-bottom
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-arrow-from-left"></i> bx bx-arrow-from-left
+                      <i className="bx bx-arrow-from-left"></i> bx
+                      bx-arrow-from-left
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-arrow-from-right"></i> bx bx-arrow-from-right
+                      <i className="bx bx-arrow-from-right"></i> bx
+                      bx-arrow-from-right
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-arrow-to-right"></i> bx bx-arrow-to-right
+                      <i className="bx bx-arrow-to-right"></i> bx
+                      bx-arrow-to-right
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-arrow-to-left"></i> bx bx-arrow-to-left
+                      <i className="bx bx-arrow-to-left"></i> bx
+                      bx-arrow-to-left
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-arrow-to-top"></i> bx bx-arrow-to-top
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-arrow-to-bottom"></i> bx bx-arrow-to-bottom
+                      <i className="bx bx-arrow-to-bottom"></i> bx
+                      bx-arrow-to-bottom
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-book-reader"></i> bx bx-book-reader
@@ -1968,7 +2088,8 @@ const IconBoxicons = () => {
                       <i className="bx bx-scan"></i> bx bx-scan
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-calendar-week"></i> bx bx-calendar-week
+                      <i className="bx bx-calendar-week"></i> bx
+                      bx-calendar-week
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-glasses"></i> bx bx-glasses
@@ -2022,7 +2143,8 @@ const IconBoxicons = () => {
                       <i className="bx bx-alarm-snooze"></i> bx bx-alarm-snooze
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-alarm-exclamation"></i> bx bx-alarm-exclamation
+                      <i className="bx bx-alarm-exclamation"></i> bx
+                      bx-alarm-exclamation
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-medal"></i> bx bx-medal
@@ -2031,7 +2153,8 @@ const IconBoxicons = () => {
                       <i className="bx bx-task-x"></i> bx bx-task-x
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-barcode-reader"></i> bx bx-barcode-reader
+                      <i className="bx bx-barcode-reader"></i> bx
+                      bx-barcode-reader
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-blanket"></i> bx bx-blanket
@@ -2067,7 +2190,8 @@ const IconBoxicons = () => {
                       <i className="bx bx-window-alt"></i> bx bx-window-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-calendar-heart"></i> bx bx-calendar-heart
+                      <i className="bx bx-calendar-heart"></i> bx
+                      bx-calendar-heart
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-wine"></i> bx bx-wine
@@ -2094,16 +2218,19 @@ const IconBoxicons = () => {
                       <i className="bx bx-chair"></i> bx bx-chair
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-network-chart"></i> bx bx-network-chart
+                      <i className="bx bx-network-chart"></i> bx
+                      bx-network-chart
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-vector"></i> bx bx-vector
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-calendar-exclamation"></i> bx bx-calendar-exclamation
+                      <i className="bx bx-calendar-exclamation"></i> bx
+                      bx-calendar-exclamation
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-calendar-star"></i> bx bx-calendar-star
+                      <i className="bx bx-calendar-star"></i> bx
+                      bx-calendar-star
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-camera-home"></i> bx bx-camera-home
@@ -2112,58 +2239,75 @@ const IconBoxicons = () => {
                       <i className="bx bx-camera-movie"></i> bx bx-camera-movie
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-caret-right-circle"></i> bx bx-caret-right-circle
+                      <i className="bx bx-caret-right-circle"></i> bx
+                      bx-caret-right-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-caret-left-circle"></i> bx bx-caret-left-circle
+                      <i className="bx bx-caret-left-circle"></i> bx
+                      bx-caret-left-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-caret-up-circle"></i> bx bx-caret-up-circle
+                      <i className="bx bx-caret-up-circle"></i> bx
+                      bx-caret-up-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-caret-down-circle"></i> bx bx-caret-down-circle
+                      <i className="bx bx-caret-down-circle"></i> bx
+                      bx-caret-down-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-caret-right-square"></i> bx bx-caret-right-square
+                      <i className="bx bx-caret-right-square"></i> bx
+                      bx-caret-right-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-caret-up-square"></i> bx bx-caret-up-square
+                      <i className="bx bx-caret-up-square"></i> bx
+                      bx-caret-up-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-caret-left-square"></i> bx bx-caret-left-square
+                      <i className="bx bx-caret-left-square"></i> bx
+                      bx-caret-left-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-caret-down-square"></i> bx bx-caret-down-square
+                      <i className="bx bx-caret-down-square"></i> bx
+                      bx-caret-down-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-shield-x"></i> bx bx-shield-x
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-line-chart-down"></i> bx bx-line-chart-down
+                      <i className="bx bx-line-chart-down"></i> bx
+                      bx-line-chart-down
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-chevron-down-circle"></i> bx bx-chevron-down-circle
+                      <i className="bx bx-chevron-down-circle"></i> bx
+                      bx-chevron-down-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-chevron-up-circle"></i> bx bx-chevron-up-circle
+                      <i className="bx bx-chevron-up-circle"></i> bx
+                      bx-chevron-up-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-chevron-left-circle"></i> bx bx-chevron-left-circle
+                      <i className="bx bx-chevron-left-circle"></i> bx
+                      bx-chevron-left-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-chevron-right-circle"></i> bx bx-chevron-right-circle
+                      <i className="bx bx-chevron-right-circle"></i> bx
+                      bx-chevron-right-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-chevron-down-square"></i> bx bx-chevron-down-square
+                      <i className="bx bx-chevron-down-square"></i> bx
+                      bx-chevron-down-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-chevron-up-square"></i> bx bx-chevron-up-square
+                      <i className="bx bx-chevron-up-square"></i> bx
+                      bx-chevron-up-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-chevron-left-square"></i> bx bx-chevron-left-square
+                      <i className="bx bx-chevron-left-square"></i> bx
+                      bx-chevron-left-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-chevron-right-square"></i> bx bx-chevron-right-square
+                      <i className="bx bx-chevron-right-square"></i> bx
+                      bx-chevron-right-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-church"></i> bx bx-church
@@ -2208,61 +2352,79 @@ const IconBoxicons = () => {
                       <i className="bx bx-home-smile"></i> bx bx-home-smile
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-envelope-open"></i> bx bx-envelope-open
+                      <i className="bx bx-envelope-open"></i> bx
+                      bx-envelope-open
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-message-alt-add"></i> bx bx-message-alt-add
+                      <i className="bx bx-message-alt-add"></i> bx
+                      bx-message-alt-add
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-message-alt-check"></i> bx bx-message-alt-check
+                      <i className="bx bx-message-alt-check"></i> bx
+                      bx-message-alt-check
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-message-alt-error"></i> bx bx-message-alt-error
+                      <i className="bx bx-message-alt-error"></i> bx
+                      bx-message-alt-error
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-message-alt-x"></i> bx bx-message-alt-x
+                      <i className="bx bx-message-alt-x"></i> bx
+                      bx-message-alt-x
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-message-alt-minus"></i> bx bx-message-alt-minus
+                      <i className="bx bx-message-alt-minus"></i> bx
+                      bx-message-alt-minus
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-message-alt-edit"></i> bx bx-message-alt-edit
+                      <i className="bx bx-message-alt-edit"></i> bx
+                      bx-message-alt-edit
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-message-alt-detail"></i> bx bx-message-alt-detail
+                      <i className="bx bx-message-alt-detail"></i> bx
+                      bx-message-alt-detail
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-message-rounded-check"></i> bx bx-message-rounded-check
+                      <i className="bx bx-message-rounded-check"></i> bx
+                      bx-message-rounded-check
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-message-rounded-error"></i> bx bx-message-rounded-error
+                      <i className="bx bx-message-rounded-error"></i> bx
+                      bx-message-rounded-error
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-message-rounded-x"></i> bx bx-message-rounded-x
+                      <i className="bx bx-message-rounded-x"></i> bx
+                      bx-message-rounded-x
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-message-rounded-minus"></i> bx bx-message-rounded-minus
+                      <i className="bx bx-message-rounded-minus"></i> bx
+                      bx-message-rounded-minus
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-message-rounded-edit"></i> bx bx-message-rounded-edit
+                      <i className="bx bx-message-rounded-edit"></i> bx
+                      bx-message-rounded-edit
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-message-rounded-add"></i> bx bx-message-rounded-add
+                      <i className="bx bx-message-rounded-add"></i> bx
+                      bx-message-rounded-add
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-message-rounded-detail"></i> bx bx-message-rounded-detail
+                      <i className="bx bx-message-rounded-detail"></i> bx
+                      bx-message-rounded-detail
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-message-check"></i> bx bx-message-check
+                      <i className="bx bx-message-check"></i> bx
+                      bx-message-check
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-message-error"></i> bx bx-message-error
+                      <i className="bx bx-message-error"></i> bx
+                      bx-message-error
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-message-x"></i> bx bx-message-x
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-message-minus"></i> bx bx-message-minus
+                      <i className="bx bx-message-minus"></i> bx
+                      bx-message-minus
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-message-edit"></i> bx bx-message-edit
@@ -2271,34 +2433,44 @@ const IconBoxicons = () => {
                       <i className="bx bx-message-add"></i> bx bx-message-add
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-message-detail"></i> bx bx-message-detail
+                      <i className="bx bx-message-detail"></i> bx
+                      bx-message-detail
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-message-square-check"></i> bx bx-message-square-check
+                      <i className="bx bx-message-square-check"></i> bx
+                      bx-message-square-check
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-message-square-error"></i> bx bx-message-square-error
+                      <i className="bx bx-message-square-error"></i> bx
+                      bx-message-square-error
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-message-square-x"></i> bx bx-message-square-x
+                      <i className="bx bx-message-square-x"></i> bx
+                      bx-message-square-x
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-message-square-minus"></i> bx bx-message-square-minus
+                      <i className="bx bx-message-square-minus"></i> bx
+                      bx-message-square-minus
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-message-square-edit"></i> bx bx-message-square-edit
+                      <i className="bx bx-message-square-edit"></i> bx
+                      bx-message-square-edit
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-message-square-add"></i> bx bx-message-square-add
+                      <i className="bx bx-message-square-add"></i> bx
+                      bx-message-square-add
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-message-square-detail"></i> bx bx-message-square-detail
+                      <i className="bx bx-message-square-detail"></i> bx
+                      bx-message-square-detail
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-comment-check"></i> bx bx-comment-check
+                      <i className="bx bx-comment-check"></i> bx
+                      bx-comment-check
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-comment-error"></i> bx bx-comment-error
+                      <i className="bx bx-comment-error"></i> bx
+                      bx-comment-error
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-comment-x"></i> bx bx-comment-x
@@ -2307,19 +2479,22 @@ const IconBoxicons = () => {
                       <i className="bx bx-comment-edit"></i> bx bx-comment-edit
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-comment-minus"></i> bx bx-comment-minus
+                      <i className="bx bx-comment-minus"></i> bx
+                      bx-comment-minus
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-comment-add"></i> bx bx-comment-add
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-comment-detail"></i> bx bx-comment-detail
+                      <i className="bx bx-comment-detail"></i> bx
+                      bx-comment-detail
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-cookie"></i> bx bx-cookie
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-credit-card-front"></i> bx bx-credit-card-front
+                      <i className="bx bx-credit-card-front"></i> bx
+                      bx-credit-card-front
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-door-open"></i> bx bx-door-open
@@ -2331,10 +2506,12 @@ const IconBoxicons = () => {
                       <i className="bx bx-donate-blood"></i> bx bx-donate-blood
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-shape-polygon"></i> bx bx-shape-polygon
+                      <i className="bx bx-shape-polygon"></i> bx
+                      bx-shape-polygon
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-bookmark-heart"></i> bx bx-bookmark-heart
+                      <i className="bx bx-bookmark-heart"></i> bx
+                      bx-bookmark-heart
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-sort-alt-2"></i> bx bx-sort-alt-2
@@ -2349,10 +2526,12 @@ const IconBoxicons = () => {
                       <i className="bx bx-bookmark-alt"></i> bx bx-bookmark-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-bookmark-alt-plus"></i> bx bx-bookmark-alt-plus
+                      <i className="bx bx-bookmark-alt-plus"></i> bx
+                      bx-bookmark-alt-plus
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bx-bookmark-alt-minus"></i> bx bx-bookmark-alt-minus
+                      <i className="bx bx-bookmark-alt-minus"></i> bx
+                      bx-bookmark-alt-minus
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bx-tag-alt"></i> bx bx-tag-alt
@@ -2374,7 +2553,12 @@ const IconBoxicons = () => {
                   {/* <!--Regular end row --> */}
 
                   <h5 className="mt-5">Solid Icons</h5>
-                  <p className="text-muted mb-0">Use class <code>&lt;i className="bx bxs-**"{'>'}&lt;/i{'>'}</code></p>
+                  <p className="text-muted mb-0">
+                    Use class{" "}
+                    <code>
+                      &lt;i className="bx bxs-**"{">"}&lt;/i{">"}
+                    </code>
+                  </p>
 
                   <Row className="icon-demo-content">
                     <div className="col-xl-3 col-lg-4 col-sm-6">
@@ -2384,7 +2568,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-cable-car"></i> bx bxs-cable-car
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-cricket-ball"></i> bx bxs-cricket-ball
+                      <i className="bx bxs-cricket-ball"></i> bx
+                      bxs-cricket-ball
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-tree-alt"></i> bx bxs-tree-alt
@@ -2399,10 +2584,12 @@ const IconBoxicons = () => {
                       <i className="bx bxs-circle-half"></i> bx bxs-circle-half
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-circle-three-quarter"></i> bx bxs-circle-three-quarter
+                      <i className="bx bxs-circle-three-quarter"></i> bx
+                      bxs-circle-three-quarter
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-circle-quarter"></i> bx bxs-circle-quarter
+                      <i className="bx bxs-circle-quarter"></i> bx
+                      bxs-circle-quarter
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-bowl-rice"></i> bx bxs-bowl-rice
@@ -2432,7 +2619,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-hand"></i> bx bxs-hand
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-checkbox-minus"></i> bx bxs-checkbox-minus
+                      <i className="bx bxs-checkbox-minus"></i> bx
+                      bxs-checkbox-minus
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-speaker"></i> bx bxs-speaker
@@ -2450,13 +2638,16 @@ const IconBoxicons = () => {
                       <i className="bx bxs-store-alt"></i> bx bxs-store-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-bar-chart-alt-2"></i> bx bxs-bar-chart-alt-2
+                      <i className="bx bxs-bar-chart-alt-2"></i> bx
+                      bxs-bar-chart-alt-2
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-message-dots"></i> bx bxs-message-dots
+                      <i className="bx bxs-message-dots"></i> bx
+                      bxs-message-dots
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-message-rounded-dots"></i> bx bxs-message-rounded-dots
+                      <i className="bx bxs-message-rounded-dots"></i> bx
+                      bxs-message-rounded-dots
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-devices"></i> bx bxs-devices
@@ -2474,13 +2665,16 @@ const IconBoxicons = () => {
                       <i className="bx bxs-slideshow"></i> bx bxs-slideshow
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-message-square"></i> bx bxs-message-square
+                      <i className="bx bxs-message-square"></i> bx
+                      bxs-message-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-message-square-dots"></i> bx bxs-message-square-dots
+                      <i className="bx bxs-message-square-dots"></i> bx
+                      bxs-message-square-dots
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-book-content"></i> bx bxs-book-content
+                      <i className="bx bxs-book-content"></i> bx
+                      bxs-book-content
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-chat"></i> bx bxs-chat
@@ -2498,19 +2692,23 @@ const IconBoxicons = () => {
                       <i className="bx bxs-notepad"></i> bx bxs-notepad
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-video-recording"></i> bx bxs-video-recording
+                      <i className="bx bxs-video-recording"></i> bx
+                      bxs-video-recording
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-direction-left"></i> bx bxs-direction-left
+                      <i className="bx bxs-direction-left"></i> bx
+                      bxs-direction-left
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-ghost"></i> bx bxs-ghost
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-quote-single-left"></i> bx bxs-quote-single-left
+                      <i className="bx bxs-quote-single-left"></i> bx
+                      bxs-quote-single-left
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-quote-single-right"></i> bx bxs-quote-single-right
+                      <i className="bx bxs-quote-single-right"></i> bx
+                      bxs-quote-single-right
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-user-pin"></i> bx bxs-user-pin
@@ -2526,7 +2724,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-file-html"></i> bx bxs-file-html
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-comment-detail"></i> bx bxs-comment-detail
+                      <i className="bx bxs-comment-detail"></i> bx
+                      bxs-comment-detail
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-comment-add"></i> bx bxs-comment-add
@@ -2559,7 +2758,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-analyse"></i> bx bxs-analyse
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-plane-take-off"></i> bx bxs-plane-take-off
+                      <i className="bx bxs-plane-take-off"></i> bx
+                      bxs-plane-take-off
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-plane-land"></i> bx bxs-plane-land
@@ -2583,7 +2783,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-comment"></i> bx bxs-comment
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-comment-dots"></i> bx bxs-comment-dots
+                      <i className="bx bxs-comment-dots"></i> bx
+                      bxs-comment-dots
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-wine"></i> bx bxs-wine
@@ -2601,28 +2802,35 @@ const IconBoxicons = () => {
                       <i className="bx bxs-lock-alt"></i> bx bxs-lock-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-lock-open-alt"></i> bx bxs-lock-open-alt
+                      <i className="bx bxs-lock-open-alt"></i> bx
+                      bxs-lock-open-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-hourglass-top"></i> bx bxs-hourglass-top
+                      <i className="bx bxs-hourglass-top"></i> bx
+                      bxs-hourglass-top
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-hourglass-bottom"></i> bx bxs-hourglass-bottom
+                      <i className="bx bxs-hourglass-bottom"></i> bx
+                      bxs-hourglass-bottom
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-bowling-ball"></i> bx bxs-bowling-ball
+                      <i className="bx bxs-bowling-ball"></i> bx
+                      bxs-bowling-ball
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-search-alt-2"></i> bx bxs-search-alt-2
+                      <i className="bx bxs-search-alt-2"></i> bx
+                      bxs-search-alt-2
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-droplet-half"></i> bx bxs-droplet-half
+                      <i className="bx bxs-droplet-half"></i> bx
+                      bxs-droplet-half
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-paint-roll"></i> bx bxs-paint-roll
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-shield-alt-2"></i> bx bxs-shield-alt-2
+                      <i className="bx bxs-shield-alt-2"></i> bx
+                      bxs-shield-alt-2
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-error-alt"></i> bx bxs-error-alt
@@ -2631,7 +2839,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-square"></i> bx bxs-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-square-rounded"></i> bx bxs-square-rounded
+                      <i className="bx bxs-square-rounded"></i> bx
+                      bxs-square-rounded
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-polygon"></i> bx bxs-polygon
@@ -2646,19 +2855,23 @@ const IconBoxicons = () => {
                       <i className="bx bxs-user-voice"></i> bx bxs-user-voice
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-building-house"></i> bx bxs-building-house
+                      <i className="bx bxs-building-house"></i> bx
+                      bxs-building-house
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-doughnut-chart"></i> bx bxs-doughnut-chart
+                      <i className="bx bxs-doughnut-chart"></i> bx
+                      bxs-doughnut-chart
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-circle"></i> bx bxs-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-log-in-circle"></i> bx bxs-log-in-circle
+                      <i className="bx bxs-log-in-circle"></i> bx
+                      bxs-log-in-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-log-out-circle"></i> bx bxs-log-out-circle
+                      <i className="bx bxs-log-out-circle"></i> bx
+                      bxs-log-out-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-log-in"></i> bx bxs-log-in
@@ -2667,25 +2880,30 @@ const IconBoxicons = () => {
                       <i className="bx bxs-log-out"></i> bx bxs-log-out
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-notification"></i> bx bxs-notification
+                      <i className="bx bxs-notification"></i> bx
+                      bxs-notification
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-notification-off"></i> bx bxs-notification-off
+                      <i className="bx bxs-notification-off"></i> bx
+                      bxs-notification-off
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-check-square"></i> bx bxs-check-square
+                      <i className="bx bxs-check-square"></i> bx
+                      bxs-check-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-message-alt"></i> bx bxs-message-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-message-alt-dots"></i> bx bxs-message-alt-dots
+                      <i className="bx bxs-message-alt-dots"></i> bx
+                      bxs-message-alt-dots
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-no-entry"></i> bx bxs-no-entry
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-traffic-barrier"></i> bx bxs-traffic-barrier
+                      <i className="bx bxs-traffic-barrier"></i> bx
+                      bxs-traffic-barrier
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-component"></i> bx bxs-component
@@ -2700,7 +2918,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-basket"></i> bx bxs-basket
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-purchase-tag-alt"></i> bx bxs-purchase-tag-alt
+                      <i className="bx bxs-purchase-tag-alt"></i> bx
+                      bxs-purchase-tag-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-receipt"></i> bx bxs-receipt
@@ -2712,7 +2931,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-band-aid"></i> bx bxs-band-aid
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-credit-card-alt"></i> bx bxs-credit-card-alt
+                      <i className="bx bxs-credit-card-alt"></i> bx
+                      bxs-credit-card-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-credit-card"></i> bx bxs-credit-card
@@ -2721,7 +2941,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-paint"></i> bx bxs-paint
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-brightness-half"></i> bx bxs-brightness-half
+                      <i className="bx bxs-brightness-half"></i> bx
+                      bxs-brightness-half
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-brightness"></i> bx bxs-brightness
@@ -2742,16 +2963,20 @@ const IconBoxicons = () => {
                       <i className="bx bxs-down-arrow"></i> bx bxs-down-arrow
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-right-top-arrow-circle"></i> bx bxs-right-top-arrow-circle
+                      <i className="bx bxs-right-top-arrow-circle"></i> bx
+                      bxs-right-top-arrow-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-right-down-arrow-circle"></i> bx bxs-right-down-arrow-circle
+                      <i className="bx bxs-right-down-arrow-circle"></i> bx
+                      bxs-right-down-arrow-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-left-top-arrow-circle"></i> bx bxs-left-top-arrow-circle
+                      <i className="bx bxs-left-top-arrow-circle"></i> bx
+                      bxs-left-top-arrow-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-left-down-arrow-circle"></i> bx bxs-left-down-arrow-circle
+                      <i className="bx bxs-left-down-arrow-circle"></i> bx
+                      bxs-left-down-arrow-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-institution"></i> bx bxs-institution
@@ -2763,10 +2988,12 @@ const IconBoxicons = () => {
                       <i className="bx bxs-chalkboard"></i> bx bxs-chalkboard
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-skip-previous-circle"></i> bx bxs-skip-previous-circle
+                      <i className="bx bxs-skip-previous-circle"></i> bx
+                      bxs-skip-previous-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-skip-next-circle"></i> bx bxs-skip-next-circle
+                      <i className="bx bxs-skip-next-circle"></i> bx
+                      bxs-skip-next-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-data"></i> bx bxs-data
@@ -2775,7 +3002,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-mobile"></i> bx bxs-mobile
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-folder-minus"></i> bx bxs-folder-minus
+                      <i className="bx bxs-folder-minus"></i> bx
+                      bxs-folder-minus
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-bell-plus"></i> bx bxs-bell-plus
@@ -2814,7 +3042,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-time"></i> bx bxs-time
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-pie-chart-alt-2"></i> bx bxs-pie-chart-alt-2
+                      <i className="bx bxs-pie-chart-alt-2"></i> bx
+                      bxs-pie-chart-alt-2
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-time-five"></i> bx bxs-time-five
@@ -2823,31 +3052,38 @@ const IconBoxicons = () => {
                       <i className="bx bxs-bookmarks"></i> bx bxs-bookmarks
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-bookmark-minus"></i> bx bxs-bookmark-minus
+                      <i className="bx bxs-bookmark-minus"></i> bx
+                      bxs-bookmark-minus
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-briefcase-alt-2"></i> bx bxs-briefcase-alt-2
+                      <i className="bx bxs-briefcase-alt-2"></i> bx
+                      bxs-briefcase-alt-2
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-calendar"></i> bx bxs-calendar
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-calendar-alt"></i> bx bxs-calendar-alt
+                      <i className="bx bxs-calendar-alt"></i> bx
+                      bxs-calendar-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-calendar-plus"></i> bx bxs-calendar-plus
+                      <i className="bx bxs-calendar-plus"></i> bx
+                      bxs-calendar-plus
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-calendar-minus"></i> bx bxs-calendar-minus
+                      <i className="bx bxs-calendar-minus"></i> bx
+                      bxs-calendar-minus
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-calendar-x"></i> bx bxs-calendar-x
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-calendar-check"></i> bx bxs-calendar-check
+                      <i className="bx bxs-calendar-check"></i> bx
+                      bxs-calendar-check
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-calendar-event"></i> bx bxs-calendar-event
+                      <i className="bx bxs-calendar-event"></i> bx
+                      bxs-calendar-event
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-customize"></i> bx bxs-customize
@@ -2856,19 +3092,24 @@ const IconBoxicons = () => {
                       <i className="bx bxs-carousel"></i> bx bxs-carousel
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-rewind-circle"></i> bx bxs-rewind-circle
+                      <i className="bx bxs-rewind-circle"></i> bx
+                      bxs-rewind-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-fast-forward-circle"></i> bx bxs-fast-forward-circle
+                      <i className="bx bxs-fast-forward-circle"></i> bx
+                      bxs-fast-forward-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-mobile-vibration"></i> bx bxs-mobile-vibration
+                      <i className="bx bxs-mobile-vibration"></i> bx
+                      bxs-mobile-vibration
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-quote-alt-left"></i> bx bxs-quote-alt-left
+                      <i className="bx bxs-quote-alt-left"></i> bx
+                      bxs-quote-alt-left
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-quote-alt-right"></i> bx bxs-quote-alt-right
+                      <i className="bx bxs-quote-alt-right"></i> bx
+                      bxs-quote-alt-right
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-layout"></i> bx bxs-layout
@@ -2892,10 +3133,12 @@ const IconBoxicons = () => {
                       <i className="bx bxs-label"></i> bx bxs-label
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-check-shield"></i> bx bxs-check-shield
+                      <i className="bx bxs-check-shield"></i> bx
+                      bxs-check-shield
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-add-to-queue"></i> bx bxs-add-to-queue
+                      <i className="bx bxs-add-to-queue"></i> bx
+                      bxs-add-to-queue
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-archive-in"></i> bx bxs-archive-in
@@ -2928,22 +3171,27 @@ const IconBoxicons = () => {
                       <i className="bx bxs-bolt-circle"></i> bx bxs-bolt-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-caret-up-circle"></i> bx bxs-caret-up-circle
+                      <i className="bx bxs-caret-up-circle"></i> bx
+                      bxs-caret-up-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-caret-down-circle"></i> bx bxs-caret-down-circle
+                      <i className="bx bxs-caret-down-circle"></i> bx
+                      bxs-caret-down-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-caret-left-circle"></i> bx bxs-caret-left-circle
+                      <i className="bx bxs-caret-left-circle"></i> bx
+                      bxs-caret-left-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-caret-right-circle"></i> bx bxs-caret-right-circle
+                      <i className="bx bxs-caret-right-circle"></i> bx
+                      bxs-caret-right-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-tone"></i> bx bxs-tone
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-baby-carriage"></i> bx bxs-baby-carriage
+                      <i className="bx bxs-baby-carriage"></i> bx
+                      bxs-baby-carriage
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-hand-up"></i> bx bxs-hand-up
@@ -2976,7 +3224,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-angry"></i> bx bxs-angry
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-happy-heart-eyes"></i> bx bxs-happy-heart-eyes
+                      <i className="bx bxs-happy-heart-eyes"></i> bx
+                      bxs-happy-heart-eyes
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-dizzy"></i> bx bxs-dizzy
@@ -3009,7 +3258,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-shocked"></i> bx bxs-shocked
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-happy-beaming"></i> bx bxs-happy-beaming
+                      <i className="bx bxs-happy-beaming"></i> bx
+                      bxs-happy-beaming
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-tired"></i> bx bxs-tired
@@ -3033,7 +3283,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-wink-tongue"></i> bx bxs-wink-tongue
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-comment-error"></i> bx bxs-comment-error
+                      <i className="bx bxs-comment-error"></i> bx
+                      bxs-comment-error
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-vial"></i> bx bxs-vial
@@ -3069,7 +3320,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-award"></i> bx bxs-award
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-bar-chart-square"></i> bx bxs-bar-chart-square
+                      <i className="bx bxs-bar-chart-square"></i> bx
+                      bxs-bar-chart-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-barcode"></i> bx bxs-barcode
@@ -3078,10 +3330,12 @@ const IconBoxicons = () => {
                       <i className="bx bxs-battery"></i> bx bxs-battery
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-battery-charging"></i> bx bxs-battery-charging
+                      <i className="bx bxs-battery-charging"></i> bx
+                      bxs-battery-charging
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-battery-full"></i> bx bxs-battery-full
+                      <i className="bx bxs-battery-full"></i> bx
+                      bxs-battery-full
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-bell"></i> bx bxs-bell
@@ -3096,25 +3350,29 @@ const IconBoxicons = () => {
                       <i className="bx bxs-book"></i> bx bxs-book
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-book-bookmark"></i> bx bxs-book-bookmark
+                      <i className="bx bxs-book-bookmark"></i> bx
+                      bxs-book-bookmark
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-bookmark"></i> bx bxs-bookmark
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-bookmark-plus"></i> bx bxs-bookmark-plus
+                      <i className="bx bxs-bookmark-plus"></i> bx
+                      bxs-bookmark-plus
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-book-open"></i> bx bxs-book-open
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-bookmark-star"></i> bx bxs-bookmark-star
+                      <i className="bx bxs-bookmark-star"></i> bx
+                      bxs-bookmark-star
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-briefcase"></i> bx bxs-briefcase
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-briefcase-alt"></i> bx bxs-briefcase-alt
+                      <i className="bx bxs-briefcase-alt"></i> bx
+                      bxs-briefcase-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-bug"></i> bx bxs-bug
@@ -3150,10 +3408,12 @@ const IconBoxicons = () => {
                       <i className="bx bxs-chip"></i> bx bxs-chip
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-cloud-download"></i> bx bxs-cloud-download
+                      <i className="bx bxs-cloud-download"></i> bx
+                      bxs-cloud-download
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-cloud-upload"></i> bx bxs-cloud-upload
+                      <i className="bx bxs-cloud-upload"></i> bx
+                      bxs-cloud-upload
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-cloud"></i> bx bxs-cloud
@@ -3204,7 +3464,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-dock-top"></i> bx bxs-dock-top
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-down-arrow-circle"></i> bx bxs-down-arrow-circle
+                      <i className="bx bxs-down-arrow-circle"></i> bx
+                      bxs-down-arrow-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-download"></i> bx bxs-download
@@ -3228,7 +3489,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-envelope"></i> bx bxs-envelope
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-error-circle"></i> bx bxs-error-circle
+                      <i className="bx bxs-error-circle"></i> bx
+                      bxs-error-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-error"></i> bx bxs-error
@@ -3288,7 +3550,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-info-circle"></i> bx bxs-info-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-joystick-alt"></i> bx bxs-joystick-alt
+                      <i className="bx bxs-joystick-alt"></i> bx
+                      bxs-joystick-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-joystick"></i> bx bxs-joystick
@@ -3297,7 +3560,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-layer"></i> bx bxs-layer
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-left-arrow-circle"></i> bx bxs-left-arrow-circle
+                      <i className="bx bxs-left-arrow-circle"></i> bx
+                      bxs-left-arrow-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-like"></i> bx bxs-like
@@ -3315,19 +3579,22 @@ const IconBoxicons = () => {
                       <i className="bx bxs-map"></i> bx bxs-map
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-message-rounded"></i> bx bxs-message-rounded
+                      <i className="bx bxs-message-rounded"></i> bx
+                      bxs-message-rounded
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-message"></i> bx bxs-message
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-microphone-off"></i> bx bxs-microphone-off
+                      <i className="bx bxs-microphone-off"></i> bx
+                      bxs-microphone-off
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-microphone"></i> bx bxs-microphone
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-minus-circle"></i> bx bxs-minus-circle
+                      <i className="bx bxs-minus-circle"></i> bx
+                      bxs-minus-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-moon"></i> bx bxs-moon
@@ -3363,16 +3630,19 @@ const IconBoxicons = () => {
                       <i className="bx bxs-phone-call"></i> bx bxs-phone-call
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-phone-incoming"></i> bx bxs-phone-incoming
+                      <i className="bx bxs-phone-incoming"></i> bx
+                      bxs-phone-incoming
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-phone-outgoing"></i> bx bxs-phone-outgoing
+                      <i className="bx bxs-phone-outgoing"></i> bx
+                      bxs-phone-outgoing
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-phone"></i> bx bxs-phone
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-pie-chart-alt"></i> bx bxs-pie-chart-alt
+                      <i className="bx bxs-pie-chart-alt"></i> bx
+                      bxs-pie-chart-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-pie-chart"></i> bx bxs-pie-chart
@@ -3393,7 +3663,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-printer"></i> bx bxs-printer
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-purchase-tag"></i> bx bxs-purchase-tag
+                      <i className="bx bxs-purchase-tag"></i> bx
+                      bxs-purchase-tag
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-quote-left"></i> bx bxs-quote-left
@@ -3411,7 +3682,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-report"></i> bx bxs-report
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-right-arrow-circle"></i> bx bxs-right-arrow-circle
+                      <i className="bx bxs-right-arrow-circle"></i> bx
+                      bxs-right-arrow-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-ruler"></i> bx bxs-ruler
@@ -3423,7 +3695,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-sort-alt"></i> bx bxs-sort-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-select-multiple"></i> bx bxs-select-multiple
+                      <i className="bx bxs-select-multiple"></i> bx
+                      bxs-select-multiple
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-send"></i> bx bxs-send
@@ -3441,10 +3714,12 @@ const IconBoxicons = () => {
                       <i className="bx bxs-shield"></i> bx bxs-shield
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-shopping-bag-alt"></i> bx bxs-shopping-bag-alt
+                      <i className="bx bxs-shopping-bag-alt"></i> bx
+                      bxs-shopping-bag-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-shopping-bag"></i> bx bxs-shopping-bag
+                      <i className="bx bxs-shopping-bag"></i> bx
+                      bxs-shopping-bag
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-show"></i> bx bxs-show
@@ -3483,7 +3758,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-toggle-left"></i> bx bxs-toggle-left
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-toggle-right"></i> bx bxs-toggle-right
+                      <i className="bx bxs-toggle-right"></i> bx
+                      bxs-toggle-right
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-torch"></i> bx bxs-torch
@@ -3501,7 +3777,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-truck"></i> bx bxs-truck
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-up-arrow-circle"></i> bx bxs-up-arrow-circle
+                      <i className="bx bxs-up-arrow-circle"></i> bx
+                      bxs-up-arrow-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-upvote"></i> bx bxs-upvote
@@ -3570,7 +3847,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-battery-low"></i> bx bxs-battery-low
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-conversation"></i> bx bxs-conversation
+                      <i className="bx bxs-conversation"></i> bx
+                      bxs-conversation
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-dashboard"></i> bx bxs-dashboard
@@ -3579,19 +3857,22 @@ const IconBoxicons = () => {
                       <i className="bx bxs-file-plus"></i> bx bxs-file-plus
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-certification"></i> bx bxs-certification
+                      <i className="bx bxs-certification"></i> bx
+                      bxs-certification
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-rocket"></i> bx bxs-rocket
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-check-circle"></i> bx bxs-check-circle
+                      <i className="bx bxs-check-circle"></i> bx
+                      bxs-check-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-checkbox"></i> bx bxs-checkbox
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-checkbox-checked"></i> bx bxs-checkbox-checked
+                      <i className="bx bxs-checkbox-checked"></i> bx
+                      bxs-checkbox-checked
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-star-half"></i> bx bxs-star-half
@@ -3651,7 +3932,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-film"></i> bx bxs-film
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-dollar-circle"></i> bx bxs-dollar-circle
+                      <i className="bx bxs-dollar-circle"></i> bx
+                      bxs-dollar-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-skull"></i> bx bxs-skull
@@ -3660,7 +3942,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-image-alt"></i> bx bxs-image-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-microphone-alt"></i> bx bxs-microphone-alt
+                      <i className="bx bxs-microphone-alt"></i> bx
+                      bxs-microphone-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-x-square"></i> bx bxs-x-square
@@ -3669,7 +3952,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-plus-square"></i> bx bxs-plus-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-minus-square"></i> bx bxs-minus-square
+                      <i className="bx bxs-minus-square"></i> bx
+                      bxs-minus-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-disc"></i> bx bxs-disc
@@ -3696,16 +3980,20 @@ const IconBoxicons = () => {
                       <i className="bx bxs-ambulance"></i> bx bxs-ambulance
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-left-arrow-square"></i> bx bxs-left-arrow-square
+                      <i className="bx bxs-left-arrow-square"></i> bx
+                      bxs-left-arrow-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-up-arrow-square"></i> bx bxs-up-arrow-square
+                      <i className="bx bxs-up-arrow-square"></i> bx
+                      bxs-up-arrow-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-down-arrow-square"></i> bx bxs-down-arrow-square
+                      <i className="bx bxs-down-arrow-square"></i> bx
+                      bxs-down-arrow-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-right-arrow-square"></i> bx bxs-right-arrow-square
+                      <i className="bx bxs-right-arrow-square"></i> bx
+                      bxs-right-arrow-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-user-badge"></i> bx bxs-user-badge
@@ -3735,10 +4023,12 @@ const IconBoxicons = () => {
                       <i className="bx bxs-directions"></i> bx bxs-directions
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-direction-right"></i> bx bxs-direction-right
+                      <i className="bx bxs-direction-right"></i> bx
+                      bxs-direction-right
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-joystick-button"></i> bx bxs-joystick-button
+                      <i className="bx bxs-joystick-button"></i> bx
+                      bxs-joystick-button
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-flask"></i> bx bxs-flask
@@ -3762,13 +4052,15 @@ const IconBoxicons = () => {
                       <i className="bx bxs-cloud-rain"></i> bx bxs-cloud-rain
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-cloud-lightning"></i> bx bxs-cloud-lightning
+                      <i className="bx bxs-cloud-lightning"></i> bx
+                      bxs-cloud-lightning
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-eyedropper"></i> bx bxs-eyedropper
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-user-rectangle"></i> bx bxs-user-rectangle
+                      <i className="bx bxs-user-rectangle"></i> bx
+                      bxs-user-rectangle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-plane"></i> bx bxs-plane
@@ -3792,13 +4084,15 @@ const IconBoxicons = () => {
                       <i className="bx bxs-home-circle"></i> bx bxs-home-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-location-plus"></i> bx bxs-location-plus
+                      <i className="bx bxs-location-plus"></i> bx
+                      bxs-location-plus
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-arch"></i> bx bxs-arch
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-badge-dollar"></i> bx bxs-badge-dollar
+                      <i className="bx bxs-badge-dollar"></i> bx
+                      bxs-badge-dollar
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-beer"></i> bx bxs-beer
@@ -3816,7 +4110,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-cabinet"></i> bx bxs-cabinet
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-calendar-edit"></i> bx bxs-calendar-edit
+                      <i className="bx bxs-calendar-edit"></i> bx
+                      bxs-calendar-edit
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-car-wash"></i> bx bxs-car-wash
@@ -3825,7 +4120,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-car-garage"></i> bx bxs-car-garage
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-car-mechanic"></i> bx bxs-car-mechanic
+                      <i className="bx bxs-car-mechanic"></i> bx
+                      bxs-car-mechanic
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-car-crash"></i> bx bxs-car-crash
@@ -3858,13 +4154,16 @@ const IconBoxicons = () => {
                       <i className="bx bxs-file-import"></i> bx bxs-file-import
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-flag-checkered"></i> bx bxs-flag-checkered
+                      <i className="bx bxs-flag-checkered"></i> bx
+                      bxs-flag-checkered
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-heart-circle"></i> bx bxs-heart-circle
+                      <i className="bx bxs-heart-circle"></i> bx
+                      bxs-heart-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-heart-square"></i> bx bxs-heart-square
+                      <i className="bx bxs-heart-square"></i> bx
+                      bxs-heart-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-home-heart"></i> bx bxs-home-heart
@@ -3879,7 +4178,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-layer-minus"></i> bx bxs-layer-minus
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-traffic-cone"></i> bx bxs-traffic-cone
+                      <i className="bx bxs-traffic-cone"></i> bx
+                      bxs-traffic-cone
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-mask"></i> bx bxs-mask
@@ -3894,34 +4194,43 @@ const IconBoxicons = () => {
                       <i className="bx bxs-been-here"></i> bx bxs-been-here
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-arrow-from-top"></i> bx bxs-arrow-from-top
+                      <i className="bx bxs-arrow-from-top"></i> bx
+                      bxs-arrow-from-top
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-arrow-from-bottom"></i> bx bxs-arrow-from-bottom
+                      <i className="bx bxs-arrow-from-bottom"></i> bx
+                      bxs-arrow-from-bottom
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-arrow-from-left"></i> bx bxs-arrow-from-left
+                      <i className="bx bxs-arrow-from-left"></i> bx
+                      bxs-arrow-from-left
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-arrow-from-right"></i> bx bxs-arrow-from-right
+                      <i className="bx bxs-arrow-from-right"></i> bx
+                      bxs-arrow-from-right
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-arrow-to-right"></i> bx bxs-arrow-to-right
+                      <i className="bx bxs-arrow-to-right"></i> bx
+                      bxs-arrow-to-right
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-arrow-to-left"></i> bx bxs-arrow-to-left
+                      <i className="bx bxs-arrow-to-left"></i> bx
+                      bxs-arrow-to-left
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-arrow-to-top"></i> bx bxs-arrow-to-top
+                      <i className="bx bxs-arrow-to-top"></i> bx
+                      bxs-arrow-to-top
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-arrow-to-bottom"></i> bx bxs-arrow-to-bottom
+                      <i className="bx bxs-arrow-to-bottom"></i> bx
+                      bxs-arrow-to-bottom
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-book-reader"></i> bx bxs-book-reader
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-edit-location"></i> bx bxs-edit-location
+                      <i className="bx bxs-edit-location"></i> bx
+                      bxs-edit-location
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-ev-station"></i> bx bxs-ev-station
@@ -3936,7 +4245,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-pizza"></i> bx bxs-pizza
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-calendar-week"></i> bx bxs-calendar-week
+                      <i className="bx bxs-calendar-week"></i> bx
+                      bxs-calendar-week
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-dice-1"></i> bx bxs-dice-1
@@ -3963,7 +4273,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-spray-can"></i> bx bxs-spray-can
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-file-archive"></i> bx bxs-file-archive
+                      <i className="bx bxs-file-archive"></i> bx
+                      bxs-file-archive
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-sticker"></i> bx bxs-sticker
@@ -3978,55 +4289,68 @@ const IconBoxicons = () => {
                       <i className="bx bxs-game"></i> bx bxs-game
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-alarm-snooze"></i> bx bxs-alarm-snooze
+                      <i className="bx bxs-alarm-snooze"></i> bx
+                      bxs-alarm-snooze
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-alarm-exclamation"></i> bx bxs-alarm-exclamation
+                      <i className="bx bxs-alarm-exclamation"></i> bx
+                      bxs-alarm-exclamation
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-chevrons-left"></i> bx bxs-chevrons-left
+                      <i className="bx bxs-chevrons-left"></i> bx
+                      bxs-chevrons-left
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-chevrons-right"></i> bx bxs-chevrons-right
+                      <i className="bx bxs-chevrons-right"></i> bx
+                      bxs-chevrons-right
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-chevrons-up"></i> bx bxs-chevrons-up
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-chevrons-down"></i> bx bxs-chevrons-down
+                      <i className="bx bxs-chevrons-down"></i> bx
+                      bxs-chevrons-down
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-chevron-down"></i> bx bxs-chevron-down
+                      <i className="bx bxs-chevron-down"></i> bx
+                      bxs-chevron-down
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-chevron-up"></i> bx bxs-chevron-up
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-chevron-right"></i> bx bxs-chevron-right
+                      <i className="bx bxs-chevron-right"></i> bx
+                      bxs-chevron-right
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-chevron-left"></i> bx bxs-chevron-left
+                      <i className="bx bxs-chevron-left"></i> bx
+                      bxs-chevron-left
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-guitar-amp"></i> bx bxs-guitar-amp
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-up-arrow-alt"></i> bx bxs-up-arrow-alt
+                      <i className="bx bxs-up-arrow-alt"></i> bx
+                      bxs-up-arrow-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-down-arrow-alt"></i> bx bxs-down-arrow-alt
+                      <i className="bx bxs-down-arrow-alt"></i> bx
+                      bxs-down-arrow-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-left-arrow-alt"></i> bx bxs-left-arrow-alt
+                      <i className="bx bxs-left-arrow-alt"></i> bx
+                      bxs-left-arrow-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-right-arrow-alt"></i> bx bxs-right-arrow-alt
+                      <i className="bx bxs-right-arrow-alt"></i> bx
+                      bxs-right-arrow-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-medal"></i> bx bxs-medal
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-shopping-bags"></i> bx bxs-shopping-bags
+                      <i className="bx bxs-shopping-bags"></i> bx
+                      bxs-shopping-bags
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-baseball"></i> bx bxs-baseball
@@ -4062,34 +4386,40 @@ const IconBoxicons = () => {
                       <i className="bx bxs-window-alt"></i> bx bxs-window-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-calendar-heart"></i> bx bxs-calendar-heart
+                      <i className="bx bxs-calendar-heart"></i> bx
+                      bxs-calendar-heart
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-cctv"></i> bx bxs-cctv
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-network-chart"></i> bx bxs-network-chart
+                      <i className="bx bxs-network-chart"></i> bx
+                      bxs-network-chart
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-vector"></i> bx bxs-vector
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-calendar-exclamation"></i> bx bxs-calendar-exclamation
+                      <i className="bx bxs-calendar-exclamation"></i> bx
+                      bxs-calendar-exclamation
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-calendar-star"></i> bx bxs-calendar-star
+                      <i className="bx bxs-calendar-star"></i> bx
+                      bxs-calendar-star
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-camera-home"></i> bx bxs-camera-home
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-camera-movie"></i> bx bxs-camera-movie
+                      <i className="bx bxs-camera-movie"></i> bx
+                      bxs-camera-movie
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-backpack"></i> bx bxs-backpack
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-cart-download"></i> bx bxs-cart-download
+                      <i className="bx bxs-cart-download"></i> bx
+                      bxs-cart-download
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-cart-add"></i> bx bxs-cart-add
@@ -4098,43 +4428,55 @@ const IconBoxicons = () => {
                       <i className="bx bxs-car-battery"></i> bx bxs-car-battery
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-caret-right-square"></i> bx bxs-caret-right-square
+                      <i className="bx bxs-caret-right-square"></i> bx
+                      bxs-caret-right-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-caret-up-square"></i> bx bxs-caret-up-square
+                      <i className="bx bxs-caret-up-square"></i> bx
+                      bxs-caret-up-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-caret-left-square"></i> bx bxs-caret-left-square
+                      <i className="bx bxs-caret-left-square"></i> bx
+                      bxs-caret-left-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-caret-down-square"></i> bx bxs-caret-down-square
+                      <i className="bx bxs-caret-down-square"></i> bx
+                      bxs-caret-down-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-shield-x"></i> bx bxs-shield-x
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-chevron-down-circle"></i> bx bxs-chevron-down-circle
+                      <i className="bx bxs-chevron-down-circle"></i> bx
+                      bxs-chevron-down-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-chevron-up-circle"></i> bx bxs-chevron-up-circle
+                      <i className="bx bxs-chevron-up-circle"></i> bx
+                      bxs-chevron-up-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-chevron-left-circle"></i> bx bxs-chevron-left-circle
+                      <i className="bx bxs-chevron-left-circle"></i> bx
+                      bxs-chevron-left-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-chevron-right-circle"></i> bx bxs-chevron-right-circle
+                      <i className="bx bxs-chevron-right-circle"></i> bx
+                      bxs-chevron-right-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-chevron-down-square"></i> bx bxs-chevron-down-square
+                      <i className="bx bxs-chevron-down-square"></i> bx
+                      bxs-chevron-down-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-chevron-up-square"></i> bx bxs-chevron-up-square
+                      <i className="bx bxs-chevron-up-square"></i> bx
+                      bxs-chevron-up-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-chevron-left-square"></i> bx bxs-chevron-left-square
+                      <i className="bx bxs-chevron-left-square"></i> bx
+                      bxs-chevron-left-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-chevron-right-square"></i> bx bxs-chevron-right-square
+                      <i className="bx bxs-chevron-right-square"></i> bx
+                      bxs-chevron-right-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-church"></i> bx bxs-church
@@ -4155,103 +4497,133 @@ const IconBoxicons = () => {
                       <i className="bx bxs-home-smile"></i> bx bxs-home-smile
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-envelope-open"></i> bx bxs-envelope-open
+                      <i className="bx bxs-envelope-open"></i> bx
+                      bxs-envelope-open
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-message-alt-add"></i> bx bxs-message-alt-add
+                      <i className="bx bxs-message-alt-add"></i> bx
+                      bxs-message-alt-add
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-message-alt-check"></i> bx bxs-message-alt-check
+                      <i className="bx bxs-message-alt-check"></i> bx
+                      bxs-message-alt-check
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-message-alt-error"></i> bx bxs-message-alt-error
+                      <i className="bx bxs-message-alt-error"></i> bx
+                      bxs-message-alt-error
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-message-alt-x"></i> bx bxs-message-alt-x
+                      <i className="bx bxs-message-alt-x"></i> bx
+                      bxs-message-alt-x
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-message-alt-minus"></i> bx bxs-message-alt-minus
+                      <i className="bx bxs-message-alt-minus"></i> bx
+                      bxs-message-alt-minus
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-message-alt-edit"></i> bx bxs-message-alt-edit
+                      <i className="bx bxs-message-alt-edit"></i> bx
+                      bxs-message-alt-edit
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-message-alt-detail"></i> bx bxs-message-alt-detail
+                      <i className="bx bxs-message-alt-detail"></i> bx
+                      bxs-message-alt-detail
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-message-rounded-check"></i> bx bxs-message-rounded-check
+                      <i className="bx bxs-message-rounded-check"></i> bx
+                      bxs-message-rounded-check
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-message-rounded-error"></i> bx bxs-message-rounded-error
+                      <i className="bx bxs-message-rounded-error"></i> bx
+                      bxs-message-rounded-error
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-message-rounded-x"></i> bx bxs-message-rounded-x
+                      <i className="bx bxs-message-rounded-x"></i> bx
+                      bxs-message-rounded-x
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-message-rounded-minus"></i> bx bxs-message-rounded-minus
+                      <i className="bx bxs-message-rounded-minus"></i> bx
+                      bxs-message-rounded-minus
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-message-rounded-edit"></i> bx bxs-message-rounded-edit
+                      <i className="bx bxs-message-rounded-edit"></i> bx
+                      bxs-message-rounded-edit
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-message-rounded-add"></i> bx bxs-message-rounded-add
+                      <i className="bx bxs-message-rounded-add"></i> bx
+                      bxs-message-rounded-add
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-message-rounded-detail"></i> bx bxs-message-rounded-detail
+                      <i className="bx bxs-message-rounded-detail"></i> bx
+                      bxs-message-rounded-detail
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-message-check"></i> bx bxs-message-check
+                      <i className="bx bxs-message-check"></i> bx
+                      bxs-message-check
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-message-error"></i> bx bxs-message-error
+                      <i className="bx bxs-message-error"></i> bx
+                      bxs-message-error
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-message-x"></i> bx bxs-message-x
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-message-minus"></i> bx bxs-message-minus
+                      <i className="bx bxs-message-minus"></i> bx
+                      bxs-message-minus
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-message-edit"></i> bx bxs-message-edit
+                      <i className="bx bxs-message-edit"></i> bx
+                      bxs-message-edit
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-message-add"></i> bx bxs-message-add
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-message-detail"></i> bx bxs-message-detail
+                      <i className="bx bxs-message-detail"></i> bx
+                      bxs-message-detail
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-message-square-check"></i> bx bxs-message-square-check
+                      <i className="bx bxs-message-square-check"></i> bx
+                      bxs-message-square-check
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-message-square-error"></i> bx bxs-message-square-error
+                      <i className="bx bxs-message-square-error"></i> bx
+                      bxs-message-square-error
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-message-square-x"></i> bx bxs-message-square-x
+                      <i className="bx bxs-message-square-x"></i> bx
+                      bxs-message-square-x
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-message-square-minus"></i> bx bxs-message-square-minus
+                      <i className="bx bxs-message-square-minus"></i> bx
+                      bxs-message-square-minus
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-message-square-edit"></i> bx bxs-message-square-edit
+                      <i className="bx bxs-message-square-edit"></i> bx
+                      bxs-message-square-edit
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-message-square-add"></i> bx bxs-message-square-add
+                      <i className="bx bxs-message-square-add"></i> bx
+                      bxs-message-square-add
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-message-square-detail"></i> bx bxs-message-square-detail
+                      <i className="bx bxs-message-square-detail"></i> bx
+                      bxs-message-square-detail
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-comment-check"></i> bx bxs-comment-check
+                      <i className="bx bxs-comment-check"></i> bx
+                      bxs-comment-check
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-comment-x"></i> bx bxs-comment-x
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-comment-edit"></i> bx bxs-comment-edit
+                      <i className="bx bxs-comment-edit"></i> bx
+                      bxs-comment-edit
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-comment-minus"></i> bx bxs-comment-minus
+                      <i className="bx bxs-comment-minus"></i> bx
+                      bxs-comment-minus
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-cookie"></i> bx bxs-cookie
@@ -4260,7 +4632,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-copyright"></i> bx bxs-copyright
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-credit-card-front"></i> bx bxs-credit-card-front
+                      <i className="bx bxs-credit-card-front"></i> bx
+                      bxs-credit-card-front
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-crop"></i> bx bxs-crop
@@ -4272,28 +4645,35 @@ const IconBoxicons = () => {
                       <i className="bx bxs-door-open"></i> bx bxs-door-open
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-donate-heart"></i> bx bxs-donate-heart
+                      <i className="bx bxs-donate-heart"></i> bx
+                      bxs-donate-heart
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-donate-blood"></i> bx bxs-donate-blood
+                      <i className="bx bxs-donate-blood"></i> bx
+                      bxs-donate-blood
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-bookmark-heart"></i> bx bxs-bookmark-heart
+                      <i className="bx bxs-bookmark-heart"></i> bx
+                      bxs-bookmark-heart
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-category"></i> bx bxs-category
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-category-alt"></i> bx bxs-category-alt
+                      <i className="bx bxs-category-alt"></i> bx
+                      bxs-category-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-bookmark-alt"></i> bx bxs-bookmark-alt
+                      <i className="bx bxs-bookmark-alt"></i> bx
+                      bxs-bookmark-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-bookmark-alt-plus"></i> bx bxs-bookmark-alt-plus
+                      <i className="bx bxs-bookmark-alt-plus"></i> bx
+                      bxs-bookmark-alt-plus
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-bookmark-alt-minus"></i> bx bxs-bookmark-alt-minus
+                      <i className="bx bxs-bookmark-alt-minus"></i> bx
+                      bxs-bookmark-alt-minus
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-face-mask"></i> bx bxs-face-mask
@@ -4308,7 +4688,8 @@ const IconBoxicons = () => {
                       <i className="bx bxs-movie-play"></i> bx bxs-movie-play
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxs-user-account"></i> bx bxs-user-account
+                      <i className="bx bxs-user-account"></i> bx
+                      bxs-user-account
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxs-virus"></i> bx bxs-virus
@@ -4321,7 +4702,12 @@ const IconBoxicons = () => {
                   {/* <!--Solid Icons end row --> */}
 
                   <h4 className="mt-5">Logos</h4>
-                  <p className="text-muted mb-0">Use class <code>&lt;i className="bx bl-**"{'>'}&lt;/i{'>'}</code></p>
+                  <p className="text-muted mb-0">
+                    Use class{" "}
+                    <code>
+                      &lt;i className="bx bl-**"{">"}&lt;/i{">"}
+                    </code>
+                  </p>
                   <Row className="icon-demo-content">
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxl-meta"></i> bx bxl-meta
@@ -4369,10 +4755,12 @@ const IconBoxicons = () => {
                       <i className="bx bxl-steam"></i> bx bxl-steam
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxl-trip-advisor"></i> bx bxl-trip-advisor
+                      <i className="bx bxl-trip-advisor"></i> bx
+                      bxl-trip-advisor
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxl-visual-studio"></i> bx bxl-visual-studio
+                      <i className="bx bxl-visual-studio"></i> bx
+                      bxl-visual-studio
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxl-unity"></i> bx bxl-unity
@@ -4390,13 +4778,16 @@ const IconBoxicons = () => {
                       <i className="bx bxl-mastodon"></i> bx bxl-mastodon
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxl-tailwind-css"></i> bx bxl-tailwind-css
+                      <i className="bx bxl-tailwind-css"></i> bx
+                      bxl-tailwind-css
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxl-instagram-alt"></i> bx bxl-instagram-alt
+                      <i className="bx bxl-instagram-alt"></i> bx
+                      bxl-instagram-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxl-facebook-circle"></i> bx bxl-facebook-circle
+                      <i className="bx bxl-facebook-circle"></i> bx
+                      bxl-facebook-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxl-jquery"></i> bx bxl-jquery
@@ -4405,7 +4796,8 @@ const IconBoxicons = () => {
                       <i className="bx bxl-imdb"></i> bx bxl-imdb
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxl-pinterest-alt"></i> bx bxl-pinterest-alt
+                      <i className="bx bxl-pinterest-alt"></i> bx
+                      bxl-pinterest-alt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxl-adobe"></i> bx bxl-adobe
@@ -4471,22 +4863,26 @@ const IconBoxicons = () => {
                       <i className="bx bxl-bitcoin"></i> bx bxl-bitcoin
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxl-facebook-square"></i> bx bxl-facebook-square
+                      <i className="bx bxl-facebook-square"></i> bx
+                      bxl-facebook-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxl-google-plus"></i> bx bxl-google-plus
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxl-google-plus-circle"></i> bx bxl-google-plus-circle
+                      <i className="bx bxl-google-plus-circle"></i> bx
+                      bxl-google-plus-circle
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxl-linkedin-square"></i> bx bxl-linkedin-square
+                      <i className="bx bxl-linkedin-square"></i> bx
+                      bxl-linkedin-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxl-medium"></i> bx bxl-medium
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxl-medium-square"></i> bx bxl-medium-square
+                      <i className="bx bxl-medium-square"></i> bx
+                      bxl-medium-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxl-skype"></i> bx bxl-skype
@@ -4543,10 +4939,12 @@ const IconBoxicons = () => {
                       <i className="bx bxl-codepen"></i> bx bxl-codepen
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxl-creative-commons"></i> bx bxl-creative-commons
+                      <i className="bx bxl-creative-commons"></i> bx
+                      bxl-creative-commons
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxl-digitalocean"></i> bx bxl-digitalocean
+                      <i className="bx bxl-digitalocean"></i> bx
+                      bxl-digitalocean
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxl-deviantart"></i> bx bxl-deviantart
@@ -4603,13 +5001,15 @@ const IconBoxicons = () => {
                       <i className="bx bxl-html5"></i> bx bxl-html5
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxl-product-hunt"></i> bx bxl-product-hunt
+                      <i className="bx bxl-product-hunt"></i> bx
+                      bxl-product-hunt
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxl-magento"></i> bx bxl-magento
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxl-stack-overflow"></i> bx bxl-stack-overflow
+                      <i className="bx bxl-stack-overflow"></i> bx
+                      bxl-stack-overflow
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxl-firefox"></i> bx bxl-firefox
@@ -4651,7 +5051,8 @@ const IconBoxicons = () => {
                       <i className="bx bxl-paypal"></i> bx bxl-paypal
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxl-internet-explorer"></i> bx bxl-internet-explorer
+                      <i className="bx bxl-internet-explorer"></i> bx
+                      bxl-internet-explorer
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxl-joomla"></i> bx bxl-joomla
@@ -4723,10 +5124,12 @@ const IconBoxicons = () => {
                       <i className="bx bxl-squarespace"></i> bx bxl-squarespace
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxl-whatsapp-square"></i> bx bxl-whatsapp-square
+                      <i className="bx bxl-whatsapp-square"></i> bx
+                      bxl-whatsapp-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxl-flickr-square"></i> bx bxl-flickr-square
+                      <i className="bx bxl-flickr-square"></i> bx
+                      bxl-flickr-square
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxl-dev-to"></i> bx bxl-dev-to
@@ -4735,7 +5138,8 @@ const IconBoxicons = () => {
                       <i className="bx bxl-zoom"></i> bx bxl-zoom
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxl-microsoft-teams"></i> bx bxl-microsoft-teams
+                      <i className="bx bxl-microsoft-teams"></i> bx
+                      bxl-microsoft-teams
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxl-blender"></i> bx bxl-blender
@@ -4744,7 +5148,8 @@ const IconBoxicons = () => {
                       <i className="bx bxl-kubernetes"></i> bx bxl-kubernetes
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                      <i className="bx bxl-google-cloud"></i> bx bxl-google-cloud
+                      <i className="bx bxl-google-cloud"></i> bx
+                      bxl-google-cloud
                     </div>
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                       <i className="bx bxl-django"></i> bx bxl-django

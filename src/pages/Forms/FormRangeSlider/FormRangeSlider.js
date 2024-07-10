@@ -4,7 +4,6 @@ import { Card, Col, Row, CardHeader, Container } from "reactstrap";
 import BreadCrumb from "../../../Components/Common/BreadCrumb";
 import UiContent from "../../../Components/Common/UiContent";
 
-
 import Slider from "react-rangeslider";
 import "react-rangeslider/lib/index.css";
 
@@ -42,11 +41,8 @@ const FormRangeSlider = () => {
     <React.Fragment>
       <UiContent />
       <div className="page-content">
-        
-          <title>
-            Range Slider | Velzon - React Admin & Dashboard Template
-          </title>
-        
+        <title>Range Slider | Standartlar onlayn do'koni</title>
+
         <Container fluid>
           <BreadCrumb title="Range Slider" pageTitle="Forms" />
           <Row>
