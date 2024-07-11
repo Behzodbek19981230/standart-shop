@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.82fc61a3.css",
-    "main.js": "/static/js/main.d8801bc3.js",
+    "main.js": "/static/js/main.dcbc98d8.js",
     "static/media/remixicon.svg?t=1590207869815": "/static/media/remixicon.1664a258a7e7714f6f8d.svg",
     "static/media/boxicons.svg": "/static/media/boxicons.17f6cb4eef77f07f2caa.svg",
     "static/media/materialdesignicons-webfont.eot": "/static/media/materialdesignicons-webfont.e044ed23c047e571c550.eot",
@@ -600,6 +600,6 @@
   },
   "entrypoints": [
     "static/css/main.82fc61a3.css",
-    "static/js/main.d8801bc3.js"
+    "static/js/main.dcbc98d8.js"
   ]
 }

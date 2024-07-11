@@ -61,13 +61,13 @@ const Products = () => {
                 </Link>
               </div>
               <Card>
-                <div className=" custom-accordion-border accordion-border-box accordion-success landing accordion">
-                  <div className="accordion-item">
-                    <CardBody className="p-0">
-                      <ul className="list-group list-group-flush  mb-0  ">
+                <CardBody>
+                  <div className=" custom-accordion-border accordion-border-box accordion-success landing accordion">
+                    <div className="accordion-item">
+                      <ul className="list-group list-group-flush   mb-0  ">
                         {(topPerformers || []).map((item, key) => (
                           <li
-                            className="list-group-item d-flex align-items-center selected landing-border"
+                            className="list-group-item d-flex align-items-center selected border-dishes "
                             key={key}
                           >
                             {/* <div className="flex-shrink-0">
@@ -88,9 +88,9 @@ const Products = () => {
                           </li>
                         ))}
                       </ul>
-                    </CardBody>
+                    </div>
                   </div>
-                </div>
+                </CardBody>
               </Card>
             </Col>
             <Col lg={6}>
@@ -106,13 +106,13 @@ const Products = () => {
                 </Link>
               </div>
               <Card>
-                <div className=" custom-accordion-border accordion-border-box accordion-success landing accordion">
-                  <div className="accordion-item">
-                    <CardBody className="p-0">
+                <CardBody>
+                  <div className=" custom-accordion-border accordion-border-box accordion-success landing accordion">
+                    <div className="accordion-item">
                       <ul className="list-group list-group-flush  mb-0">
                         {(signers || []).map((item, key) => (
                           <li
-                            className="list-group-item landing-border d-flex align-items-center selected"
+                            className="list-group-item  d-flex align-items-center selected"
                             key={key}
                           >
                             {/* <div className="flex-shrink-0">
@@ -133,9 +133,9 @@ const Products = () => {
                           </li>
                         ))}
                       </ul>
-                    </CardBody>
+                    </div>
                   </div>
-                </div>
+                </CardBody>
               </Card>
             </Col>
           </Row>
