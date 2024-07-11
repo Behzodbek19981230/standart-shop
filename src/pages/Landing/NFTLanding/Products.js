@@ -49,81 +49,93 @@ const Products = () => {
           </Row> */}
           <Row>
             <Col lg={6}>
-              <Card>
-                <CardHeader className="align-items-center d-flex justify-content-between">
-                  <h2 className=" mb-0 fw-semibold lh-base flex-grow-1">
+              <div className="d-flex align-items-center mb-2">
+                <div className="flex-grow-1">
+                  <h2 className="mb-0 fw-semibold lh-base flex-grow-1">
                     Mahsulotlar haqida
                   </h2>
-                  <Link to="#" className="fs-13 fw-medium text-success">
-                    Barchasi{" "}
-                    <i className="ri-arrow-right-s-line align-bottom"></i>
-                  </Link>
-                </CardHeader>
-                <CardBody className="p-0">
-                  <ul className="list-group list-group-flush border-dashed mb-0">
-                    {(topPerformers || []).map((item, key) => (
-                      <li
-                        className="list-group-item d-flex align-items-center selected"
-                        key={key}
-                      >
-                        {/* <div className="flex-shrink-0">
+                </div>
+                <Link to="#" className="fs-13 fw-medium text-success">
+                  Barchasi{" "}
+                  <i className="ri-arrow-right-s-line align-bottom"></i>
+                </Link>
+              </div>
+              <Card>
+                <div className=" custom-accordion-border accordion-border-box accordion-success landing accordion">
+                  <div className="accordion-item">
+                    <CardBody className="p-0">
+                      <ul className="list-group list-group-flush  mb-0  ">
+                        {(topPerformers || []).map((item, key) => (
+                          <li
+                            className="list-group-item d-flex align-items-center selected landing-border"
+                            key={key}
+                          >
+                            {/* <div className="flex-shrink-0">
                           <img src={item.img} className="avatar-xs" alt="" />
                         </div> */}
-                        <div className="flex-grow-1 ms-3">
-                          <h6 className="fs-14 mb-1">{item.coinName}</h6>
-                          {/* <p className="text-muted mb-0">
+                            <div className="flex-grow-1 ms-3">
+                              <h6 className="fs-14 mb-1">{item.coinName}</h6>
+                              {/* <p className="text-muted mb-0">
                             ${item.marketCap} Billions
                           </p> */}
-                        </div>
-                        {/* <div className="flex-shrink-0 text-end">
+                            </div>
+                            {/* <div className="flex-shrink-0 text-end">
                           <h6 className="fs-14 mb-1">${item.price}</h6>
                           <p className={"fs-12 mb-0 text-" + item.textColor}>
                             {item.change} ({item.percentage})
                           </p>
                         </div> */}
-                      </li>
-                    ))}
-                  </ul>
-                </CardBody>
+                          </li>
+                        ))}
+                      </ul>
+                    </CardBody>
+                  </div>
+                </div>
               </Card>
             </Col>
             <Col lg={6}>
-              <Card>
-                <CardHeader className="align-items-center d-flex justify-content-between">
-                  <h2 className=" mb-0 fw-semibold lh-base flex-grow-1">
-                    Nashrlar{" "}
+              <div className="d-flex align-items-center mb-2">
+                <div className="flex-grow-1">
+                  <h2 className="mb-0 fw-semibold lh-base flex-grow-1">
+                    Nashrlar
                   </h2>
-                  <Link to="#" className="fs-13 fw-medium text-success">
-                    Barchasi{" "}
-                    <i className="ri-arrow-right-s-line align-bottom"></i>
-                  </Link>
-                </CardHeader>
-                <CardBody className="p-0">
-                  <ul className="list-group list-group-flush border-dashed mb-0">
-                    {(signers || []).map((item, key) => (
-                      <li
-                        className="list-group-item d-flex align-items-center selected"
-                        key={key}
-                      >
-                        {/* <div className="flex-shrink-0">
+                </div>
+                <Link to="#" className="fs-13 fw-medium text-success">
+                  Barchasi{" "}
+                  <i className="ri-arrow-right-s-line align-bottom"></i>
+                </Link>
+              </div>
+              <Card>
+                <div className=" custom-accordion-border accordion-border-box accordion-success landing accordion">
+                  <div className="accordion-item">
+                    <CardBody className="p-0">
+                      <ul className="list-group list-group-flush  mb-0">
+                        {(signers || []).map((item, key) => (
+                          <li
+                            className="list-group-item landing-border d-flex align-items-center selected"
+                            key={key}
+                          >
+                            {/* <div className="flex-shrink-0">
                           <img src={item.img} className="avatar-xs" alt="" />
                         </div> */}
-                        <div className="flex-grow-1 ms-3">
-                          <h6 className="fs-14 mb-1">{item.title}</h6>
-                          {/* <p className="text-muted mb-0">
+                            <div className="flex-grow-1 ms-3">
+                              <h6 className="fs-14 mb-1">{item.title}</h6>
+                              {/* <p className="text-muted mb-0">
                             ${item.marketCap} Billions
                           </p> */}
-                        </div>
-                        {/* <div className="flex-shrink-0 text-end">
+                            </div>
+                            {/* <div className="flex-shrink-0 text-end">
                           <h6 className="fs-14 mb-1">${item.price}</h6>
                           <p className={"fs-12 mb-0 text-" + item.textColor}>
                             {item.change} ({item.percentage})
                           </p>
                         </div> */}
-                      </li>
-                    ))}
-                  </ul>
-                </CardBody>
+                          </li>
+                        ))}
+                      </ul>
+                    </CardBody>
+                  </div>
+                </div>
               </Card>
             </Col>
           </Row>

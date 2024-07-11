@@ -109,7 +109,7 @@ const Standarts = () => {
                                     whileTap={{ scale: 0.9 }}
                                     transition={{ duration: 0.3 }}
                                   >
-                                    <Card className="pricing-box ribbon-box right">
+                                    <Card className="pricing-box ribbon-box right border card-border-success">
                                       {price2.ribbon === true ? (
                                         <div className="ribbon-two ribbon-two-danger">
                                           <span>Popular</span>

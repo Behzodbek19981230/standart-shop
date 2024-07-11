@@ -90,20 +90,38 @@ const Faqs = () => {
                   <i className="ri-arrow-right-s-line align-bottom"></i>
                 </Link>
               </div>
-              <div className=" custom-accordion-border accordion-border-box accordion-success landing accordion">
-                {signers?.map((res, i) => (
-                  <div className="accordion-item" key={i}>
-                    <h2 className="accordion-header" id="headingOne">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                      >
-                        {res?.title}
-                      </button>
-                    </h2>
+              <Card>
+                <CardBody>
+                  <div className=" custom-accordion-border accordion-border-box accordion-success border-none landing accordion">
+                    <div className="accordion-item">
+                      <ul className="list-group list-group-flush  mb-0">
+                        {(signers || []).map((item, key) => (
+                          <li
+                            className="list-group-item d-flex align-items-center selected border-0"
+                            key={key}
+                          >
+                            {/* <div className="flex-shrink-0">
+                          <img src={item.img} className="avatar-xs" alt="" />
+                        </div> */}
+                            <div className="flex-grow-1 ms-3">
+                              <h6 className="fs-14 mb-1">{item.title}</h6>
+                              {/* <p className="text-muted mb-0">
+                            ${item.marketCap} Billions
+                          </p> */}
+                            </div>
+                            {/* <div className="flex-shrink-0 text-end">
+                          <h6 className="fs-14 mb-1">${item.price}</h6>
+                          <p className={"fs-12 mb-0 text-" + item.textColor}>
+                            {item.change} ({item.percentage})
+                          </p>
+                        </div> */}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
-                ))}
-              </div>
+                </CardBody>
+              </Card>
             </Col>
             <Col lg={6}>
               <div className="d-flex align-items-center mb-2">
@@ -117,13 +135,13 @@ const Faqs = () => {
                   <i className="ri-arrow-right-s-line align-bottom"></i>
                 </Link>
               </div>
-              <Card className="shadow-none">
+              <Card>
                 <CardBody>
                   <div className=" custom-accordion-border accordion-border-box accordion-success landing accordion">
-                    <div className="table-responsive table-card">
+                    <div className="table-responsive ">
                       <div className="accordion-item">
-                        <table className="table table-nowrap table-centered align-middle mb-0">
-                          <thead className=" text-muted">
+                        <table className="table table-nowrap table-centered align-middle mb-0 border-success table-borderless">
+                          <thead className=" text-muted border-0 ">
                             <tr>
                               <th scope="col">Наименования издания</th>
                               <th scope="col">Цена за номер (1 экз.), руб</th>

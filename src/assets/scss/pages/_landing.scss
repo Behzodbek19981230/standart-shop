@@ -10,6 +10,13 @@
     font-size: 15px;
   }
 }
+.landing .accordion-item {
+  border-left: 6px solid $success !important;
+  // border: 1px solid rgba(23, 77, 149, 0.6);
+}
+.landing-border {
+  border-color: #a5bbd7 !important;
+}
 
 // helper
 
