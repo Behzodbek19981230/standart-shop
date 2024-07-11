@@ -34,9 +34,9 @@ const Standarts = () => {
                     <Col lg={2}>
                       <Card>
                         <CardBody>
-                          <div className="text-center">
+                          <div className="text-center" style={{ height: 330 }}>
                             <ul
-                              className="d-flex flex-column list-inline categories-filter animation-nav"
+                              className="d-flex flex-column list-inline categories-filter animation-nav pb-5"
                               id="filter"
                             >
                               <li className="list-inline-item ">
@@ -127,18 +127,9 @@ const Standarts = () => {
                                       <CardBody className="p-4 m-2">
                                         <div className="d-flex align-items-center">
                                           <div className="flex-grow-1">
-                                            <h5 className="mb-1 fw-semibold">
+                                            <h5 className="text-card-elleps-id mb-1 fw-semibold">
                                               {price2.type}
                                             </h5>
-                                          </div>
-                                          <div className="avatar-sm">
-                                            <div className="avatar-title bg-light rounded-circle text-primary">
-                                              <i
-                                                className={
-                                                  "fs-20 " + price2.icon
-                                                }
-                                              ></i>
-                                            </div>
                                           </div>
                                         </div>
                                         <div className="pt-4">

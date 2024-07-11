@@ -28,6 +28,14 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.text-card-elleps-id {
+  height: 40px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .landing .accordion-button {
   background-image: none !important;
 }

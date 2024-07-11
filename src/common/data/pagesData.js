@@ -232,7 +232,7 @@ const pricing1 = [
 const pricing2 = [
   {
     id: 1,
-    type: "SS ISO 50001:2018+A1:2024",
+    type: "SS ISO 50001:2018+A1:2024 asassssss saaaaaaaaaaaa aaaaaaaaaaa",
     purpose: "Umumiy holat. Terminologiya. Standartlashtirish. Hujjatlar",
     planIcon: "ri-book-mark-line",
     rate: 19,
