@@ -81,7 +81,9 @@ const Faqs = () => {
             <Col lg={6}>
               <div className="d-flex align-items-center mb-2">
                 <div className="flex-grow-1">
-                  <h5 className="mb-0 fw-semibold">Xizmatlar</h5>
+                  <h2 className="mb-0 fw-semibold lh-base flex-grow-1">
+                    Xizmatlar
+                  </h2>
                 </div>
                 <Link to="#" className="fs-13 fw-medium text-success">
                   Barchasi{" "}
@@ -106,7 +108,9 @@ const Faqs = () => {
             <Col lg={6}>
               <div className="d-flex align-items-center mb-2">
                 <div className="flex-grow-1">
-                  <h5 className="mb-0 fw-semibold">Obunalar</h5>
+                  <h2 className="mb-0 fw-semibold lh-base flex-grow-1">
+                    Obunalar
+                  </h2>
                 </div>
                 <Link to="#" className="fs-13 fw-medium text-success">
                   Barchasi{" "}
@@ -115,38 +119,42 @@ const Faqs = () => {
               </div>
               <Card className="shadow-none">
                 <CardBody>
-                  <div className="table-responsive table-card">
-                    <table className="table table-nowrap table-centered align-middle mb-0">
-                      <thead className=" text-muted">
-                        <tr>
-                          <th scope="col">Наименования издания</th>
-                          <th scope="col">Цена за номер (1 экз.), руб</th>
-                          <th scope="col">Цена в рублях, с НДС 10 %</th>
-                        </tr>
-                      </thead>
+                  <div className=" custom-accordion-border accordion-border-box accordion-success landing accordion">
+                    <div className="table-responsive table-card">
+                      <div className="accordion-item">
+                        <table className="table table-nowrap table-centered align-middle mb-0">
+                          <thead className=" text-muted">
+                            <tr>
+                              <th scope="col">Наименования издания</th>
+                              <th scope="col">Цена за номер (1 экз.), руб</th>
+                              <th scope="col">Цена в рублях, с НДС 10 %</th>
+                            </tr>
+                          </thead>
 
-                      <tbody>
-                        {(obuna || []).map((item, key) => (
-                          <tr key={key}>
-                            <td className="fw-medium">
-                              {item.title}
-                              <div className="d-flex align-items-center">
-                                <div className="flex-shrink-0 me-1 text-muted fs-13">
-                                  {item.note}
-                                </div>
-                              </div>
-                            </td>
-                            <td className="text-muted">
-                              <span>{item.value1}</span>
-                            </td>
+                          <tbody>
+                            {(obuna || []).map((item, key) => (
+                              <tr key={key}>
+                                <td className="fw-medium">
+                                  {item.title}
+                                  <div className="d-flex align-items-center">
+                                    <div className="flex-shrink-0 me-1 text-muted fs-13">
+                                      {item.note}
+                                    </div>
+                                  </div>
+                                </td>
+                                <td className="text-muted">
+                                  <span>{item.value1}</span>
+                                </td>
 
-                            <td className="text-muted">
-                              <span>{item.value2}</span>
-                            </td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
+                                <td className="text-muted">
+                                  <span>{item.value2}</span>
+                                </td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
                   </div>
                 </CardBody>
               </Card>

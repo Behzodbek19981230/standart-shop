@@ -51,7 +51,9 @@ const Products = () => {
             <Col lg={6}>
               <Card>
                 <CardHeader className="align-items-center d-flex justify-content-between">
-                  <h4 className="card-title mb-0  me-2">Mahsulotlar haqida</h4>
+                  <h2 className=" mb-0 fw-semibold lh-base flex-grow-1">
+                    Mahsulotlar haqida
+                  </h2>
                   <Link to="#" className="fs-13 fw-medium text-success">
                     Barchasi{" "}
                     <i className="ri-arrow-right-s-line align-bottom"></i>
@@ -88,7 +90,9 @@ const Products = () => {
             <Col lg={6}>
               <Card>
                 <CardHeader className="align-items-center d-flex justify-content-between">
-                  <h4 className="card-title mb-0  me-2">Nashrlar</h4>
+                  <h2 className=" mb-0 fw-semibold lh-base flex-grow-1">
+                    Nashrlar{" "}
+                  </h2>
                   <Link to="#" className="fs-13 fw-medium text-success">
                     Barchasi{" "}
                     <i className="ri-arrow-right-s-line align-bottom"></i>
