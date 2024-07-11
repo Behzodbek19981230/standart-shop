@@ -1,160 +1,127 @@
-import React, { useState } from "react";
-import { Container, Row, Col, Nav, NavItem, NavLink } from "reactstrap";
+import React from "react";
 import { Link } from "react-router-dom";
-import { productData } from "../../../common/data";
+import { Card, CardBody, CardHeader, Col, Container, Row } from "reactstrap";
+import { topPerformers } from "../../../common/data";
 
 const Products = () => {
-  const [nav, setNav] = useState("All");
-
+  const signers = [
+    {
+      id: 1,
+      title: "2023 yil oktyabr-noyabr oylari uchun standartlar ro'yxati",
+    },
+    {
+      id: 2,
+      title: "2023 yil avgust-sentyabr oylari uchun standartlar ro'yxati.",
+    },
+    {
+      id: 3,
+      title: "2023 yil iyul oyi uchun standartlar ro'yxati.",
+    },
+    {
+      id: 4,
+      title: "2023 yil iyun uchun standartlar ro'yxati",
+    },
+    {
+      id: 5,
+      title: "2023 yil iyun uchun standartlar ro'yxati",
+    },
+    {
+      id: 6,
+      title: "2023 yil iyun uchun standartlar ro'yxati",
+    },
+  ];
   return (
     <React.Fragment>
-      <section className="section bg-light" id="marketplace">
+      <section className="section" id="product">
         <Container>
-          <Row className="justify-content-center">
-            <Col lg={8}>
-              <div className="text-center mb-5">
-                <h2 className="mb-3 fw-semibold lh-base">Explore Products</h2>
-                <p className="text-muted mb-4">
-                  Collection widgets specialize in displaying many elements of
-                  the same type, such as a collection of pictures from a
-                  collection of articles.
-                </p>
-                <Nav
-                  pills
-                  className="nav-pills filter-btns justify-content-center"
-                  role="tablist"
-                >
-                  <NavItem role="presentation">
-                    <NavLink
-                      type="button"
-                      onClick={() => setNav("All")}
-                      className={
-                        nav === "All" ? " fw-medium active" : "fw-medium"
-                      }
-                    >
-                      All Items
-                    </NavLink>
-                  </NavItem>
-                  <NavItem role="presentation">
-                    <NavLink
-                      type="button"
-                      onClick={() => setNav("artwork")}
-                      className={
-                        nav === "artwork" ? " fw-medium active" : "fw-medium"
-                      }
-                    >
-                      Artwork
-                    </NavLink>
-                  </NavItem>
-                  <NavItem role="presentation">
-                    <NavLink
-                      type="button"
-                      onClick={() => setNav("music")}
-                      className={
-                        nav === "music" ? " fw-medium active" : "fw-medium"
-                      }
-                    >
-                      Music
-                    </NavLink>
-                  </NavItem>
-                  <NavItem role="presentation">
-                    <NavLink
-                      type="button"
-                      onClick={() => setNav("games")}
-                      className={
-                        nav === "games" ? " fw-medium active" : "fw-medium"
-                      }
-                    >
-                      Games
-                    </NavLink>
-                  </NavItem>
-                  <NavItem role="presentation">
-                    <NavLink
-                      type="button"
-                      onClick={() => setNav("crypto-card")}
-                      className={
-                        nav === "crypto-card"
-                          ? " fw-medium active"
-                          : "fw-medium"
-                      }
-                    >
-                      Crypto Card
-                    </NavLink>
-                  </NavItem>
-                  <NavItem role="presentation">
-                    <NavLink
-                      type="button"
-                      onClick={() => setNav("3d-style")}
-                      className={
-                        nav === "3d-style" ? " fw-medium active" : "fw-medium"
-                      }
-                    >
-                      3d Style
-                    </NavLink>
-                  </NavItem>
-                </Nav>
+          {/* <Row className="justify-content-center">
+            <Col lg={12}>
+              <div className="d-flex align-items-center mb-4">
+                <h2 className="mb-0 fw-semibold lh-base flex-grow-1">
+                  Mahsulotlar haqida
+                </h2>
+                <Link to="#" className="fs-13 fw-medium text-success">
+                  Barchasi{" "}
+                  <i className="ri-arrow-right-s-line align-bottom"></i>
+                </Link>
               </div>
             </Col>
-          </Row>
+          </Row> */}
           <Row>
-            {productData
-              .filter(({ categories }) => nav === categories || nav === "All")
-              .map((item, key) => (
-                <Col
-                  key={key}
-                  lg={4}
-                  className={"product-item " + item.isClass}
-                >
-                  <div className="card explore-box card-animate">
-                    <div className="bookmark-icon position-absolute top-0 end-0 p-2">
-                      <button
-                        type="button"
-                        className="btn btn-icon active"
-                        data-bs-toggle="button"
-                        aria-pressed="true"
+            <Col lg={6}>
+              <Card>
+                <CardHeader className="align-items-center d-flex justify-content-between">
+                  <h4 className="card-title mb-0  me-2">Mahsulotlar haqida</h4>
+                  <Link to="#" className="fs-13 fw-medium text-success">
+                    Barchasi{" "}
+                    <i className="ri-arrow-right-s-line align-bottom"></i>
+                  </Link>
+                </CardHeader>
+                <CardBody className="p-0">
+                  <ul className="list-group list-group-flush border-dashed mb-0">
+                    {(topPerformers || []).map((item, key) => (
+                      <li
+                        className="list-group-item d-flex align-items-center selected"
+                        key={key}
                       >
-                        <i className="mdi mdi-cards-heart fs-16"></i>
-                      </button>
-                    </div>
-                    <div className="explore-place-bid-img">
-                      <img
-                        src={item.img}
-                        alt=""
-                        className="card-img-top explore-img"
-                      />
-                      <div className="bg-overlay"></div>
-                      <div className="place-bid-btn">
-                        <Link to="#" className="btn btn-success">
-                          <i className="ri-auction-fill align-bottom me-1"></i>{" "}
-                          Place Bid
-                        </Link>
-                      </div>
-                    </div>
-                    <div className="card-body">
-                      <p className="fw-medium mb-0 float-end">
-                        <i className="mdi mdi-heart text-danger align-middle"></i>{" "}
-                        {item.likes}{" "}
-                      </p>
-                      <h5 className="mb-1">
-                        <Link to="/apps-nft-item-details">{item.title}</Link>
-                      </h5>
-                      <p className="text-muted mb-0">{item.category}</p>
-                    </div>
-                    <div className="card-footer border-top border-top-dashed">
-                      <div className="d-flex align-items-center">
-                        <div className="flex-grow-1 fs-14">
-                          <i className="ri-price-tag-3-fill text-warning align-bottom me-1"></i>{" "}
-                          Highest:{" "}
-                          <span className="fw-medium">{item.highest}</span>
+                        {/* <div className="flex-shrink-0">
+                          <img src={item.img} className="avatar-xs" alt="" />
+                        </div> */}
+                        <div className="flex-grow-1 ms-3">
+                          <h6 className="fs-14 mb-1">{item.coinName}</h6>
+                          {/* <p className="text-muted mb-0">
+                            ${item.marketCap} Billions
+                          </p> */}
                         </div>
-                        <h5 className="flex-shrink-0 fs-14 text-primary mb-0">
-                          {item.price}
-                        </h5>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-              ))}
+                        {/* <div className="flex-shrink-0 text-end">
+                          <h6 className="fs-14 mb-1">${item.price}</h6>
+                          <p className={"fs-12 mb-0 text-" + item.textColor}>
+                            {item.change} ({item.percentage})
+                          </p>
+                        </div> */}
+                      </li>
+                    ))}
+                  </ul>
+                </CardBody>
+              </Card>
+            </Col>
+            <Col lg={6}>
+              <Card>
+                <CardHeader className="align-items-center d-flex justify-content-between">
+                  <h4 className="card-title mb-0  me-2">Nashrlar</h4>
+                  <Link to="#" className="fs-13 fw-medium text-success">
+                    Barchasi{" "}
+                    <i className="ri-arrow-right-s-line align-bottom"></i>
+                  </Link>
+                </CardHeader>
+                <CardBody className="p-0">
+                  <ul className="list-group list-group-flush border-dashed mb-0">
+                    {(signers || []).map((item, key) => (
+                      <li
+                        className="list-group-item d-flex align-items-center selected"
+                        key={key}
+                      >
+                        {/* <div className="flex-shrink-0">
+                          <img src={item.img} className="avatar-xs" alt="" />
+                        </div> */}
+                        <div className="flex-grow-1 ms-3">
+                          <h6 className="fs-14 mb-1">{item.title}</h6>
+                          {/* <p className="text-muted mb-0">
+                            ${item.marketCap} Billions
+                          </p> */}
+                        </div>
+                        {/* <div className="flex-shrink-0 text-end">
+                          <h6 className="fs-14 mb-1">${item.price}</h6>
+                          <p className={"fs-12 mb-0 text-" + item.textColor}>
+                            {item.change} ({item.percentage})
+                          </p>
+                        </div> */}
+                      </li>
+                    ))}
+                  </ul>
+                </CardBody>
+              </Card>
+            </Col>
           </Row>
         </Container>
       </section>

@@ -21,6 +21,19 @@
     padding: 50px 0;
   }
 }
+.text-card-elleps {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.landing .accordion-button {
+  background-image: none !important;
+}
+.landing .accordion-button::after {
+  background-image: none !important;
+}
 
 .icon-effect {
   position: relative;

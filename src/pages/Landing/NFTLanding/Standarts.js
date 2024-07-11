@@ -153,8 +153,11 @@ const Standarts = () => {
                                           </h2>
                                         </div>
                                         <hr className="my-4 text-muted" />
-                                        <div>
-                                          <p className="text-muted mb-0">
+                                        <div
+                                          style={{ height: 150 }}
+                                          className="d-flex  justify-content-between flex-column"
+                                        >
+                                          <p className="text-card-elleps text-muted mb-0">
                                             {price2.purpose}
                                           </p>
                                           <div className="mt-4 d-flex justify-content-between align-items-center">

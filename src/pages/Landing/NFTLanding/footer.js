@@ -8,7 +8,7 @@ import logolight from "../../../assets/images/logo-light.svg";
 const Footer = () => {
   return (
     <React.Fragment>
-      <footer className="custom-footer bg-dark py-5 position-relative">
+      <footer className="custom-footer bg-success py-5 position-relative">
         <Container>
           <Row>
             <Col lg={4} className="mt-4">
@@ -16,7 +16,7 @@ const Footer = () => {
                 <div>
                   <img src={logolight} alt="logo light" height="48" />
                 </div>
-                <div className="mt-4">
+                <div className="mt-4 text-white">
                   <p>Premium Multipurpose Admin & Dashboard Template</p>
                   <p>
                     You can build any type of web application like eCommerce,
@@ -30,54 +30,79 @@ const Footer = () => {
               <Row>
                 <Col sm={4} className="mt-4">
                   <h5 className="text-white mb-0">Company</h5>
-                  <div className="text-muted mt-3">
+                  <div className="text-white mt-3">
                     <ul className="list-unstyled ff-secondary footer-list">
                       <li>
-                        <Link to="/pages-profile">About Us</Link>
+                        <Link className="text-white" to="/pages-profile">
+                          About Us
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/pages-gallery">Gallery</Link>
+                        <Link className="text-white" to="/pages-gallery">
+                          Gallery
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/apps-projects-overview">Projects</Link>
+                        <Link
+                          className="text-white"
+                          to="/apps-projects-overview"
+                        >
+                          Projects
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/pages-timeline">Timeline</Link>
+                        <Link className="text-white" to="/pages-timeline">
+                          Timeline
+                        </Link>
                       </li>
                     </ul>
                   </div>
                 </Col>
                 <Col sm={4} className="mt-4">
                   <h5 className="text-white mb-0">Apps Pages</h5>
-                  <div className="text-muted mt-3">
+                  <div className="text-white mt-3">
                     <ul className="list-unstyled ff-secondary footer-list">
                       <li>
-                        <Link to="/pages-pricing">Calendar</Link>
+                        <Link className="text-white" to="/pages-pricing">
+                          Calendar
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/apps-mailbox">Mailbox</Link>
+                        <Link className="text-white" to="/apps-mailbox">
+                          Mailbox
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/apps-chat">Chat</Link>
+                        <Link className="text-white" to="/apps-chat">
+                          Chat
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/apps-crm-deals">Deals</Link>
+                        <Link className="text-white" to="/apps-crm-deals">
+                          Deals
+                        </Link>
                       </li>
                       <li>
-                        <Link to="#">Kanban Board</Link>
+                        <Link className="text-white" to="#">
+                          Kanban Board
+                        </Link>
                       </li>
                     </ul>
                   </div>
                 </Col>
                 <Col sm={4} className="mt-4">
                   <h5 className="text-white mb-0">Support</h5>
-                  <div className="text-muted mt-3">
+                  <div className="text-white mt-3">
                     <ul className="list-unstyled ff-secondary footer-list">
                       <li>
-                        <Link to="/pages-faqs">FAQ</Link>
+                        <Link className="text-white" to="/pages-faqs">
+                          FAQ
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/pages-faqs">Contact</Link>
+                        <Link className="text-white" to="/pages-faqs">
+                          Contact
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -89,7 +114,7 @@ const Footer = () => {
           <Row className="text-center text-sm-start align-items-center mt-5">
             <Col sm={6}>
               <div>
-                <p className="copy-rights mb-0">
+                <p className="copy-rights text-white mb-0">
                   {new Date().getFullYear()} © Standart loyihalari muhokamasi
                   portali. All rights reserved.
                 </p>
@@ -99,37 +124,37 @@ const Footer = () => {
               <div className="text-sm-end mt-3 mt-sm-0">
                 <ul className="list-inline mb-0 footer-social-link">
                   <li className="list-inline-item">
-                    <Link to="#" className="avatar-xs d-block">
+                    <Link to="#" className="text-white avatar-xs d-block">
                       <div className="avatar-title rounded-circle">
-                        <i className="ri-facebook-fill"></i>
+                        <i className="ri-facebook-fill text-white"></i>
                       </div>
                     </Link>
                   </li>
                   <li className="list-inline-item">
-                    <Link to="#" className="avatar-xs d-block">
+                    <Link to="#" className="avatar-xs d-block text-white">
                       <div className="avatar-title rounded-circle">
-                        <i className="ri-github-fill"></i>
+                        <i className="ri-github-fill text-white"></i>
                       </div>
                     </Link>
                   </li>
                   <li className="list-inline-item">
-                    <Link to="#" className="avatar-xs d-block">
+                    <Link to="#" className="avatar-xs d-block text-white">
                       <div className="avatar-title rounded-circle">
-                        <i className="ri-linkedin-fill"></i>
+                        <i className="ri-linkedin-fill text-white"></i>
                       </div>
                     </Link>
                   </li>
                   <li className="list-inline-item">
-                    <Link to="#" className="avatar-xs d-block">
+                    <Link to="#" className="avatar-xs d-block text-white">
                       <div className="avatar-title rounded-circle">
-                        <i className="ri-google-fill"></i>
+                        <i className="ri-google-fill text-white"></i>
                       </div>
                     </Link>
                   </li>
                   <li className="list-inline-item">
-                    <Link to="#" className="avatar-xs d-block">
+                    <Link to="#" className="avatar-xs d-block text-white">
                       <div className="avatar-title rounded-circle">
-                        <i className="ri-dribbble-line"></i>
+                        <i className="ri-dribbble-line text-white"></i>
                       </div>
                     </Link>
                   </li>

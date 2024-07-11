@@ -10,10 +10,13 @@ import {
   ListGroup,
   ListGroupItem,
   AccordionHeader,
+  CardBody,
+  Card,
 } from "reactstrap";
 import classnames from "classnames";
 import { Link } from "react-router-dom";
 import moment from "moment";
+import SimpleBar from "simplebar-react";
 
 const Faqs = () => {
   const [open, setOpen] = useState("1");
@@ -74,106 +77,79 @@ const Faqs = () => {
     <React.Fragment>
       <section className="section" id="publications">
         <Container>
-          <Row className="justify-content-center">
-            <Col lg={8}>
-              <div className="text-center mb-5">
-                <h3 className="mb-3 fw-semibold">Nashrlar va Obunalar</h3>
-              </div>
-            </Col>
-          </Row>
-
           <Row className="g-lg-5 g-4">
             <Col lg={6}>
               <div className="d-flex align-items-center mb-2">
-                <div className="flex-shrink-0 me-1">
-                  <i className="ri-question-line fs-24 align-middle text-success me-1"></i>
-                </div>
                 <div className="flex-grow-1">
-                  <h5 className="mb-0 fw-semibold">Nashrlar</h5>
+                  <h5 className="mb-0 fw-semibold">Xizmatlar</h5>
                 </div>
                 <Link to="#" className="fs-13 fw-medium text-success">
-                  Batafsil{" "}
+                  Barchasi{" "}
                   <i className="ri-arrow-right-s-line align-bottom"></i>
                 </Link>
               </div>
-              <Accordion
-                open={open}
-                toggle={toggle}
-                className="custom-accordionwithicon custom-accordion-border accordion-border-box accordion-success"
-              >
+              <div className=" custom-accordion-border accordion-border-box accordion-success landing accordion">
                 {signers?.map((res, i) => (
-                  <AccordionItem key={res.id}>
-                    <AccordionHeader targetId={`${i + 1}`}>
-                      {res?.title}{" "}
-                    </AccordionHeader>
-                    <AccordionBody accordionId={`${i + 1}`}>
-                      <ListGroup flush>
-                        <ListGroupItem>
-                          <div className="d-flex justify-content-between align-items-center">
-                            <div>
-                              2023 yil iyun uchun standartlar ro'yxati 1-qismi{" "}
-                            </div>
-                            <span>{moment().format("DD.MM.YYYY")}</span>
-                          </div>
-                        </ListGroupItem>
-                        <ListGroupItem>
-                          <div className="d-flex justify-content-between align-items-center w-100">
-                            <div>
-                              2023 yil iyun uchun standartlar ro'yxati 2-qismi{" "}
-                            </div>
-                            <span>{moment().format("DD.MM.YYYY")}</span>
-                          </div>
-                        </ListGroupItem>
-                      </ListGroup>
-                    </AccordionBody>
-                  </AccordionItem>
+                  <div className="accordion-item" key={i}>
+                    <h2 className="accordion-header" id="headingOne">
+                      <button
+                        className="accordion-button collapsed"
+                        type="button"
+                      >
+                        {res?.title}
+                      </button>
+                    </h2>
+                  </div>
                 ))}
-              </Accordion>
+              </div>
             </Col>
             <Col lg={6}>
               <div className="d-flex align-items-center mb-2">
-                <div className="flex-shrink-0 me-1">
-                  <i className="ri-question-line fs-24 align-middle text-success me-1"></i>
-                </div>
                 <div className="flex-grow-1">
                   <h5 className="mb-0 fw-semibold">Obunalar</h5>
                 </div>
                 <Link to="#" className="fs-13 fw-medium text-success">
-                  Batafsil{" "}
+                  Barchasi{" "}
                   <i className="ri-arrow-right-s-line align-bottom"></i>
                 </Link>
               </div>
-              <Accordion
-                open={open2}
-                toggle={toggle2}
-                className="custom-accordionwithicon custom-accordion-border accordion-border-box accordion-success"
-              >
-                {obuna?.map((res, i) => (
-                  <AccordionItem key={res.id}>
-                    <AccordionHeader targetId={`${i + 1}`}>
-                      {res?.title}{" "}
-                    </AccordionHeader>
-                    <AccordionBody accordionId={`${i + 1}`}>
-                      <ListGroup flush>
-                        <ListGroupItem>
-                          <div className="d-flex justify-content-between align-items-center">
-                            <div>{res?.note} </div>
-                            <div>{res?.info1} </div>
-                            <span>{res?.value1}</span>
-                          </div>
-                        </ListGroupItem>
-                        <ListGroupItem>
-                          <div className="d-flex justify-content-between align-items-center">
-                            <div>{res?.note} </div>
-                            <div>{res?.info2} </div>
-                            <span>{res?.value2}</span>
-                          </div>
-                        </ListGroupItem>
-                      </ListGroup>
-                    </AccordionBody>
-                  </AccordionItem>
-                ))}
-              </Accordion>
+              <Card className="shadow-none">
+                <CardBody>
+                  <div className="table-responsive table-card">
+                    <table className="table table-nowrap table-centered align-middle mb-0">
+                      <thead className=" text-muted">
+                        <tr>
+                          <th scope="col">Наименования издания</th>
+                          <th scope="col">Цена за номер (1 экз.), руб</th>
+                          <th scope="col">Цена в рублях, с НДС 10 %</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        {(obuna || []).map((item, key) => (
+                          <tr key={key}>
+                            <td className="fw-medium">
+                              {item.title}
+                              <div className="d-flex align-items-center">
+                                <div className="flex-shrink-0 me-1 text-muted fs-13">
+                                  {item.note}
+                                </div>
+                              </div>
+                            </td>
+                            <td className="text-muted">
+                              <span>{item.value1}</span>
+                            </td>
+
+                            <td className="text-muted">
+                              <span>{item.value2}</span>
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </CardBody>
+              </Card>
             </Col>
           </Row>
         </Container>

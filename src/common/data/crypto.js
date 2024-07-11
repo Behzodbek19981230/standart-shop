@@ -354,7 +354,7 @@ const topPerformers = [
   {
     id: 1,
     img: btcCoin,
-    coinName: "Bitcoin",
+    coinName: "Texnik reglamentlar",
     marketCap: "18.7",
     price: "12,863.08",
     change: "+$67.21",
@@ -364,7 +364,7 @@ const topPerformers = [
   {
     id: 2,
     img: ethCoin,
-    coinName: "Eathereum",
+    coinName: "Texnik reglamentlar - TR RF, TR CU, TR EAE",
     marketCap: "27.4",
     price: "08,256.04",
     change: "+$51.19",
@@ -374,7 +374,7 @@ const topPerformers = [
   {
     id: 3,
     img: aaveCoin,
-    coinName: "Avalanche",
+    coinName: " Milliy standartlashtirish tizimining hujjatlari",
     marketCap: "12.9",
     price: "11,896.13",
     change: "-$59.01",
@@ -384,7 +384,7 @@ const topPerformers = [
   {
     id: 4,
     img: dogeCoin,
-    coinName: "Dogecoin",
+    coinName: "GOST, GOST R - Rossiya Federatsiyasining milliy standartlari",
     marketCap: "09.5",
     price: "15,999.06",
     change: "+$74.05",
@@ -394,7 +394,8 @@ const topPerformers = [
   {
     id: 5,
     img: bnbCoin,
-    coinName: "Binance",
+    coinName:
+      "R, PR, RD - standartlashtirish sohasidagi standartlashtirish qoidalari,normalari va tavsiyalari",
     marketCap: "14.2",
     price: "13,786.18",
     change: "-$61.05",
@@ -404,7 +405,8 @@ const topPerformers = [
   {
     id: 6,
     img: ltcCoin,
-    coinName: "Litecoin",
+    coinName:
+      "Butunrossiya tasniflagichlari -texnik, iqtisodiy va ijtimoiy ma'lumotlarning butun Rossiya tasniflagichlari",
     marketCap: "09.5",
     price: "10,604.27",
     change: "+$76.12",

@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import Navbar from "./Navbar";
 import Home from "./Home";
 import Connect from "./Connect";
-import Products from "./Products";
 import Features from "./Features";
 import Trending from "./Trending ";
 import DiscoverItems from "./DiscoverItems";
@@ -11,10 +10,11 @@ import CTA from "./CTA";
 import Footer from "./footer";
 import Standarts from "./Standarts";
 import Aos from "aos";
-import Services from "./services";
 import Faqs from "./faq";
 import Reviews from "./reviews";
 import Contact from "./contact";
+import Products from "./Products";
+import { Col, Container, Row } from "reactstrap";
 
 const index = () => {
   document.title = " Landing | Standartlar onlayn do'koni";
@@ -51,14 +51,16 @@ const index = () => {
 
   return (
     <React.Fragment>
-      <div className="layout-wrapper landing">
+      <div className="layout-wrapper landing bg-light">
         <Navbar />
         <Home />
         <Standarts />
         {/* <Connect /> */}
-        <Services />
+
+        <Products />
+
         <Faqs />
-        <Reviews />
+        {/* <Reviews /> */}
         <Contact />
         {/* <DiscoverItems /> */}
         {/* <Features />

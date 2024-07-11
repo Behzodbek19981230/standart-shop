@@ -210,7 +210,8 @@ const pricing1 = [
     id: 4,
     type: "SS ISO 50001:2018+A1:2024",
     rate: 49,
-    purpose: "For most businesses that want to optimize web queries.",
+    purpose:
+      "For most businesses that want to optimize web queries. For most businesses that want to optimize web queries.For most businesses that want to optimize web queries.For most businesses that want to optimize web queries.",
     projects: "Unlimited",
     Customers: "Unlimited",
     FTP: "Unlimited ",
