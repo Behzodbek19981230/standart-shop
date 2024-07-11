@@ -78,7 +78,7 @@ const findJob = [
   {
     id: 1,
     company: img3,
-    lable: "UI/UX designer",
+    lable: "Перечень стандартов за октябрь-ноябрь 2023 года.",
     name: "Nesta Technologies",
     location: "USA",
     salary: "$23k - 35k",
@@ -89,8 +89,8 @@ const findJob = [
   {
     id: 2,
     company: img2,
-    lable: "UI/UX designer",
-    class:"active",
+    lable: "Перечень стандартов за октябрь-ноябрь 2023 года.",
+    class: "active",
     name: "Digitech Galaxy",
     location: "Spain",
     salary: "$10k - 15k",
@@ -101,8 +101,8 @@ const findJob = [
   {
     id: 3,
     company: img4,
-    lable: "Marketing Director",
-    class:"active",
+    lable: "Перечень стандартов за август-сентябрь 2023 года.",
+    class: "active",
     name: "Meta4Systems",
     location: "Sweden",
     salary: "$20k - 25k",
@@ -112,7 +112,7 @@ const findJob = [
   {
     id: 4,
     company: img9,
-    lable: "Product Designer",
+    lable: "Перечень стандартов за июль 2023 г..",
     name: "Themesbrand",
     location: "USA",
     salary: "$40k+",
@@ -123,7 +123,7 @@ const findJob = [
   {
     id: 5,
     company: img8,
-    lable: "Recruiting Coordinator",
+    lable: "Перечень стандартов за март 2023 г.",
     name: "Zoetic Fashion",
     location: "Namibia",
     salary: " $12k - 15k",
@@ -134,8 +134,8 @@ const findJob = [
   {
     id: 6,
     company: img5,
-    lable: "Customs officer",
-    class:"active",
+    lable: "Перечень стандартов за март 2023 г.",
+    class: "active",
     name: "Nesta Technologies",
     location: "USA",
     salary: "$41k - 45k",
@@ -146,8 +146,8 @@ const findJob = [
   {
     id: 7,
     company: img9,
-    lable: "Product Designer",
-    class:"active",
+    lable: "Перечень стандартов за март 2023 г.",
+    class: "active",
     name: "Themesbrand",
     location: "USA",
     salary: "$40k+",
@@ -158,7 +158,7 @@ const findJob = [
   {
     id: 8,
     company: img1,
-    lable: "Project Manager",
+    lable: "Перечень стандартов за март 2023 г.",
     name: "Syntyce Solutions",
     location: "Germany",
     salary: "$18k - 26k",
