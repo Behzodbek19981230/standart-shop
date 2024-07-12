@@ -6,12 +6,10 @@ import { motion } from "framer-motion";
 export default function Field() {
   return (
     <div className="py-4">
-      <div className="d-flex align-items-center mb-2">
-        <div className="flex-grow-1">
-          <h2 className="mb-0 fw-semibold lh-base flex-grow-1">Sohalar</h2>
-        </div>
+      <div className="d-flex align-items-center mb-2 justify-content-center w-100 text-center">
+        <h2 className="mb-0 fw-semibold lh-base flex-grow-1">Sohalar</h2>
       </div>
-      <Row className="justify-content-center ">
+      <Row className="justify-content-center">
         {categories.map((item, key) => (
           <Col lg={2} md={6} key={key}>
             <motion.div
@@ -28,7 +26,7 @@ export default function Field() {
                     </div>
                   </div>
                   <Link to="#!" className="to-link" style={{ height: 80 }}>
-                    <h5 className="fs-17 pt-1 text-card-elleps-id">
+                    <h5 className="fs-15 pt-1 text-card-elleps-id">
                       {item.lable}
                     </h5>
                   </Link>

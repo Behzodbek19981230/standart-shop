@@ -82,10 +82,6 @@ export default function UsefulLinks() {
                 Foydali havolalar
               </h2>
             </div>
-            <Link to="#" className="fs-13 fw-medium text-primary">
-              Barchasi
-              <i className="ri-arrow-right-s-line align-bottom"></i>
-            </Link>
           </div>
 
           <Row>
@@ -125,7 +121,7 @@ export default function UsefulLinks() {
                             height={120}
                           />
                           <p
-                            className="text-muted mt-3 mb-0 text-card-elleps-id"
+                            className=" mt-3 mb-0 text-card-elleps-id"
                             style={{ height: 50 }}
                           >
                             {item.title}

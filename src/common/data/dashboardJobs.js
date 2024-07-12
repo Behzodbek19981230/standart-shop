@@ -67,7 +67,7 @@ const featuredCompany = [
     designation:
       "Geotexnik tadqiqotlar va sinovlar. Gruntlarni laboratoriya sinovlari.Geotexnik tadqiqotlar va sinovlar. Gruntlarni laboratoriya sinovlari. 12-qism: Oquvchanlik va qayishqoqlik chegaralarini aniqlash 12-qism: Oquvchanlik va qayishqoqlik chegaralarini aniqlash qisqa ma’lumot",
     city: " Cullera, Spain",
-    bgColor: "green",
+    bgColor: "success",
     lang: "English",
   },
   {

@@ -27,7 +27,7 @@ const FindJob = () => {
                 <h2 className="mb-0 fw-semibold lh-base flex-grow-1">
                   Xizmatlar
                 </h2>
-                <Link to="#" className="fs-13 fw-medium text-success">
+                <Link to="#" className="fs-13 fw-medium text-primary">
                   Barchasi{" "}
                   <i className="ri-arrow-right-s-line align-bottom"></i>
                 </Link>
@@ -45,7 +45,7 @@ const FindJob = () => {
                 >
                   <Card className="shadow-lg pricing-box ribbon-box right">
                     {key % 3 == 0 ? (
-                      <div className="ribbon-two ribbon-two-success">
+                      <div className="ribbon-two ribbon-two-primary">
                         <span>New</span>
                       </div>
                     ) : (
@@ -55,7 +55,7 @@ const FindJob = () => {
                     <CardBody>
                       <div className="d-flex">
                         <div className="avatar-sm">
-                          <div className="avatar-title bg-soft-success rounded text-success">
+                          <div className="avatar-title bg-soft-primary rounded text-primary">
                             {/* <img
                             src={item.company}
                             alt=""
