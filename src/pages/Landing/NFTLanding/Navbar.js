@@ -32,8 +32,7 @@ const Navbar = () => {
     <React.Fragment>
       <nav
         className={
-          "navbar navbar-expand-lg navbar-landing navbar-light fixed-top " +
-          navClass
+          "navbar navbar-expand-lg navbar-landing navbar-light fixed-top is-sticky "
         }
         id="navbar"
       >

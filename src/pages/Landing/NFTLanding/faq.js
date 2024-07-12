@@ -82,17 +82,17 @@ const Faqs = () => {
               <div className="d-flex align-items-center mb-2">
                 <div className="flex-grow-1">
                   <h2 className="mb-0 fw-semibold lh-base flex-grow-1">
-                    Xizmatlar
+                    Nashrlar
                   </h2>
                 </div>
-                <Link to="#" className="fs-13 fw-medium text-success">
+                <Link to="#" className="fs-13 fw-medium text-primary">
                   Barchasi{" "}
                   <i className="ri-arrow-right-s-line align-bottom"></i>
                 </Link>
               </div>
               <Card>
                 <CardBody>
-                  <div className=" custom-accordion-border accordion-border-box accordion-success border-none landing accordion">
+                  <div className=" custom-accordion-border accordion-border-box accordion-primary border-none landing accordion">
                     <div className="accordion-item">
                       <ul className="list-group list-group-flush  mb-0">
                         {(signers || []).map((item, key) => (
@@ -130,17 +130,17 @@ const Faqs = () => {
                     Obunalar
                   </h2>
                 </div>
-                <Link to="#" className="fs-13 fw-medium text-success">
+                <Link to="#" className="fs-13 fw-medium text-primary">
                   Barchasi{" "}
                   <i className="ri-arrow-right-s-line align-bottom"></i>
                 </Link>
               </div>
               <Card>
                 <CardBody>
-                  <div className=" custom-accordion-border accordion-border-box accordion-success landing accordion">
+                  <div className=" custom-accordion-border accordion-border-box accordion-primary landing accordion">
                     <div className="table-responsive ">
                       <div className="accordion-item">
-                        <table className="table table-nowrap table-centered align-middle mb-0 border-success table-borderless">
+                        <table className="table table-nowrap table-centered align-middle mb-0 border-primary table-borderless">
                           <thead className=" text-muted border-0 ">
                             <tr>
                               <th scope="col">Наименования издания</th>

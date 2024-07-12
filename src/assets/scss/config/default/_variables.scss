@@ -243,7 +243,7 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary: $indigo;
+$primary: $primaryBlue;
 $secondary: $blue;
 $success: $primaryBlue;
 $info: $cyan;
@@ -251,13 +251,14 @@ $warning: $yellow;
 $danger: $red;
 $light: $gray-100;
 $dark: $gray-900;
+$green: $green;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
-  "success": $success,
+  "success": $green,
   "info": $info,
   "warning": $warning,
   "danger": $danger,

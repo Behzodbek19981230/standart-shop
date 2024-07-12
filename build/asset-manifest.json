@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.97a6ec5c.css",
-    "main.js": "/static/js/main.59c2504a.js",
+    "main.css": "/static/css/main.fde1fdc3.css",
+    "main.js": "/static/js/main.0de8d623.js",
     "static/media/remixicon.svg?t=1590207869815": "/static/media/remixicon.1664a258a7e7714f6f8d.svg",
     "static/media/boxicons.svg": "/static/media/boxicons.17f6cb4eef77f07f2caa.svg",
     "static/media/materialdesignicons-webfont.eot": "/static/media/materialdesignicons-webfont.e044ed23c047e571c550.eot",
     "static/media/materialdesignicons-webfont.ttf?v=6.5.95": "/static/media/materialdesignicons-webfont.5d42b4e60858731e7b65.ttf",
+    "static/media/img-3.svg": "/static/media/img-3.a993ec67d4bf2544386f4e49faf4a5ce.svg",
     "static/media/la-brands-400.svg": "/static/media/la-brands-400.331115337bc9be66667a.svg",
     "static/media/la-solid-900.svg": "/static/media/la-solid-900.0f874d69730f8631d632.svg",
     "static/media/materialdesignicons-webfont.woff?v=6.5.95": "/static/media/materialdesignicons-webfont.5dff34d5fed607519dcb.woff",
@@ -60,6 +61,7 @@
     "static/media/img-06.jpg": "/static/media/img-06.33d029f69c6eb6eb3919.jpg",
     "static/media/la-brands-400.woff2": "/static/media/la-brands-400.3a8109c4ac75662f8355.woff2",
     "static/media/file.png": "/static/media/file.7460d341c4220363ca42.png",
+    "static/media/img-4.svg": "/static/media/img-4.f14a7977e1b6b97c8f61cd05a843df83.svg",
     "static/media/img-11.jpg": "/static/media/img-11.ee2350a5a6accfd99a8d.jpg",
     "static/media/d.svg": "/static/media/d.58881ef1bd64019fb16961f9fc9efb69.svg",
     "static/media/img-05.jpg": "/static/media/img-05.537c20d8af68890e1a62.jpg",
@@ -124,6 +126,7 @@
     "static/media/spain.svg": "/static/media/spain.5f30750a77f9be43ca71b0173638615a.svg",
     "static/media/error.svg": "/static/media/error.bc754a5b8a10c14e55a192ab1196a76d.svg",
     "static/media/ins.svg": "/static/media/ins.605bae8e474b78f7490b4abad83d6521.svg",
+    "static/media/img-1.svg": "/static/media/img-1.8b0a8490f5a9d5aa9d8613cd34be8397.svg",
     "static/media/fldc.svg": "/static/media/fldc.535b7c3210f55b70613af7032e92e374.svg",
     "static/media/bell.svg": "/static/media/bell.bb6565fedee4ebe7d4402bd4a5ef0619.svg",
     "static/media/dbc.svg": "/static/media/dbc.801eab9c374593686565a26520f625a0.svg",
@@ -131,6 +134,7 @@
     "static/media/kin.svg": "/static/media/kin.e58f117e9f7c80f41b9be59c0e950be0.svg",
     "static/media/miota.svg": "/static/media/miota.3509dfd91052b6026031cc1b947f7752.svg",
     "static/media/prl.svg": "/static/media/prl.7e69ad24df2e37af3d386d569430f397.svg",
+    "static/media/document.svg": "/static/media/document.5179110d1038c2d0a638fac0d7d436f0.svg",
     "static/media/wabi.svg": "/static/media/wabi.fd1a8196cacdcf97a5ac79db92c726fc.svg",
     "static/media/storj.svg": "/static/media/storj.897da6088b2ca1ffae8a6d8e10b71792.svg",
     "static/media/powr.svg": "/static/media/powr.3028e398a7f0beec04e1375487ebbbe6.svg",
@@ -156,6 +160,7 @@
     "static/media/eng.svg": "/static/media/eng.67270614d6b7bca4b9bc2ad00682e212.svg",
     "static/media/qash.svg": "/static/media/qash.937f2a50bbfbc9cc9806c1522dd92ab1.svg",
     "static/media/bco.svg": "/static/media/bco.291348735d8e01883f9826885abb5300.svg",
+    "static/media/img-2.svg": "/static/media/img-2.b054882d9b9a47b144ffe8b38bef37e3.svg",
     "static/media/hot.svg": "/static/media/hot.e55ca6c8d1cc576999691f8dada865a7.svg",
     "static/media/walmart.svg": "/static/media/walmart.f4a9e4fc2f0da8d1a581e305fefd0d6a.svg",
     "static/media/btt.svg": "/static/media/btt.4c5508604bc28c955b09bebf62245c46.svg",
@@ -599,7 +604,7 @@
     "static/media/waves.svg": "/static/media/waves.2c95a006c407ae1604b47828fbf14a9d.svg"
   },
   "entrypoints": [
-    "static/css/main.97a6ec5c.css",
-    "static/js/main.59c2504a.js"
+    "static/css/main.fde1fdc3.css",
+    "static/js/main.0de8d623.js"
   ]
 }

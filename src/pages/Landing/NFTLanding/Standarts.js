@@ -20,7 +20,7 @@ const Standarts = () => {
                 <h2 className="mb-0 fw-semibold lh-base flex-grow-1">
                   Standartlar
                 </h2>
-                <Link to="/apps-nft-explore" className="btn btn-success">
+                <Link to="/apps-nft-explore" className="btn btn-primary">
                   Barchasi <i className="ri-arrow-right-line align-bottom"></i>
                 </Link>
               </div>
@@ -45,7 +45,7 @@ const Standarts = () => {
                                   onClick={() => setCategory("All")}
                                   className={
                                     displayCategory === "All"
-                                      ? "categories active bg-success py-4"
+                                      ? "categories active bg-primary py-4"
                                       : "categories py-4"
                                   }
                                   data-filter="*"
@@ -59,7 +59,7 @@ const Standarts = () => {
                                   onClick={() => setCategory("Project")}
                                   className={
                                     displayCategory === "Project"
-                                      ? "categories active bg-success py-4"
+                                      ? "categories active bg-primary py-4"
                                       : "categories py-4"
                                   }
                                   data-filter=".project"
@@ -118,7 +118,7 @@ const Standarts = () => {
                                         ""
                                       )}
                                       {key == 2 ? (
-                                        <div className="ribbon-two ribbon-two-success">
+                                        <div className="ribbon-two ribbon-two-primary">
                                           <span>New</span>
                                         </div>
                                       ) : (
@@ -154,7 +154,7 @@ const Standarts = () => {
                                           <div className="mt-4 d-flex justify-content-between align-items-center">
                                             <Link
                                               to="/"
-                                              className="btn btn-soft-success  waves-effect waves-light "
+                                              className="btn btn-soft-primary  waves-effect waves-light "
                                             >
                                               {" "}
                                               <i
@@ -164,7 +164,7 @@ const Standarts = () => {
                                             </Link>
                                             <Link
                                               to="#"
-                                              className="fs-13 fw-medium text-success"
+                                              className="fs-13 fw-medium text-primary"
                                             >
                                               Batafsil{" "}
                                               <i className="ri-arrow-right-s-line align-bottom"></i>

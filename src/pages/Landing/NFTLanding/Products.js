@@ -43,7 +43,7 @@ const Products = () => {
                 <h2 className="mb-0 fw-semibold lh-base flex-grow-1">
                   Mahsulotlar haqida
                 </h2>
-                <Link to="#" className="fs-13 fw-medium text-success">
+                <Link to="#" className="fs-13 fw-medium text-primary">
                   Barchasi{" "}
                   <i className="ri-arrow-right-s-line align-bottom"></i>
                 </Link>
@@ -58,14 +58,14 @@ const Products = () => {
                     Mahsulotlar haqida
                   </h2>
                 </div>
-                <Link to="#" className="fs-13 fw-medium text-success">
+                <Link to="#" className="fs-13 fw-medium text-primary">
                   Barchasi{" "}
                   <i className="ri-arrow-right-s-line align-bottom"></i>
                 </Link>
               </div>
               <Card>
                 <CardBody>
-                  <div className=" custom-accordion-border accordion-border-box accordion-success landing accordion">
+                  <div className=" custom-accordion-border accordion-border-box accordion-primary landing accordion">
                     <div className="accordion-item">
                       <ul className="list-group list-group-flush   mb-0  ">
                         {(topPerformers || []).map((item, key) => (
@@ -91,14 +91,14 @@ const Products = () => {
                     Nashrlar
                   </h2>
                 </div>
-                <Link to="#" className="fs-13 fw-medium text-success">
+                <Link to="#" className="fs-13 fw-medium text-primary">
                   Barchasi{" "}
                   <i className="ri-arrow-right-s-line align-bottom"></i>
                 </Link>
               </div>
               <Card>
                 <CardBody>
-                  <div className=" custom-accordion-border accordion-border-box accordion-success landing accordion">
+                  <div className=" custom-accordion-border accordion-border-box accordion-primary landing accordion">
                     <div className="accordion-item">
                       <ul className="list-group list-group-flush  mb-0">
                         {(signers || []).map((item, key) => (
@@ -124,7 +124,7 @@ const Products = () => {
                 <h2 className="mb-0 fw-semibold lh-base flex-grow-1">
                   Mahsulotlar haqida
                 </h2>
-                <Link to="#" className="fs-13 fw-medium text-success">
+                <Link to="#" className="fs-13 fw-medium text-primary">
                   Barchasi{" "}
                   <i className="ri-arrow-right-s-line align-bottom"></i>
                 </Link>
@@ -158,7 +158,7 @@ const Products = () => {
                         {price1.items.map((res, i) => (
                           <li key={i}>
                             <div className="d-flex">
-                              <div className="flex-shrink-0 text-success me-1">
+                              <div className="flex-shrink-0 text-primary me-1">
                                 <i className="ri-checkbox-circle-fill fs-15 align-middle"></i>
                               </div>
                               <div className="flex-grow-1">{res}</div>
@@ -167,7 +167,7 @@ const Products = () => {
                         ))}
                       </ul>
                       <div className="mt-4 d-flex justify-content-end align-items-end flex-column">
-                        <Link to="#" className="fs-13 fw-medium text-success">
+                        <Link to="#" className="fs-13 fw-medium text-primary">
                           Batafsil{" "}
                           <i className="ri-arrow-right-s-line align-bottom"></i>
                         </Link>
@@ -186,14 +186,14 @@ const Products = () => {
                     Nashrlar
                   </h2>
                 </div>
-                <Link to="#" className="fs-13 fw-medium text-success">
+                <Link to="#" className="fs-13 fw-medium text-primary">
                   Barchasi{" "}
                   <i className="ri-arrow-right-s-line align-bottom"></i>
                 </Link>
               </div>
               <Card>
                 <CardBody>
-                  <div className=" custom-accordion-border accordion-border-box accordion-success landing accordion">
+                  <div className=" custom-accordion-border accordion-border-box accordion-primary landing accordion">
                     <div className="accordion-item">
                       <ul className="list-group list-group-flush  mb-0">
                         {(signers || []).map((item, key) => (

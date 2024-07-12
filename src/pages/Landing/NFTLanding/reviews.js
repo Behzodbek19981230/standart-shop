@@ -18,7 +18,7 @@ const Reviews = () => {
             <Col lg={10}>
               <div className="text-center">
                 <div>
-                  <i className="ri-double-quotes-l text-success display-3"></i>
+                  <i className="ri-double-quotes-l text-primary display-3"></i>
                 </div>
                 <h4 className="text-white mb-5">Xizmatlar </h4>
 

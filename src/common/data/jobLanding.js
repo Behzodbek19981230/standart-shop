@@ -32,46 +32,53 @@ const jobProcess = [
 
 const categories = [
   {
-    id: 1,
-    icon: "ri-pencil-ruler-2-line fs-1",
-    lable: "IT & Software",
-    jobs: "1543 Jobs",
-  },
-  {
     id: 2,
-    icon: "ri-airplay-line fs-1",
-    lable: "Construction / Facilities",
+    icon: " ri-secure-payment-line fs-1",
+    lable: "Konstitutsiyaviy tuzum",
     jobs: "3241 Jobs",
   },
   {
     id: 3,
-    icon: "ri-bank-line fs-1",
-    lable: "Government",
+    icon: " ri-checkbox-multiple-line fs-1",
+    lable:
+      "Ijtimoiy ta’minot va ijtimoiy sug‘urta to‘g‘risidagi qonunchilik. Ijtimoiy himoya",
     jobs: "876 Jobs",
   },
   {
     id: 4,
-    icon: "ri-focus-2-line fs-1",
-    lable: "Marketing & Advertising",
+    icon: " ri-government-line fs-1",
+    lable: "Davlat boshqaruvi asoslari",
     jobs: "465 Jobs",
   },
   {
     id: 5,
-    icon: "ri-pencil-ruler-line fs-1",
-    lable: "Education & training",
+    icon: "ri-bank-line fs-1",
+    lable: "Moliya va kredit to‘g‘risidagi qonunchilik. Bank faoliyati",
     jobs: "105 Jobs",
   },
   {
-    id: 6,
-    icon: "ri-line-chart-line fs-1",
-    lable: "Digital Marketing",
-    jobs: "377 Jobs",
+    id: 4,
+    icon: " ri-government-line fs-1",
+    lable: "Davlat boshqaruvi asoslari",
+    jobs: "465 Jobs",
   },
   {
-    id: 7,
-    icon: "ri-briefcase-2-line fs-1",
-    lable: "Catering & Tourism",
-    jobs: "85 Jobs",
+    id: 5,
+    icon: "ri-bank-line fs-1",
+    lable: "Moliya va kredit to‘g‘risidagi qonunchilik. Bank faoliyati",
+    jobs: "105 Jobs",
+  },
+  {
+    id: 4,
+    icon: " ri-government-line fs-1",
+    lable: "Davlat boshqaruvi asoslari",
+    jobs: "465 Jobs",
+  },
+  {
+    id: 5,
+    icon: "ri-bank-line fs-1",
+    lable: "Moliya va kredit to‘g‘risidagi qonunchilik. Bank faoliyati",
+    jobs: "105 Jobs",
   },
 ];
 const findJob = [

@@ -239,6 +239,8 @@ import UserProfile from "../pages/Authentication/user-profile";
 
 import FileManager from "../pages/FileManager";
 import ToDoList from "../pages/ToDo";
+import AdvancedSearch from "../pages/Landing/NFTLanding/AdvancedSearch";
+import LandingHome from "../pages/Landing/NFTLanding/LandingHome";
 
 const authProtectedRoutes = [
   { path: "/dashboard-analytics", component: <DashboardAnalytics /> },
@@ -465,11 +467,12 @@ const authProtectedRoutes = [
 
 const publicRoutes = [
   // Authentication Page
+  { path: "/", component: <NFTLanding /> },
+
   { path: "/logout", component: <Logout /> },
   { path: "/login", component: <Login /> },
   { path: "/forgot-password", component: <ForgetPasswordPage /> },
   { path: "/register", component: <Register /> },
-
   //AuthenticationInner pages
   { path: "/auth-signin-basic", component: <BasicSignIn /> },
   { path: "/auth-signin-cover", component: <CoverSignIn /> },
@@ -493,12 +496,14 @@ const publicRoutes = [
   { path: "/pages-coming-soon", component: <ComingSoon /> },
 
   { path: "/landing", component: <OnePage /> },
-  { path: "/", component: <NFTLanding /> },
   { path: "/job-landing", component: <JobLanding /> },
 
   { path: "/auth-pass-change-basic", component: <BasicPasswCreate /> },
   { path: "/auth-pass-change-cover", component: <CoverPasswCreate /> },
   { path: "/auth-offline", component: <Offlinepage /> },
 ];
+const landingRoutes = [
+  { path: "/advanced-search", component: <AdvancedSearch /> },
+];
 
-export { authProtectedRoutes, publicRoutes };
+export { authProtectedRoutes, publicRoutes, landingRoutes };

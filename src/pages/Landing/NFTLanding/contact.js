@@ -14,7 +14,7 @@ const Contact = () => {
             </Col>
           </Row>
 
-          <div className=" custom-accordion-border accordion-border-box accordion-success border-none landing accordion">
+          <div className=" custom-accordion-border accordion-border-box accordion-primary border-none landing accordion">
             <div className="accordion-item">
               <Card className="border-0 shadow-none">
                 <CardBody className="border-0">
@@ -133,7 +133,7 @@ const Contact = () => {
                                 type="submit"
                                 id="submit"
                                 name="send"
-                                className="submitBnt btn btn-success"
+                                className="submitBnt btn btn-primary"
                                 value="Send Message"
                               />
                             </Col>

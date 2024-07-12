@@ -12,6 +12,7 @@ import avtar6 from "../../assets/images/users/avatar-6.jpg";
 import avtar10 from "../../assets/images/users/avatar-10.jpg";
 import avtar8 from "../../assets/images/users/avatar-8.jpg";
 import avtar9 from "../../assets/images/users/avatar-9.jpg";
+import { lang } from "moment";
 
 const jobWidgets = [
   {
@@ -61,38 +62,52 @@ const jobWidgets = [
 const featuredCompany = [
   {
     id: 1,
-    img: img1,
-    lable: "Force Medicines",
+    img: "  ri-checkbox-circle-fill",
+    lable: "O‘zMSt ISO 17892-12:2024",
+    designation:
+      "Geotexnik tadqiqotlar va sinovlar. Gruntlarni laboratoriya sinovlari.Geotexnik tadqiqotlar va sinovlar. Gruntlarni laboratoriya sinovlari. 12-qism: Oquvchanlik va qayishqoqlik chegaralarini aniqlash 12-qism: Oquvchanlik va qayishqoqlik chegaralarini aniqlash qisqa ma’lumot",
     city: " Cullera, Spain",
-    bgColor : "secondary"
+    bgColor: "green",
+    lang: "English",
   },
   {
     id: 2,
-    img: img3,
-    lable: "Syntyce Solutions",
+    img: " ri-time-fill",
+    lable: "O‘zMSt ISO 17892-12:2024",
+    designation:
+      "Geotexnik tadqiqotlar va sinovlar. Gruntlarni laboratoriya sinovlari. 12-qism: Oquvchanlik va qayishqoqlik chegaralarini aniqlash qisqa ma’lumot",
     city: "Mughairah, UAE",
-    bgColor : "warning"
+    bgColor: "warning",
+    lang: "Russian",
   },
   {
     id: 3,
-    img: img2,
-    lable: "Moetic Fashion",
+    img: "  ri-checkbox-circle-fill",
+    lable: "O‘zMSt ISO 17892-12:2024",
+    designation: "Geotexnik tadqiqotlar haqida  ma’lumot",
+    lang: "Uzbek",
     city: "Mughairah, UAE",
-    bgColor : "primary"
+    bgColor: "success",
   },
   {
     id: 4,
-    img: img4,
-    lable: "Meta4Systems",
+    img: "  ri-close-circle-fill",
+    lable: "O‘zMSt ISO 17892-12:2024",
+    designation:
+      "Geotexnik Geotexnik tadqiqotlar va sinovlar. Gruntlarni laboratoriya sinovlari. 12-qism: Oquvchanlik va qayishqoqlik chegaralarini aniqlash tadqiqotlar va sinovlar. Gruntlarni laboratoriya sinovlari. 12-qism: Oquvchanlik va qayishqoqlik chegaralarini aniqlash qisqa ma’lumot",
+    lang: "Uzbek",
     city: "Germany",
-    bgColor : "danger"
+    bgColor: "danger",
   },
   {
     id: 5,
-    img: img5,
-    lable: "Themesbrand",
+    img: " ri-close-circle-fill",
+    lable: "O‘zMSt ISO 17892-12:2024",
+    designation:
+      "Geotexnik tadqiqotlar va sinovlar. Gruntlarni laboratoriya sinovlari. 12-qism: Oquvchanlik va qayishqoqlik chegaralarini aniqlash qisqa ma’lumot",
+    lang: "Uzbek",
     city: " Limestone, US",
-    bgColor : "danger"
+    bgColor: "danger",
   },
 ];
 
@@ -108,7 +123,7 @@ const recentApplicants = [
     type: "Full Time",
     typeColor: "success",
     rating: "5.0",
-    ratingDetails : "(245 Rating)"
+    ratingDetails: "(245 Rating)",
   },
   {
     id: 2,
@@ -121,7 +136,7 @@ const recentApplicants = [
     type: "Freelancer",
     typeColor: "secondary",
     rating: "4.7",
-    ratingDetails : "(1.34 Rating)"
+    ratingDetails: "(1.34 Rating)",
   },
   {
     id: 3,
@@ -134,7 +149,7 @@ const recentApplicants = [
     type: "Part Time",
     typeColor: "danger",
     rating: "4.5",
-    ratingDetails : "(2.93 Rating)"
+    ratingDetails: "(2.93 Rating)",
   },
   {
     id: 4,
@@ -147,7 +162,7 @@ const recentApplicants = [
     type: "Part Time",
     typeColor: "danger",
     rating: "2.3",
-    ratingDetails : "(4.5 Rating)"
+    ratingDetails: "(4.5 Rating)",
   },
   {
     id: 5,
@@ -160,7 +175,7 @@ const recentApplicants = [
     type: "Full Time",
     typeColor: "success",
     rating: "4.5",
-    ratingDetails : "(645 Rating)"
+    ratingDetails: "(645 Rating)",
   },
   {
     id: 6,
@@ -173,7 +188,7 @@ const recentApplicants = [
     type: "Freelancer",
     typeColor: "secondary",
     rating: "4.5",
-    ratingDetails : "(12 Rating)"
+    ratingDetails: "(12 Rating)",
   },
   {
     id: 7,
@@ -186,7 +201,7 @@ const recentApplicants = [
     type: "Part Time",
     typeColor: "danger",
     rating: "2.5",
-    ratingDetails : "(6.3 Rating)"
+    ratingDetails: "(6.3 Rating)",
   },
   {
     id: 8,
@@ -199,7 +214,7 @@ const recentApplicants = [
     type: "Full Time",
     typeColor: "success",
     rating: "4.7",
-    ratingDetails : "(23 Rating)"
+    ratingDetails: "(23 Rating)",
   },
 ];
 export { jobWidgets, featuredCompany, recentApplicants };

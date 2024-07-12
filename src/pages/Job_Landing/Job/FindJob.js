@@ -25,7 +25,7 @@ const FindJob = () => {
             <Col lg={12}>
               <div className="d-flex align-items-center mb-4">
                 <h2 className="mb-0 fw-semibold lh-base flex-grow-1">
-                  Nashrlar
+                  Xizmatlar
                 </h2>
                 <Link to="#" className="fs-13 fw-medium text-success">
                   Barchasi{" "}

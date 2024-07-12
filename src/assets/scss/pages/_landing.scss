@@ -35,6 +35,22 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.landing-hover-card {
+  &:hover .card-body {
+    background: $primary;
+    h5 {
+      color: #fff !important;
+    }
+    .job-icon-effect {
+      background: #fff;
+      color: $primary;
+    }
+    .text-primary {
+      color: #fff !important;
+    }
+    color: #fff !important;
+  }
+}
 .text-card-elleps-id {
   height: 40px;
   display: -webkit-box;

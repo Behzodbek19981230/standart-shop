@@ -74,7 +74,7 @@ const Trending = () => {
                                                     </Col>
                                                 </Row>
                                                 <Link to="#" className="float-end"> View All <i className="ri-arrow-right-line align-bottom"></i></Link>
-                                                <h5 className="mb-0 fs-16"><Link to="#">Artwork <span className="badge badge-soft-success">206</span></Link></h5>
+                                                <h5 className="mb-0 fs-16"><Link to="#">Artwork <span className="badge badge-soft-primary">206</span></Link></h5>
                                             </CardBody>
                                         </Card>
                                     </SwiperSlide>
@@ -92,7 +92,7 @@ const Trending = () => {
                                                     </Col>
                                                 </Row>
                                                 <Link to="#" className="float-end"> View All <i className="ri-arrow-right-line align-bottom"></i></Link>
-                                                <h5 className="mb-0 fs-16"><Link to="#">Crypto Card <span className="badge badge-soft-success">743</span></Link></h5>
+                                                <h5 className="mb-0 fs-16"><Link to="#">Crypto Card <span className="badge badge-soft-primary">743</span></Link></h5>
                                             </CardBody>
                                         </Card>
                                     </SwiperSlide>
@@ -110,7 +110,7 @@ const Trending = () => {
                                                     </Col>
                                                 </Row>
                                                 <Link to="#" className="float-end"> View All <i className="ri-arrow-right-line align-bottom"></i></Link>
-                                                <h5 className="mb-0 fs-16"><Link to="#">Music <span className="badge badge-soft-success">679</span></Link></h5>
+                                                <h5 className="mb-0 fs-16"><Link to="#">Music <span className="badge badge-soft-primary">679</span></Link></h5>
                                             </CardBody>
                                         </Card>
                                     </SwiperSlide>
@@ -128,7 +128,7 @@ const Trending = () => {
                                                     </Col>
                                                 </Row>
                                                 <Link to="#" className="float-end"> View All <i className="ri-arrow-right-line align-bottom"></i></Link>
-                                                <h5 className="mb-0 fs-16"><Link to="#">Games <span className="badge badge-soft-success">341</span></Link></h5>
+                                                <h5 className="mb-0 fs-16"><Link to="#">Games <span className="badge badge-soft-primary">341</span></Link></h5>
                                             </CardBody>
                                         </Card>
                                     </SwiperSlide>
@@ -146,7 +146,7 @@ const Trending = () => {
                                                     </Col>
                                                 </Row>
                                                 <Link to="#" className="float-end"> View All <i className="ri-arrow-right-line align-bottom"></i></Link>
-                                                <h5 className="mb-0 fs-16"><Link to="#">Photography <span className="badge badge-soft-success">1452</span></Link></h5>
+                                                <h5 className="mb-0 fs-16"><Link to="#">Photography <span className="badge badge-soft-primary">1452</span></Link></h5>
                                             </CardBody>
                                         </Card>
                                     </SwiperSlide>

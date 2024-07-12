@@ -1,22 +1,10 @@
 import React, { useEffect } from "react";
 import Navbar from "./Navbar";
-import Home from "./Home";
-import Connect from "./Connect";
-import Features from "./Features";
-import Trending from "./Trending ";
-import DiscoverItems from "./DiscoverItems";
-import TopCreator from "./TopCreator ";
-import CTA from "./CTA";
 import Footer from "./footer";
-import Standarts from "./Standarts";
-import Aos from "aos";
-import Faqs from "./faq";
-import Reviews from "./reviews";
-import Contact from "./contact";
-import Products from "./Products";
-import { Col, Container, Row } from "reactstrap";
+import LandingHome from "./LandingHome";
+import NavbarLanding from "./NavbarLanding";
 
-const index = () => {
+const NFTLanding = ({ children }) => {
   document.title = " Landing | Standartlar onlayn do'koni";
 
   window.onscroll = function () {
@@ -41,33 +29,12 @@ const index = () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   };
-  useEffect(() => {
-    Aos.init({
-      disable: "phone",
-      duration: 700,
-      easing: "ease-out-cubic",
-    });
-  }, []);
 
   return (
     <React.Fragment>
       <div className="layout-wrapper landing bg-light">
-        <Navbar />
-        <Home />
-        <Standarts />
-        {/* <Connect /> */}
-
-        <Products />
-
-        <Faqs />
-        {/* <Reviews /> */}
-        <Contact />
-        {/* <DiscoverItems /> */}
-        {/* <Features />
-                <Trending />
-                <DiscoverItems />
-                <TopCreator />
-                <CTA /> */}
+        <NavbarLanding />
+        <LandingHome />
         <Footer />
         <button
           onClick={() => toTop()}
@@ -81,4 +48,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default NFTLanding;

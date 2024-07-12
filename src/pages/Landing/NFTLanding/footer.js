@@ -8,7 +8,7 @@ import logolight from "../../../assets/images/logo-light.svg";
 const Footer = () => {
   return (
     <React.Fragment>
-      <footer className="custom-footer bg-success py-5 position-relative">
+      <footer className="custom-footer bg-primary py-5 position-relative">
         <Container>
           <Row>
             <Col lg={4} className="mt-4">
