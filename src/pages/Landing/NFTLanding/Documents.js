@@ -22,6 +22,14 @@ const Documents = () => {
           <CardBody>
             <div className="table-responsive table-card">
               <Table className="table table-centered table-hover align-middle table-nowrap mb-0">
+                <thead>
+                  <tr>
+                    <th>Qabul qilingan hujjatlar</th>
+                    <th>Til</th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
                 <tbody>
                   {featuredCompany.map((company, key) => (
                     <tr key={key}>
