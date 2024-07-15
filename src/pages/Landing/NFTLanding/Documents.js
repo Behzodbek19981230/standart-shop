@@ -40,10 +40,10 @@ const Documents = () => {
                             </div>
                           </div>
                           <div className="flex-1 gap-2">
-                            <h6 className="fs-15 text-primary">
+                            <h6 className="fs-15 text-primary fw-bold">
                               {company.lable}
                             </h6>
-                            <p className="d-flex flex-wrap mb-0 text-muted w-20 text-wrap ">
+                            <p className="d-flex flex-wrap mb-0  w-20 text-wrap ">
                               {company.designation}
                             </p>
                           </div>

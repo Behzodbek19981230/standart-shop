@@ -38,8 +38,13 @@ import {
   Container,
   Row,
   Col,
+  Button,
 } from "reactstrap";
 export default function UsefulLinks() {
+  const [swiper, setSwiper] = React.useState(null);
+  const nexto = () => {
+    swiper.slideNext();
+  };
   const topCreatorData = [
     {
       id: 1,
@@ -86,12 +91,32 @@ export default function UsefulLinks() {
 
           <Row>
             <Col lg={12}>
-              <div className="text-center mt-5">
+              <div className="d-flex justify-content-end gap-2 w-100">
+                <Link
+                  to="#"
+                  className="btn btn-sm btn-soft-primary"
+                  onClick={() => swiper.slidePrev()}
+                >
+                  <i className="ri-arrow-left-s-line align-bottom"></i>
+                </Link>
+                <Link
+                  to="#"
+                  className="btn btn-sm btn-soft-primary"
+                  onClick={() => swiper.slideNext()}
+                >
+                  <i className="ri-arrow-right-s-line align-bottom"></i>
+                </Link>
+              </div>
+              <div className="text-center ">
                 <Swiper
                   slidesPerView={4}
                   spaceBetween={30}
                   pagination={{
                     clickable: false,
+                  }}
+                  onSwiper={(s) => {
+                    console.log("initialize swiper", s);
+                    setSwiper(s);
                   }}
                   breakpoints={{
                     576: {
@@ -109,7 +134,6 @@ export default function UsefulLinks() {
                   modules={[Autoplay]}
                   className="mySwiper swiper trusted-client-slider mt-sm-5 mt-4 mb-sm-5 mb-4"
                 >
-                  {" "}
                   {topCreatorData.map((item, key) => (
                     <SwiperSlide key={key}>
                       <Card className=" bg-soft-primary">
