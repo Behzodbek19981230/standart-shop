@@ -13,6 +13,7 @@ import avtar10 from "../../assets/images/users/avatar-10.jpg";
 import avtar8 from "../../assets/images/users/avatar-8.jpg";
 import avtar9 from "../../assets/images/users/avatar-9.jpg";
 import { lang } from "moment";
+import { format } from "echarts";
 
 const jobWidgets = [
   {
@@ -69,6 +70,7 @@ const featuredCompany = [
     city: " Cullera, Spain",
     bgColor: "success",
     lang: "English",
+    format: '<i class="ri-file-excel-2-line"></i>',
   },
   {
     id: 2,
@@ -79,6 +81,7 @@ const featuredCompany = [
     city: "Mughairah, UAE",
     bgColor: "warning",
     lang: "Russian",
+    format: '<i class="ri-file-ppt-line"></i>',
   },
   {
     id: 3,
@@ -88,6 +91,7 @@ const featuredCompany = [
     lang: "Uzbek",
     city: "Mughairah, UAE",
     bgColor: "success",
+    format: '<i class=" ri-file-word-2-line"></i>',
   },
   {
     id: 4,
@@ -98,6 +102,7 @@ const featuredCompany = [
     lang: "Uzbek",
     city: "Germany",
     bgColor: "danger",
+    format: '<i class="ri-file-ppt-line"></i>',
   },
   {
     id: 5,
@@ -108,6 +113,7 @@ const featuredCompany = [
     lang: "Uzbek",
     city: " Limestone, US",
     bgColor: "danger",
+    format: '<i class="ri-file-word-2-line"></i>',
   },
 ];
 

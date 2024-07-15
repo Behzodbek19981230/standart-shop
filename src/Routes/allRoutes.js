@@ -239,8 +239,8 @@ import UserProfile from "../pages/Authentication/user-profile";
 
 import FileManager from "../pages/FileManager";
 import ToDoList from "../pages/ToDo";
-import AdvancedSearch from "../pages/Landing/NFTLanding/AdvancedSearch";
-import LandingHome from "../pages/Landing/NFTLanding/LandingHome";
+import AdvancedSearch from "../pages/Landing/NFTLanding/pages/AdvancedSearch";
+import DocumentsPage from "../pages/Landing/NFTLanding/pages/Documents";
 
 const authProtectedRoutes = [
   { path: "/dashboard-analytics", component: <DashboardAnalytics /> },
@@ -504,6 +504,7 @@ const publicRoutes = [
 ];
 const landingRoutes = [
   { path: "/advanced-search", component: <AdvancedSearch /> },
+  { path: "/documents", component: <DocumentsPage /> },
 ];
 
 export { authProtectedRoutes, publicRoutes, landingRoutes };

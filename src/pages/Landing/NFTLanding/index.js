@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
-import Navbar from "./Navbar";
-import Footer from "./footer";
-import LandingHome from "./LandingHome";
-import NavbarLanding from "./NavbarLanding";
+import LandingHome from "./pages/LandingHome";
+import NavbarLanding from "./components/NavbarLanding";
+import Footer from "./components/footer";
 
 const NFTLanding = ({ children }) => {
   document.title = " Landing | Standartlar onlayn do'koni";

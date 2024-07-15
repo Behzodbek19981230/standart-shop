@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.fde1fdc3.css",
-    "main.js": "/static/js/main.bee8dc25.js",
+    "main.js": "/static/js/main.a8e68d0e.js",
     "static/media/remixicon.svg?t=1590207869815": "/static/media/remixicon.1664a258a7e7714f6f8d.svg",
     "static/media/boxicons.svg": "/static/media/boxicons.17f6cb4eef77f07f2caa.svg",
     "static/media/materialdesignicons-webfont.eot": "/static/media/materialdesignicons-webfont.e044ed23c047e571c550.eot",
@@ -24,6 +24,7 @@
     "static/media/la-solid-900.ttf": "/static/media/la-solid-900.279f38601f1d1655255f.ttf",
     "static/media/img-03.jpg": "/static/media/img-03.fb9bdc2e151790836837.jpg",
     "static/media/img-2.png": "/static/media/img-2.15d985acc4605bbe2203.png",
+    "static/media/excel.png": "/static/media/excel.f2c13d27abc2b30fca73.png",
     "static/media/img-10.png": "/static/media/img-10.d8de01354204f22b64a0.png",
     "static/media/img-4.jpg": "/static/media/img-4.0c27fe74df9e5866c5d6.jpg",
     "static/media/remixicon.woff?t=1590207869815": "/static/media/remixicon.8d09fa11700ed63cf96e.woff",
@@ -46,6 +47,7 @@
     "static/media/boxicons.woff2": "/static/media/boxicons.60f603cccbdff82a523c.woff2",
     "static/media/la-regular-400.svg": "/static/media/la-regular-400.5b8ad6f4ffe812a4eb26.svg",
     "static/media/img-7.png": "/static/media/img-7.fcb804d7ca68571d504c.png",
+    "static/media/word.png": "/static/media/word.afe00e555ebf9599c511.png",
     "static/media/bg-pattern.png": "/static/media/bg-pattern.307164a3fd0cf567256d.png",
     "static/media/img-7.jpg": "/static/media/img-7.0cb45fe1a0c3f41f947f.jpg",
     "static/media/img-1.png": "/static/media/img-1.f546083dc67f04468e82.png",
@@ -57,6 +59,7 @@
     "static/media/user-illustarator-1.png": "/static/media/user-illustarator-1.1f7c952d80dc9e7b2e9e.png",
     "static/media/about.jpg": "/static/media/about.180dbd6360eb613fc46a.jpg",
     "static/media/img-02.jpg": "/static/media/img-02.ed85937d6e04fd992dfa.jpg",
+    "static/media/pdf.png": "/static/media/pdf.72f05d9fbbab454098a5.png",
     "static/media/img-01.jpg": "/static/media/img-01.00b4d83ed2b3aaff5bf1.jpg",
     "static/media/img-06.jpg": "/static/media/img-06.33d029f69c6eb6eb3919.jpg",
     "static/media/la-brands-400.woff2": "/static/media/la-brands-400.3a8109c4ac75662f8355.woff2",
@@ -134,7 +137,6 @@
     "static/media/kin.svg": "/static/media/kin.e58f117e9f7c80f41b9be59c0e950be0.svg",
     "static/media/miota.svg": "/static/media/miota.3509dfd91052b6026031cc1b947f7752.svg",
     "static/media/prl.svg": "/static/media/prl.7e69ad24df2e37af3d386d569430f397.svg",
-    "static/media/document.svg": "/static/media/document.5179110d1038c2d0a638fac0d7d436f0.svg",
     "static/media/wabi.svg": "/static/media/wabi.fd1a8196cacdcf97a5ac79db92c726fc.svg",
     "static/media/storj.svg": "/static/media/storj.897da6088b2ca1ffae8a6d8e10b71792.svg",
     "static/media/powr.svg": "/static/media/powr.3028e398a7f0beec04e1375487ebbbe6.svg",
@@ -605,6 +607,6 @@
   },
   "entrypoints": [
     "static/css/main.fde1fdc3.css",
-    "static/js/main.bee8dc25.js"
+    "static/js/main.a8e68d0e.js"
   ]
 }

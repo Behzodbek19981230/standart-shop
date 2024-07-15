@@ -8,9 +8,7 @@ import VerticalLayout from "../Layouts/index";
 //routes
 import { authProtectedRoutes, landingRoutes, publicRoutes } from "./allRoutes";
 import { AuthProtected } from "./AuthProtected";
-import NFTLanding from "../pages/Landing/NFTLanding";
-import LandingHome from "../pages/Landing/NFTLanding/LandingHome";
-import Layout from "../pages/Landing/NFTLanding/Layout";
+import Layout from "../pages/Landing/NFTLanding/pages/Layout";
 
 const Index = () => {
   return (
