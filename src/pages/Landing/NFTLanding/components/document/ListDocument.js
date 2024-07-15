@@ -19,11 +19,10 @@ export default function ListDocument() {
           <Col xxl={12} md={12} key={key}>
             <Card className="ribbon-box right overflow-hidden">
               <CardBody>
-                <div
+                {/* <div
                   className={`ribbon ribbon-${item.bgColor} ribbon-shape trending-ribbon`}
                 >
                   <i className={` ${item.img} text-white align-bottom`}></i>
-                  {/* <i className="ri-flashlight-fill text-white align-bottom"></i>{" "} */}
                   <span className="trending-ribbon-text">
                     {item.bgColor == "success"
                       ? "Amalda"
@@ -31,23 +30,23 @@ export default function ListDocument() {
                       ? "Amalda emas"
                       : "Kutilmoqda"}
                   </span>
-                </div>
-                <div className="d-flex align-items-center w-100  justify-content-between">
+                </div> */}
+                <div className="d-flex  w-100  justify-content-between">
                   <div className="flex-shrink-0 ">
-                    <div className="avatar-lg rounded">
-                      <img
-                        width={60}
-                        height={60}
-                        src={
-                          key % 3 == 1
-                            ? pngImage
-                            : key % 3 == 2
-                            ? wordImage
-                            : excelImage
+                    <div
+                      className="me-2 flex-shrink-0"
+                      style={{ width: 80, height: 80 }}
+                    >
+                      <div
+                        className={
+                          "avatar-title fs-2 bg-soft-" +
+                          item.bgColor +
+                          " rounded text-" +
+                          item.bgColor
                         }
-                        alt=""
-                        className="member-img img-fluid d-block rounded"
-                      ></img>
+                      >
+                        <i className={` ${item.img}`}></i>
+                      </div>
                     </div>
                   </div>
                   <div className="flex-grow-1 ms-3">
@@ -84,7 +83,13 @@ export default function ListDocument() {
                             </span>
                           </div>
                         </div>
-                        <div>
+                        <div className="w-50 d-flex gap-3 justify-content-end">
+                          <Link to="/" className="p-0  ">
+                            <i
+                              className=" ri-eye-line align-bottom text-start"
+                              style={{ fontSize: 20 }}
+                            ></i>
+                          </Link>
                           <Link to="/" className="p-0  ">
                             <i
                               className="ri-shopping-cart-line align-bottom text-start"
