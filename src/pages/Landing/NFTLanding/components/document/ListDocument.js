@@ -70,30 +70,40 @@ export default function ListDocument() {
 
                     <CardHeader className="p-0 card-footer border-bottom-0 border-top-dashed">
                       <div className="d-flex justify-content-between align-items-center flex-wrap gap-3">
-                        <div>
-                          {" "}
+                        <div className="d-flex align-items-center gap-3">
                           <div className="fs-6">
                             <i className="ri-user-3-line align-bottom me-1"></i>
                             {key * 10 + 2}
                           </div>
                           <div>
-                            <i className="ri-time-line align-bottom me-1"></i>{" "}
+                            <i className="ri-time-line align-bottom me-1"></i>
                             <span className="job-postdate fs-6">
                               {moment().format("DD.MM.yyyy")}
                             </span>
                           </div>
+                          <div>
+                            <i className=" ri-currency-line align-bottom me-1"></i>
+                            {key * 10 + 2} $
+                          </div>
                         </div>
                         <div className="w-50 d-flex gap-3 justify-content-end">
                           <Link to="/" className="p-0  ">
+                            {" "}
+                            <div
+                              style={{ fontSize: 24 }}
+                              dangerouslySetInnerHTML={{ __html: item.format }}
+                            />
+                          </Link>
+                          <Link to="/" className="p-0  ">
                             <i
-                              className=" ri-eye-line align-bottom text-start"
-                              style={{ fontSize: 20 }}
+                              className=" ri-eye-line align-bottom "
+                              style={{ fontSize: 24 }}
                             ></i>
                           </Link>
                           <Link to="/" className="p-0  ">
                             <i
-                              className="ri-shopping-cart-line align-bottom text-start"
-                              style={{ fontSize: 20 }}
+                              className="ri-shopping-cart-line align-bottom "
+                              style={{ fontSize: 24 }}
                             ></i>
                           </Link>
                         </div>

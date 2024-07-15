@@ -32,9 +32,7 @@ export default function LeftBar() {
     <React.Fragment>
       <div className="d-flex align-items-center mb-2">
         <div className="flex-grow-1">
-          <h2 className="mb-0 fw-semibold lh-base flex-grow-1">
-            Hujjat turlari
-          </h2>
+          <h2 className="mb-0 fw-semibold lh-base flex-grow-1">Sohalar</h2>
         </div>
       </div>
       <Card>
