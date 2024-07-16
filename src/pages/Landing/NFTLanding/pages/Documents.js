@@ -28,10 +28,10 @@ export default function DocumentsPage() {
       <Container>
         <FilterBar />
         <Row>
-          <Col md={4}>
+          {/* <Col md={4}>
             <LeftBar />
-          </Col>
-          <Col md={8}>
+          </Col> */}
+          <Col md={12}>
             <ListDocument />
           </Col>
         </Row>

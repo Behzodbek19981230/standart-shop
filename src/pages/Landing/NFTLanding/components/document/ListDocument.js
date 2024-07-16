@@ -71,17 +71,17 @@ export default function ListDocument() {
                     <CardHeader className="p-0 card-footer border-bottom-0 border-top-dashed">
                       <div className="d-flex justify-content-between align-items-center flex-wrap gap-3">
                         <div className="d-flex align-items-center gap-3">
-                          <div className="fs-6">
+                          <div className="fs-5 text-primary">
                             <i className="ri-user-3-line align-bottom me-1"></i>
                             {key * 10 + 2}
                           </div>
-                          <div>
+                          <div className="fs-5 text-primary">
                             <i className="ri-time-line align-bottom me-1"></i>
-                            <span className="job-postdate fs-6">
+                            <span className="job-postdate ">
                               {moment().format("DD.MM.yyyy")}
                             </span>
                           </div>
-                          <div>
+                          <div className="fs-5 text-primary fw-bold">
                             <i className=" ri-currency-line align-bottom me-1"></i>
                             {key * 10 + 2} $
                           </div>

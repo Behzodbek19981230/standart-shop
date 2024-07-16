@@ -72,7 +72,20 @@ export default function FilterBar() {
                 </Input>
               </FormGroup>
             </Col>
-            <Col md={2} className="d-flex justify-content-end align-items-end">
+            <Col md={2}>
+              <FormGroup>
+                <Label for="documentType">Sohalar</Label>
+                <Input
+                  type="select"
+                  className="form-control form-control-lg"
+                  name="documentType"
+                  id="documentType"
+                >
+                  <option>Tanlanmagan</option>
+                </Input>
+              </FormGroup>
+            </Col>
+            <Col md={1} className="d-flex justify-content-end align-items-end">
               <Button className="bg-white text-primary mb-3 btn-lg">
                 Qidirish
               </Button>
